@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     32635,        965]
-NotebookOptionsPosition[     30218,        885]
-NotebookOutlinePosition[     30637,        902]
-CellTagsIndexPosition[     30594,        899]
+NotebookDataLength[     32492,        957]
+NotebookOptionsPosition[     30155,        879]
+NotebookOutlinePosition[     30575,        896]
+CellTagsIndexPosition[     30532,        893]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -577,7 +577,7 @@ Cell[BoxData[{
 
 Cell[BoxData[
  DynamicBox[ToBoxes[$CellContext`n, StandardForm],
-  ImageSizeCache->{8., {0., 8.}}]], "Output",
+  ImageSizeCache->{42., {0., 8.}}]], "Output",
  CellChangeTimes->{
   3.6652715136142244`*^9, {3.6652715632977624`*^9, 3.665271572674039*^9}, 
    3.665271618956888*^9, 3.665272110442745*^9, {3.6652721715298996`*^9, 
@@ -734,14 +734,13 @@ Cell["primes of the form Fibonacci[n]-2293", "Section",
  CellChangeTimes->{
   3.665277624543271*^9, {3.6652785500245056`*^9, 3.66527855490893*^9}}],
 
-Cell["Enter text here.", "Text"],
-
-Cell[BoxData[
- DynamicBox[ToBoxes[$CellContext`n, StandardForm],
-  ImageSizeCache->{8., {0., 8.}}]], "Output",
- CellChangeTimes->{
-  3.665273040158985*^9, {3.665277627759592*^9, 3.6652776391508303`*^9}, 
-   3.6652778649143333`*^9, 3.665278115669092*^9}],
+Cell["\<\
+It seems that: If x=Fibonacci[n]-2293 is composite, x has a small factor. So \
+searhing primes of the form Fibonacci[n]-2293 is very fast! I got first these \
+11 primes spending only several minutes.\
+\>", "Text",
+ CellChangeTimes->{{3.6652843444565177`*^9, 3.6652844112858934`*^9}, {
+  3.665284444436698*^9, 3.6652844973858814`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -848,13 +847,13 @@ Cell[BoxData[{
      RowBox[{"Print", "[", 
       RowBox[{"n", ",", "\"\<, \>\""}], "]"}]}], "]"}], ",", 
    RowBox[{"{", 
-    RowBox[{"n", ",", "21108", ",", "110001", ",", "3"}], "}"}]}], 
+    RowBox[{"n", ",", "36660", ",", "110001", ",", "3"}], "}"}]}], 
   "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.665273032827527*^9, 3.665273038005981*^9}, {
    3.6652776136739845`*^9, 3.6652776379192533`*^9}, {3.665277842291794*^9, 
    3.665277857697954*^9}, 3.665278010659156*^9, {3.665278082967106*^9, 
    3.665278113653323*^9}, {3.665278601733528*^9, 3.665278608863126*^9}, {
-   3.6652786992069254`*^9, 3.665278718722847*^9}}],
+   3.6652786992069254`*^9, 3.665278718722847*^9}, 3.665284612879108*^9}],
 
 Cell[BoxData[
  DynamicBox[ToBoxes[$CellContext`n, StandardForm],
@@ -862,29 +861,24 @@ Cell[BoxData[
  CellChangeTimes->{
   3.665273040158985*^9, {3.665277627759592*^9, 3.6652776391508303`*^9}, 
    3.6652778649143333`*^9, 3.665278115669092*^9, 3.6652786103640275`*^9, 
-   3.665278723576686*^9}],
+   3.665278723576686*^9, 3.665284616715892*^9}],
 
 Cell[BoxData["\<\"Fib[n]-2293 is a prime when n= \"\>"], "Print",
  CellChangeTimes->{3.6652781156846886`*^9, 3.6652786103640275`*^9, 
-  3.665278723592353*^9}],
-
-Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{
-  3.665273040158985*^9, {3.665277627759592*^9, 3.6652776391508303`*^9}, 
-   3.6652778649143333`*^9, 3.665278115669092*^9, 3.6652786103640275`*^9, 
-   3.6652823869788694`*^9}]
+  3.665278723592353*^9, 3.665284616715892*^9}]
 }, Open  ]],
 
 Cell["\<\
-http://a-boy.tk/playmath/primes%20of%20form%20Fibonacci%5Bn%5D-2293.nb\
+http://a-boy.tk/playmath/primes-of-form-(Fibonacci%5Bn%5D-2293).nb\
 \>", "Text",
  CellFrame->{{0, 0}, {0, 2}},
- CellChangeTimes->{3.665283649324547*^9}]
+ CellChangeTimes->{
+  3.665283649324547*^9, {3.6652839138243885`*^9, 3.665283920218374*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{775, 561},
-WindowMargins->{{78, Automatic}, {34, Automatic}},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (2015\:5e7412\:670810\
 \:65e5)",
 StyleDefinitions->FrontEnd`FileName[{"Utility"}, "Memo.nb", CharacterEncoding -> 
@@ -902,7 +896,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 121, 1, 144, "Title"],
+Cell[580, 22, 121, 1, 90, "Title"],
 Cell[704, 25, 139, 1, 23, "Author"],
 Cell[846, 28, 136, 1, 23, "Institution"],
 Cell[985, 31, 106, 1, 23, "AbstractSection"],
@@ -914,57 +908,55 @@ Cell[1647, 50, 192, 5, 66, "Text"],
 Cell[1842, 57, 26, 0, 31, "Input"],
 Cell[CellGroupData[{
 Cell[1893, 61, 465, 12, 48, "Input"],
-Cell[2361, 75, 15766, 466, 952, "Output"]
+Cell[2361, 75, 15766, 466, 532, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18164, 546, 1381, 29, 148, "Input"],
-Cell[19548, 577, 699, 11, 31, "Output"],
+Cell[18164, 546, 1381, 29, 128, "Input"],
+Cell[19548, 577, 700, 11, 31, "Output"],
 Cell[CellGroupData[{
-Cell[20272, 592, 216, 4, 23, "Print"],
-Cell[20491, 598, 216, 4, 23, "Print"],
-Cell[20710, 604, 217, 4, 23, "Print"],
-Cell[20930, 610, 217, 4, 23, "Print"],
-Cell[21150, 616, 218, 4, 23, "Print"],
-Cell[21371, 622, 218, 4, 23, "Print"],
-Cell[21592, 628, 220, 4, 23, "Print"]
+Cell[20273, 592, 216, 4, 23, "Print"],
+Cell[20492, 598, 216, 4, 23, "Print"],
+Cell[20711, 604, 217, 4, 23, "Print"],
+Cell[20931, 610, 217, 4, 23, "Print"],
+Cell[21151, 616, 218, 4, 23, "Print"],
+Cell[21372, 622, 218, 4, 23, "Print"],
+Cell[21593, 628, 220, 4, 23, "Print"]
 }, Open  ]]
 }, Open  ]],
-Cell[21839, 636, 241, 5, 47, "Text"],
+Cell[21840, 636, 241, 5, 28, "Text"],
 Cell[CellGroupData[{
-Cell[22105, 645, 322, 8, 48, "Input"],
-Cell[22430, 655, 897, 30, 52, "Output"]
+Cell[22106, 645, 322, 8, 48, "Input"],
+Cell[22431, 655, 897, 30, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[23364, 690, 551, 12, 48, "Input"],
-Cell[23918, 704, 1507, 22, 112, "Output"]
+Cell[23365, 690, 551, 12, 48, "Input"],
+Cell[23919, 704, 1507, 22, 72, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25474, 732, 147, 2, 54, "Section"],
-Cell[25624, 736, 32, 0, 28, "Text"],
-Cell[25659, 738, 253, 5, 31, "Output"],
+Cell[25475, 732, 147, 2, 54, "Section"],
+Cell[25625, 736, 344, 6, 28, "Text"],
 Cell[CellGroupData[{
-Cell[25937, 747, 109, 1, 23, "Print"],
-Cell[26049, 750, 188, 5, 23, "Print"],
-Cell[26240, 757, 188, 5, 23, "Print"],
-Cell[26431, 764, 188, 5, 23, "Print"],
-Cell[26622, 771, 190, 5, 23, "Print"],
-Cell[26815, 778, 190, 5, 23, "Print"],
-Cell[27008, 785, 190, 5, 23, "Print"],
-Cell[27201, 792, 190, 5, 23, "Print"],
-Cell[27394, 799, 188, 5, 23, "Print"],
-Cell[27585, 806, 188, 5, 23, "Print"],
-Cell[27776, 813, 188, 5, 23, "Print"],
-Cell[27967, 820, 192, 5, 23, "Print"]
+Cell[25994, 746, 109, 1, 23, "Print"],
+Cell[26106, 749, 188, 5, 23, "Print"],
+Cell[26297, 756, 188, 5, 23, "Print"],
+Cell[26488, 763, 188, 5, 23, "Print"],
+Cell[26679, 770, 190, 5, 23, "Print"],
+Cell[26872, 777, 190, 5, 23, "Print"],
+Cell[27065, 784, 190, 5, 23, "Print"],
+Cell[27258, 791, 190, 5, 23, "Print"],
+Cell[27451, 798, 188, 5, 23, "Print"],
+Cell[27642, 805, 188, 5, 23, "Print"],
+Cell[27833, 812, 188, 5, 23, "Print"],
+Cell[28024, 819, 192, 5, 23, "Print"]
 }, Open  ]],
-Cell[28174, 828, 94, 1, 31, "Input"],
+Cell[28231, 827, 94, 1, 31, "Input"],
 Cell[CellGroupData[{
-Cell[28293, 833, 1015, 23, 166, "Input"],
-Cell[29311, 858, 304, 6, 31, "Output"],
-Cell[29618, 866, 158, 2, 23, "Print"],
-Cell[29779, 870, 230, 4, 31, "Output"]
+Cell[28350, 832, 1037, 23, 166, "Input"],
+Cell[29390, 857, 326, 6, 31, "Output"],
+Cell[29719, 865, 180, 2, 23, "Print"]
 }, Open  ]],
-Cell[30024, 877, 166, 4, 38, "Text"]
+Cell[29914, 870, 213, 5, 38, "Text"]
 }, Open  ]]
 }, Open  ]]
 }

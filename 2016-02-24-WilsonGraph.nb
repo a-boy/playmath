@@ -1,0 +1,111 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2672,        101]
+NotebookOptionsPosition[      1805,         67]
+NotebookOutlinePosition[      2225,         84]
+CellTagsIndexPosition[      2182,         81]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Wilson Graph", "Title",
+ CellChangeTimes->{{3.665281715152512*^9, 3.6652817437926493`*^9}, {
+  3.665287449689541*^9, 3.6652874563389683`*^9}}],
+
+Cell["@ https://github.com/a-boy (mailto: a_boy@live.com)", "Author",
+ CellChangeTimes->{{3.6652817517016344`*^9, 3.6652818452317333`*^9}}],
+
+Cell["\:7eaf\:60c5\:90e8\:843d QQ\:7fa4 499866721", "Institution",
+ CellChangeTimes->{{3.6652818664975185`*^9, 3.6652818968015046`*^9}}],
+
+Cell["Abstract:", "AbstractSection",
+ CellChangeTimes->{{3.6652820555776353`*^9, 3.6652820596977406`*^9}}],
+
+Cell["", "Abstract",
+ CellChangeTimes->{{3.6652820266030965`*^9, 3.6652820679734726`*^9}, {
+   3.665282131165392*^9, 3.6652822163076296`*^9}, 3.6652874748289957`*^9}],
+
+Cell["2016-02-24", "Date",
+ CellChangeTimes->{{3.665282317627529*^9, 3.66528232132574*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Enter section title here", "Section"],
+
+Cell["\<\
+Enter text here. Enter input for evaluation in a separate cell below:\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "Input"],
+
+Cell[BoxData["4"], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter section title here", "Section"],
+
+Cell["Enter text here.", "Text"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{775, 561},
+WindowMargins->{{287, Automatic}, {Automatic, 54}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (2015\:5e7412\:670810\
+\:65e5)",
+StyleDefinitions->FrontEnd`FileName[{"Utility"}, "Memo.nb", CharacterEncoding -> 
+  "CP936"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 148, 2, 90, "Title"],
+Cell[731, 26, 139, 1, 23, "Author"],
+Cell[873, 29, 136, 1, 23, "Institution"],
+Cell[1012, 32, 106, 1, 23, "AbstractSection"],
+Cell[1121, 35, 166, 2, 23, "Abstract"],
+Cell[1290, 39, 91, 1, 23, "Date"],
+Cell[CellGroupData[{
+Cell[1406, 44, 43, 0, 54, "Section"],
+Cell[1452, 46, 93, 2, 28, "Text"],
+Cell[CellGroupData[{
+Cell[1570, 52, 49, 1, 31, "Input"],
+Cell[1622, 55, 28, 0, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1699, 61, 43, 0, 54, "Section"],
+Cell[1745, 63, 32, 0, 28, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
