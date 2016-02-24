@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     32514,        962]
-NotebookOptionsPosition[     30098,        882]
-NotebookOutlinePosition[     30517,        899]
-CellTagsIndexPosition[     30474,        896]
+NotebookDataLength[     32635,        965]
+NotebookOptionsPosition[     30218,        885]
+NotebookOutlinePosition[     30637,        902]
+CellTagsIndexPosition[     30594,        899]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -875,8 +875,11 @@ Cell[BoxData["$Aborted"], "Output",
    3.6652823869788694`*^9}]
 }, Open  ]],
 
-Cell["", "Text",
- CellFrame->{{0, 0}, {0, 2}}]
+Cell["\<\
+http://a-boy.tk/playmath/primes%20of%20form%20Fibonacci%5Bn%5D-2293.nb\
+\>", "Text",
+ CellFrame->{{0, 0}, {0, 2}},
+ CellChangeTimes->{3.665283649324547*^9}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -961,7 +964,7 @@ Cell[29311, 858, 304, 6, 31, "Output"],
 Cell[29618, 866, 158, 2, 23, "Print"],
 Cell[29779, 870, 230, 4, 31, "Output"]
 }, Open  ]],
-Cell[30024, 877, 46, 1, 38, "Text"]
+Cell[30024, 877, 166, 4, 38, "Text"]
 }, Open  ]]
 }, Open  ]]
 }
