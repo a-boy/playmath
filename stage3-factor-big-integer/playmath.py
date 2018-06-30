@@ -35,8 +35,8 @@ def squareQ(x):
     return (True,root)
 
 def sqrt(n):
-    if n == 1:
-        return True
+    if n == 1 or n==0:
+        return n
     r = n//2
     s=2
     while s!=r:

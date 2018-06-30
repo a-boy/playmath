@@ -8,4 +8,4 @@
 {"type":"cell","id":"c84225","pos":-1.25,"input":"2018-06-12","cell_type":"markdown"}
 {"type":"cell","id":"df49b9","pos":3,"input":""}
 {"type":"file","last_load":1528759977102}
-{"type":"settings","backend_state":"running","trust":true,"kernel":"sagemath","kernel_usage":{"cpu":0,"memory":264712192},"kernel_state":"idle"}
+{"type":"settings","backend_state":"running","trust":true,"kernel":"sagemath","kernel_usage":{"cpu":0,"memory":264622080},"kernel_state":"idle"}
