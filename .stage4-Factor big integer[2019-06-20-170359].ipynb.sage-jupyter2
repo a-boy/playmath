@@ -1,0 +1,4 @@
+{"backend_state":"running","kernel":"sage-develop","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":205504512},"trust":true,"type":"settings"}
+{"id":"9c71ac","input":"","pos":0,"state":"done","type":"cell"}
+{"id":0,"time":1561021472284,"type":"user"}
+{"last_load":1561021480260,"type":"file"}
