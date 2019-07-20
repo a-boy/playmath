@@ -4,9 +4,9 @@ a boy's math playground; math experiment
 https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 
 ## idea:(mailto:a_boy@live.com)
-- Prime-Gap-Inequality: The i-th prime gap p[i+1]-p[i]<=i . In other words, `range(n,n+primepi(n)+1)` contains one or more primes. So, the i0th prime p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2
+- Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` . In other words, `range(n,n+primepi(n)+1)` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
 - Bread curve
-- range(n^2, n*(n+1)) contains at least one prime. This is because: as to the array {n*n, n*n+1, n*n+2, ... ,nextprime(n*n)-1 }, we can dispatch distinct real factors for every item, these real factors are in {2,3,4,...,n} , Pigeonhole principle shows `nextprime(n*n)< n*(n+1)` . Samely, `range(n*(n+1), (n+1)*(n+1))` contains at least one prime. so, here is one sentence proof for 
+- `range(n^2, n*(n+1))` contains at least one prime. This is because: as to the array `{n*n, n*n+1, n*n+2, ... ,nextprime(n*n)-1 }`, we can dispatch distinct real factors for every item, these real factors are in `{2,3,4,...,n}` , Pigeonhole principle shows `nextprime(n*n)< n*(n+1)` . Samely, `range(n*(n+1), (n+1)*(n+1))` contains at least one prime. so, this is one sentence proof for 
     ```
     "still unsolved Legendre's conjecture asks whether for every n > 1, there is a prime p, such that n^2 < p < (n + 1)^2 "
 
@@ -63,11 +63,11 @@ def f(n):
     while n%2==0 : n/=2
     return n
 
-思路: for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), it will return a less number m, m<n . 或者陈述为： 在大约n*log(3,4)次(含)嵌套调用f(n)之前，总会得到一个比n更小的数m，从而由归纳法推出Callatz Conjecture 对所有正整数都成立。
+思路: for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), it will return a less number m, m<n .  在大约n*log(3,4)次嵌套调用f(n)之前，总会得到一个比n更小的数m，从而由归纳法推出Callatz Conjecture 对所有正整数都成立。
 ```
 
-- 定义:二密分解 n=q1*q2 , q1取小于或等于√n的最大因数, q2取大于或等于√n的最小因数。
+- 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
 是否值得尝试，使用二密分解或p-密分解的一些性质证明费马大定理? 抛开Wiles的复杂理论和过程?
 
-- 猜想: 任意n>=3, 我们可以添加有限个阶乘符号，使 `n!!...! -1 ` 是一个质数.
+- 猜想: 任意`n>=3`, 我们总可以添加有限个阶乘符号，使 `n!!...! -1 ` 是一个质数.
 
