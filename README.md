@@ -70,7 +70,7 @@ def f(n):
 思路: for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), 
 it will return a less number m, m<n .  
 在大约n*log(3,4)次嵌套调用f(n)之前，总会得到一个比n更小的数m，
-从而由归纳法推出Callatz Conjecture 对所有正整数都成立。
+从而由归纳法推出Collatz Conjecture 对所有正整数都成立。
 ```
 
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
