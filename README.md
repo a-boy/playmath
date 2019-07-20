@@ -78,3 +78,8 @@ it will return a less number m, m<n .
 
 - 猜想: 任意`n>=3`, 我们总可以添加有限个阶乘符号，使 `n!!...! -1 ` 是一个质数.
 
+#### 赞助支持
+![](temp/1563593535473.jpg)
+![](temp/mm_facetoface_collect_qrcode_1560552098216.png)
+
+感谢你的赞助和支持，希望你我每天都能做得更好！！！
