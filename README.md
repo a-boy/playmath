@@ -14,14 +14,16 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
     ```
 - Try to prove Goldbach's Conjecture
 ```
-    For any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n), satisfies that both n-g and n+g are primes. ?? because we can dispatch distinct prime factors for {n+1, n+2, ... n+g}.replace( isprime(n+x) => n-x) ?? 
+    For any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n), satisfies that both n-g and n+g are primes. 
+    ?? because we can dispatch distinct prime factors for {n+1, n+2, ... n+g}.replace( isprime(n+x) => n-x) ?? 
 ```
 
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
 Conjecture: for any n>=3, ` n! - prevprime(...(prevprime(n!))) ` is always prime or 1, the count of nest `prevprime` can be from 1 to n-1 times.
 
 - denote S(k,v):=RamseyNumber(k+1,v+1)-1 . 
-Conjecture: for any integer v>=2, S(2,v)%5 in {0,2,3}, here S(2,v)=RamseyNumber(3,v+1)-1 . RamseyNumber(3,v+1) can NOT be the form 5*k or 5*k+2
+Conjecture: for any integer v>=2, S(2,v)%5 in {0,2,3}, here S(2,v)=RamseyNumber(3,v+1)-1 . 
+RamseyNumber(3,v+1) can NOT be the form 5*k or 5*k+2
 
 ```
 m	n	R(m,n)	Reference
@@ -47,9 +49,11 @@ Guess: for any ineteger n>=1, RamseyNumber(n+1,n+1)-1 = S(n,n) contains only the
 
 - try to prove Twin Prime Conjecture
 ```
-    1. Method 1: If a prime gap subsequence repeats twice, then it will occur infinitely times. such as {2}, {4},{2*k},{2,4,2},{6,6}...
-    2. Method 2: by using modern database function `groupby` on prime gap sequence, ...
-     Observing prime gap frequency distribution for primes up to some big integer N0 .Peaks occur at multiples of 6. And the ratio of {2}s to {6}s will be great than a const(0.5 ?).
+    1. Method 1: If a prime gap subsequence repeats twice, then it will occur infinitely times. 
+    such as {2}, {4},{2*k},{2,4,2},{6,6}...
+    2. Method 2: by using modern database function `groupby` on prime gap sequence, ...  
+     Observing prime gap frequency distribution for primes up to some big integer N0 .  
+     Peaks occur at multiples of 6. And the ratio of {2}s to {6}s will be great than a const(0.5 ?).
     1, 2, 2, 4, 2, 4, 2, 4, 6, 2, 6, 4, 2, 4, 6, 6, 2, 6, 4, 2, 6, 4, 6, 8, 4, 2, 4, 2, 4, 14, 4, 6, 2, 10, 2, 6, 6, 4, 6, 6, 2, 10, 2, 4, 2, 12, 12, 4, 2, 4, 6, 2, 10, 6, 6, 6, 2, 6, 4, 2, ... (sequence A001223 in the OEIS).
 ```
 
@@ -63,7 +67,10 @@ def f(n):
     while n%2==0 : n/=2
     return n
 
-思路: for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), it will return a less number m, m<n .  在大约n*log(3,4)次嵌套调用f(n)之前，总会得到一个比n更小的数m，从而由归纳法推出Callatz Conjecture 对所有正整数都成立。
+思路: for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), 
+it will return a less number m, m<n .  
+在大约n*log(3,4)次嵌套调用f(n)之前，总会得到一个比n更小的数m，
+从而由归纳法推出Callatz Conjecture 对所有正整数都成立。
 ```
 
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
