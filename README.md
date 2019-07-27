@@ -76,6 +76,11 @@ it will return a less number m, m<n .
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
 是否值得尝试，使用二密分解或p-密分解的一些性质证明费马大定理? 抛开Wiles的复杂理论和过程?
 
+- OPPC(Odd Primes Position Constant) 奇质位常数，`2*k-1`如果是质数则二进制小数点后第k位为1，否则为0
+```
+const OPPC = 0.0111 0110 1101 0011
+               1357 9
+```
 
 #### 赞助支持
 <img src="temp/1563593535473.jpg" width="280">
