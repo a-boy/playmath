@@ -1,1 +1,11 @@
 - 猜想: 任意`n>=3`, 我们总可以添加有限个阶乘符号，使 `n!!...! -1 ` 是一个质数.
+
+g = DiGraph({1:[1,2,3]})
+g.plot().show()
+i=3
+while i<60:
+    i+=1
+    j=sigma(i,1)-i
+    g.add_edge(i,j)
+print(g.vertices())
+g.plot(layout='circular').show()

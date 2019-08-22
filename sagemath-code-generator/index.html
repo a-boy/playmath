@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Sagemath Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="toolbar"></div>
+<div id="mainPanel">
+    <div id="sidebar">
+	<textarea name="codenav1" id="codenav1" cols="50" rows="42">
+2D 作图
+line([(x1,y1),. . .,(xn,yn)],options)
+polygon([(x1,y1),. . .,(xn,yn)],options)
+circle((x,y),r,options)
+text("txt",(x,y),options)
+options 与 plot.options 用法相同, 例 thickness=pixel,
+rgbcolor=(r,g,b), hue=h 其中 0 ≤ r, b, g, h ≤ 1
+show(graphic, options)
+使用 figsize=[w,h] 调整大小
+使用 aspect_ratio=number 调整纵横比
+plot(f(x),(x, xmin, xmax),options)
+parametric_plot((f(t),g(t)),(t, tmin, tmax),options)
+polar_plot(f(t),(t, tmin, tmax),options)
+结合: circle((1,1),1)+line([(0,0),(2,2)])
+animate(list of graphics, options).show(delay=20)
+
+
+3D 作图
+line3d([(x1,y1,z1),. . .,(xn,yn,zn)],options)
+sphere((x,y,z),r,options)
+text3d("txt", (x,y,z), options)
+tetrahedron((x,y,z),size,options)
+cube((x,y,z),size,options)
+octahedron((x,y,z),size,options)
+dodecahedron((x,y,z),size,options)
+icosahedron((x,y,z),size,options)
+plot3d(f(x, y),(x, xb, xe), (y, yb, ye),options)
+parametric_plot3d((f,g,h),(t, tb, te),options)
+parametric_plot3d((f(u, v),g(u, v),h(u, v)),
+(u, ub, ue),(v, vb, ve),options)
+options: aspect_ratio=[1, 1, 1], color="red"
+opacity=0.5, figsize=6, viewer="tachyon"
+
+
+数值计算
+包: import numpy, scipy, cvxopt
+最小化: var("x y z")
+minimize(x^2+x*y^3+(1-z)^2-1, [1,1,1])
+
+
+数论
+素数: prime_range(n,m), is_prime, next_prime primes_first_n, prime_pi
+素因数分解: factor(n), qsieve(n), ecm.factor(n)
+extended gcd g = sa + tb = gcd(a, b): g,s,t=xgcd(a,b)
+Kronecker 符号: kronecker_symbol(a,b)
+连分数: continued_fraction(x)
+Bernoulli 数: bernoulli(n), bernoulli_mod_p(p)
+椭圆曲线: EllipticCurve([a1, a2, a3, a4, a6])
+Dirichlet 特征: DirichletGroup(N)
+模形式: ModularForms(level, weight)
+Modular symbols: ModularSymbols(level, weight, sign)
+Brandt 模: BrandtModule(level, weight)
+Modular abelian 簇: J0(N), J1(N)
+
+
+群论
+G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])
+SymmetricGroup(n), AlternatingGroup(n)
+交换群: AbelianGroup([3,15])
+矩阵群: GL, SL, Sp, SU, GU, SO, GO
+函数: G.sylow_subgroup(p), G.character_table(),
+G.normal_subgroups(), G.cayley_graph()
+
+非交换环
+四元数: Q.<i,j,k> = QuaternionAlgebra(a,b)
+自由代数: R.<a,b,c> = FreeAlgebra(QQ, 3)
+
+Python 模块
+import module_name
+module_name.⟨tab⟩ 与 help(module_name)
+
+分析与调试
+time command: 显示时间信息
+timeit("command"): 精确时间控制
+t = cputime(); cputime(t): CPU 运行时间
+t = walltime(); walltime(t): 系统时间
+%pdb: 开启交互调试 (仅在命令行)
+%prun command: 配置命令 (仅在命令行)
+</textarea>
+<textarea name="codenav2" id="codenav2" cols="50" rows="42">
+整数: Z = ZZ 例 -2 -1 0 1 10^100
+有理数: Q = QQ 例 1/2 1/1000 314/100 -2/1
+实数: R ≈ RR 例 .5 0.001 3.14 1.23e10000
+复数: C ≈ CC 例 CC(1,1) CC(2.5,-3)
+双精度: RDF 与 CDF 例 CDF(2.1,3)
+模 n 剩余类: Z/nZ = Zmod 例 Mod(2,3) Zmod(3)(2)
+有限域: Fq = GF 例 GF(3)(2) GF(9,"a").0
+多项式: R[x, y] 例 S.<x,y>=QQ[] x+2*y^3
+幂级数: R[[t]] 例 S.<t>=QQ[[]] 1/2+2*t+O(t^2)
+p 进整数: Zp ≈Zp, Qp ≈Qp 例 2+3*5+O(5^2)
+代数闭包: Q = QQbar 例 QQbar(2^(1/5))
+区间算术: RIF 例 sage: RIF((1,1.00001))
+数域: R.<x>=QQ[];K.<a>=NumberField(x^3+x+1)
+
+离散数学
+⌊x⌋ = floor(x) ⌈x⌉ = ceil(x)
+n 除以 k 的余数 = n%k k|n iff n%k==0
+n! = factorial(n) 
+二项式系数 binomial(n,m)
+ϕ(n) = euler_phi(n)
+字符串: 例 s = "Hello" = "He"+'llo'
+s[0]="H" s[-1]="o" s[1:3]="el" s[3:]="lo" s[0:4:2]='Hl'
+列表: 例 [1,"Hello",x] = []+[1,"Hello"]+[x]
+元组: 例 (1,"Hello",x) (immutable)
+集合: 例 {1, 2, 1, a} = Set([1,2,1,"a"]) (= {1, 2, a})
+列表推导式 ≈ 描述法表示集合 (set builder notation), 例
+{f(x) : x ∈ X, x > 0} = Set([f(x) for x in X if x>0])
+
+图论
+图: G = Graph({0:[1,2,3], 2:[4]})
+有向图: DiGraph(dictionary)
+图族: graphs.⟨tab⟩
+不变量: G.chromatic_polynomial(), G.is_planar()
+路径: G.shortest_path()
+可视化: G.plot(), G.plot3d()
+自同构: G.automorphism_group(),
+G1.is_isomorphic(G2), G1.is_subgraph(G2)
+
+组合学
+整数序列: sloane_find(list), sloane.⟨tab⟩
+分划: P=Partitions(n) P.count()
+组合: C=Combinations(list) C.list()
+笛卡尔积: CartesianProduct(P,C)
+Tableau: Tableau([[1,2,3],[4,5]])
+字: W=Words("abc"); W("aabca")
+偏序集: Poset([[1,2],[4],[3],[4],[]])
+根系: RootSystem(["A",3])
+Crystals: CrystalOfTableaux(["A",3], shape=[3,2])
+Lattice Polytopes: A=random_matrix(ZZ,3,6,x=7)
+L=LatticePolytope(A) L.npoints() L.plot3d()
+
+算术
+a*b a/b a^b √x = sqrt(x) x^(1/n) abs(x) logb(x) = log(x,b)
+和:∑(i=k..n,f(i)) = sum(f(i) for i in (k..n))
+积:
+∏(i=k..n,f(i)) = prod(f(i) for i in (k..n))
+
+
+常数与函数
+常数: π = pi e = e i = i ∞ = oo
+ϕ = golden_ratio γ = euler_gamma
+π 近似值: pi.n(digits=18) = 3.14159265358979324
+函数: sin cos tan sec csc cot sinh cosh tanh
+sech csch coth log ln exp ...
+Python 函数: def f(x): return x^2
+
+
+交互函数
+把 @interact 放在函数前 (vars determine controls)
+@interact
+def f(n=[0..4], s=(1..5), c=Color("red")):
+  var("x");show(plot(sin(n+x^s),-pi,pi,color=c))
+  
+符号式
+定义新符号变元: var("t u v y z")
+符号函数: 例 f(x)=x^2
+关系式: f==g f<=g f>=g f<g f>g
+求解 f = g: solve(f(x)==g(x), x)
+solve([f(x,y)==0, g(x,y)==0], x,y)
+factor(...) expand(...) (...).simplify_...
+find_root(f(x), a, b) 寻找 x ∈ [a, b] s.t. f(x) ≈ 0
+
+微积分
+limx→a
+f(x) = limit(f(x), x=a)
+d
+dx (f(x)) = diff(f(x),x)
+∂
+∂x (f(x, y)) = diff(f(x,y),x)
+diff = differentiate = derivative
+∫
+f(x)dx = integral(f(x),x)
+∫ b
+a
+f(x)dx = integral(f(x),x,a,b)
+∫ b
+a
+f(x)dx ≈ numerical_integral(f(x),a,b)
+a 点的 n 次 Taylor 多项式: taylor(f(x),x,a,n)
+
+
+矩阵代数
+vector([1,2])
+matrix(QQ,[[1,2],[3,4]], sparse=False)
+(1 2 3
+4 5 6)
+= matrix(QQ,2,3,[1,2,3, 4,5,6])
+det(matrix(QQ,[[1,2],[3,4]]))
+Av = A*v A−1 = A^-1 At = A.transpose()
+求解 Ax = v: A\v 或 A.solve_right(v)
+求解 xA = v: A.solve_left(v)
+约化行阶梯型: A.echelon_form()
+秩与零度: A.rank() A.nullity()
+Hessenberg 型: A.hessenberg_form()
+特征多项式: A.charpoly()
+特征值: A.eigenvalues()
+特征向量: A.eigenvectors_right() (also left)
+Gram-Schmidt 正交化: A.gram_schmidt()
+可视化: A.plot()
+LLL 约化: matrix(ZZ,...).LLL()
+Hermite 型: matrix(ZZ,...).hermite_form()
+
+
+线性代数
+向量空间 Kn = K^n 例 QQ^3 RR^2 CC^4
+子空间: span(vectors, field )
+例, span([[1,2,3], [2,3,5]], QQ)
+核: A.right_kernel() (also left)
+和与交: V + W and V.intersection(W)
+基: V.basis()
+基矩阵: V.basis_matrix()
+矩阵限制在子空间: A.restrict(V)
+向量在基下的坐标: V.coordinates(vector)
+
+        </textarea>
+    </div>
+    <div id="editorPanel">
+        <input type="text" value="" size="40"><br>
+    <textarea name="editor" id="editor" cols="50" rows="40"></textarea>
+</div>
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

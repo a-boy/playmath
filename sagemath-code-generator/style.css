@@ -1,0 +1,20 @@
+#editor {
+  margin: 0;
+  color: #FFF;
+  background-color: #00C;
+}
+
+div#mainPanel>div {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+div#mainPanel>div#sidebar{
+  width: fit-content;
+}
+
+
+code {
+  color: #f66;
+}
