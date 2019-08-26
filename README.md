@@ -14,7 +14,7 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
     ```
 - Try to prove Goldbach's Conjecture
 ```
-    For any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n), satisfies that both n-g and n+g are primes. 
+    For any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n)+1, satisfies that both n-g and n+g are primes. 
     ?? because we can dispatch distinct prime factors for {n+1, n+2, ... n+g}.replace( isprime(n+x) => n-x) ?? 
 ```
 
