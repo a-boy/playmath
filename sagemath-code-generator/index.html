@@ -10,7 +10,64 @@
 <div id="toolbar"></div>
 <div id="mainPanel">
     <div id="sidebar">
-	<textarea name="codenav1" id="codenav1" cols="50" rows="42">
+	<textarea name="codenav1" id="codenav1" cols="42" rows="42">
+数论
+素数: prime_range(n,m), is_prime, next_prime primes_first_n, prime_pi
+previous_prime(n), next_probable_prime(n)
+is_pseudoprime(n)  is_prime_power(n) prime_powers(m,n)
+next_prime_power(n), previous_prime_power(n)
+set of prime numbers: Primes()
+{p : m ≤ p < n and p prime} =prime_range(m,n)
+素因数分解: factor(n), qsieve(n), ecm.factor(n)
+extended gcd g = sa + tb = gcd(a, b): g,s,t=xgcd(a,b)
+lcm(n,m)
+n.digits(base)  n.ndigits(base)
+n | m: n.divides(m) if nk = m some k
+all d with d | n: n.divisors()
+n! = n.factorial()
+Kronecker 符号: kronecker_symbol(a,b)
+连分数: continued_fraction(x)
+Bernoulli 数: bernoulli(n), bernoulli_mod_p(p)
+椭圆曲线: EllipticCurve([a1, a2, a3, a4, a6])
+Dirichlet 特征: DirichletGroup(N)
+模形式: ModularForms(level, weight)
+Modular symbols: ModularSymbols(level, weight, sign)
+Brandt 模: BrandtModule(level, weight)
+Modular abelian 簇: J0(N), J1(N)
+quadratic_residues(n)
+nonquadratic_residues(n)
+ring Z/nZ=Zmod(n) = IntegerModRing(n)
+a modulo n as element of Z/nZ:Mod(a, n)
+primitive_root(n) n.inverse_mod(m)
+power a^n(mod m):power_mod(a, n, m)
+Chinese remainder theorem:x = crt(a,b,m,n)
+finds x with x≡a(mod m) and x≡b(mod n)
+discrete log:log(Mod(6,7), Mod(3,7))
+order of a(mod n) =Mod(a,n).multiplicative_order()
+square root of a(mod n) =Mod(a,n).sqrt()
+
+Lucas-Lehmer test for primality of 2^p − 1
+def is_prime_lucas_lehmer(p):
+	s = Mod(4, 2^p - 1)
+	for i in range(0, p-2): s = s^2 - 2
+	return s == 0
+
+complex_plot(zeta, (-30,5), (-8,8))
+
+k=12; m = matrix(ZZ, k, [(i*j)%k for i in [0..k-1] for j in [0..k-1]]); m.plot(cmap=’gray’)
+
+群论
+G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])
+SymmetricGroup(n), AlternatingGroup(n)
+交换群: AbelianGroup([3,15])
+矩阵群: GL, SL, Sp, SU, GU, SO, GO
+函数: G.sylow_subgroup(p), G.character_table(),
+G.normal_subgroups(), G.cayley_graph()
+
+非交换环
+四元数: Q.<i,j,k> = QuaternionAlgebra(a,b)
+自由代数: R.<a,b,c> = FreeAlgebra(QQ, 3)
+
 2D 作图
 line([(x1,y1),. . .,(xn,yn)],options)
 polygon([(x1,y1),. . .,(xn,yn)],options)
@@ -26,7 +83,6 @@ parametric_plot((f(t),g(t)),(t, tmin, tmax),options)
 polar_plot(f(t),(t, tmin, tmax),options)
 结合: circle((1,1),1)+line([(0,0),(2,2)])
 animate(list of graphics, options).show(delay=20)
-
 
 3D 作图
 line3d([(x1,y1,z1),. . .,(xn,yn,zn)],options)
@@ -50,34 +106,6 @@ opacity=0.5, figsize=6, viewer="tachyon"
 最小化: var("x y z")
 minimize(x^2+x*y^3+(1-z)^2-1, [1,1,1])
 
-
-数论
-素数: prime_range(n,m), is_prime, next_prime primes_first_n, prime_pi
-素因数分解: factor(n), qsieve(n), ecm.factor(n)
-extended gcd g = sa + tb = gcd(a, b): g,s,t=xgcd(a,b)
-Kronecker 符号: kronecker_symbol(a,b)
-连分数: continued_fraction(x)
-Bernoulli 数: bernoulli(n), bernoulli_mod_p(p)
-椭圆曲线: EllipticCurve([a1, a2, a3, a4, a6])
-Dirichlet 特征: DirichletGroup(N)
-模形式: ModularForms(level, weight)
-Modular symbols: ModularSymbols(level, weight, sign)
-Brandt 模: BrandtModule(level, weight)
-Modular abelian 簇: J0(N), J1(N)
-
-
-群论
-G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])
-SymmetricGroup(n), AlternatingGroup(n)
-交换群: AbelianGroup([3,15])
-矩阵群: GL, SL, Sp, SU, GU, SO, GO
-函数: G.sylow_subgroup(p), G.character_table(),
-G.normal_subgroups(), G.cayley_graph()
-
-非交换环
-四元数: Q.<i,j,k> = QuaternionAlgebra(a,b)
-自由代数: R.<a,b,c> = FreeAlgebra(QQ, 3)
-
 Python 模块
 import module_name
 module_name.⟨tab⟩ 与 help(module_name)
@@ -90,7 +118,7 @@ t = walltime(); walltime(t): 系统时间
 %pdb: 开启交互调试 (仅在命令行)
 %prun command: 配置命令 (仅在命令行)
 </textarea>
-<textarea name="codenav2" id="codenav2" cols="50" rows="42">
+<textarea name="codenav2" id="codenav2" cols="45" rows="42">
 整数: Z = ZZ 例 -2 -1 0 1 10^100
 有理数: Q = QQ 例 1/2 1/1000 314/100 -2/1
 实数: R ≈ RR 例 .5 0.001 3.14 1.23e10000
@@ -176,16 +204,11 @@ find_root(f(x), a, b) 寻找 x ∈ [a, b] s.t. f(x) ≈ 0
 微积分
 limx→a
 f(x) = limit(f(x), x=a)
-d
 dx (f(x)) = diff(f(x),x)
-∂
 ∂x (f(x, y)) = diff(f(x,y),x)
 diff = differentiate = derivative
-∫
-f(x)dx = integral(f(x),x)
-∫ b
-a
-f(x)dx = integral(f(x),x,a,b)
+∫ f(x)dx = integral(f(x),x)
+integral(f(x),x,a,b)
 ∫ b
 a
 f(x)dx ≈ numerical_integral(f(x),a,b)
@@ -225,7 +248,7 @@ Hermite 型: matrix(ZZ,...).hermite_form()
 矩阵限制在子空间: A.restrict(V)
 向量在基下的坐标: V.coordinates(vector)
 
-        </textarea>
+</textarea>
     </div>
     <div id="editorPanel">
         <input type="text" value="" size="40"><br>

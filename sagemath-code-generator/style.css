@@ -4,14 +4,13 @@
   background-color: #00C;
 }
 
-div#mainPanel>div {
-  display: inline-block;
+div#mainPanel,div#sidebar {
+  display: inline-flex;
   vertical-align: top;
-  box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 div#mainPanel>div#sidebar{
-  width: fit-content;
+  width: min-content;
 }
 
 
