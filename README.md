@@ -14,12 +14,13 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
     ```
 - Try to prove Goldbach's Conjecture
 ```
-    For any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n)+1, satisfies that both n-g and n+g are primes. 
-    ?? because we can dispatch distinct prime factors for {n+1, n+2, ... n+g}.replace( isprime(n+x) => n-x) ?? 
+    Except n=344,for any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n)+1, satisfies that both n-g and n+g are primes. 
+    
+    ?? because we can dispatch distinct prime factors for {n+1, n+2, ... n+g}.replace( isprime(n+x) => n-x) ?? why n=344 is an exception?
 ```
 
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
-Conjecture: for any n>=3, ` n! - prevprime(...(prevprime(n!))) ` is always prime or 1, the count of nest `prevprime` can be from 1 to n-1 times.
+Conjecture: for any n>=3, ` n! - prevprime(...(prevprime(n!))) ` is always prime or 1, the count of nest `prevprime` can be from 1 to floor(sqrt(n)) times.
 
 - denote S(k,v):=RamseyNumber(k+1,v+1)-1 . 
 Conjecture: for any integer v>=2, S(2,v)%5 in {0,2,3}, here S(2,v)=RamseyNumber(3,v+1)-1 . 
