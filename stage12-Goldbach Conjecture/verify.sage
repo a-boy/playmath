@@ -5,8 +5,14 @@ def gold(n):
 
 # check Improved Goldbach's Conjecture
 n=344
+peak=gold(n)
 print(n,gold(n),prime_pi(n))
-n=1259168
-while gold(n)>=0:
-    print(n)
+
+n=2887462
+g=gold(n)
+while g>=0:
+    if(g>1000):
+        #peak=g
+        print(n,g,prime_pi(n))
     n+=1
+    g=gold(n)
