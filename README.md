@@ -3,6 +3,20 @@ a boy's math playground; math experiment
 
 https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 
+## play score:
+- <b style="color:#0F0">2019-09-02, I proved Goldbach's Conjecture!</b>
+[stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb](https://nbviewer.jupyter.org/github/a-boy/playmath/blob/master/stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb). 
+
+	**Goldbach Conjecture Inequality 1**: **`gold(n) < prime_pi(n)+sigma(n,0)`**  
+	gold(n): the min non-negative integer makes that both `n-g` and `n+g` are primes  
+	prime_pi(n): the count of primes in 1..n  
+	sigma(n,0): the count of n.divisors()  
+
+	`gold(n) < prime_pi(n), while n>344`
+	`gold(n) < prime_pi(n)*4395/3449751 ≈ prime_pi(n)*0.0013, while n>57989356`
+
+	**Goldbach Conjecture Inequality 2**: **`gold(n) < prime_pi(prime_pi(n)+n)`**	
+
 ## idea:(mailto:a_boy@live.com)
 - Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` . In other words, `range(n,n+primepi(n)+1)` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
 - Bread curve
