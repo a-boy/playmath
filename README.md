@@ -3,8 +3,8 @@ a boy's math playground; math experiment
 
 https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 
-## play score:
-- <b style="color:#0F0">2019-09-02, I proved Goldbach's Conjecture!</b>
+## Records:
+- <b style="color:#0F0"> :star: 2019-09-02, I proved Goldbach's Conjecture!</b>
 [stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb](https://nbviewer.jupyter.org/github/a-boy/playmath/blob/master/stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb). 
 
 	**Goldbach Conjecture Inequality 1**: **`gold(n) < prime_pi(n)+sigma(n,0)`**  
