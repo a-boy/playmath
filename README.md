@@ -6,14 +6,16 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 
 ## Records:
 - <b style="color:#0F0"> :star: 2019-09-02, I proved Goldbach's Conjecture!</b>
-[stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb](https://nbviewer.jupyter.org/github/a-boy/playmath/blob/master/stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb) _Note: put this file in Sagemath env, if you want to run the codes_
+[stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb](https://nbviewer.jupyter.org/github/a-boy/playmath/blob/master/stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb)  
+ _Note: in Sagemath env to run the codes_
 
 	**Goldbach Conjecture Inequality 1**: **`gold(n) < prime_pi(n)+sigma(n,0)`**  
-	gold(n): the min non-negative integer makes that both `n-g` and `n+g` are primes  
+	gold(n): the min non-negative integer `g` makes that both `n-g` and `n+g` are primes  
 	prime_pi(n): the count of primes in 1..n  
 	sigma(n,0): the count of n.divisors()  
 
 	`gold(n) < prime_pi(n), while n>344`
+
 	`gold(n) < prime_pi(n)*4395/3449751 ≈ prime_pi(n)*0.0013, while n>57989356`
 
 	**Goldbach Conjecture Inequality 2**: **`gold(n) < prime_pi(prime_pi(n)+n)`**	
@@ -26,6 +28,7 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 - <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i`</b>
 
 - <b style="color:#0F0"> :star: I discovered Bread Curve and Bread Model by chance in 2011: </b>
+  
 ```
 def r(theta):= nest(sin,theta,1000)
 polar_plot(r(theta),(theta,0,2*PI))
@@ -34,7 +37,8 @@ polar_plot(r(theta),(theta,0,2*PI))
 <img src="stage2-bread%20curve/bread.png">
 <img src="stage2-bread%20curve/bread-curve-3d.jpg">
 
-- before2011/果中的泪滴.png  <img src="before2011/果中的泪滴.png">
+- before2011/果中的泪滴.png  
+  <img src="before2011/果中的泪滴.png">
 - ...
   
 ## idea:(mailto:a_boy@live.com)
@@ -118,8 +122,8 @@ const OPPC = 0.0111 0110 1101 0011
 ```
 
 #### math tools
-- Mathematica : .nb is Mathematica 9 notebook
-- Sagemath : .ipynb is Jupyter notebook, in a-boy/playmath most of *.ipynb files are used Sagemath, to view by Jupyter nbviewer, but to run codes only in Sagemath env; .sagews is Sagemath worksheet
+- Mathematica : .nb is Mathematica notebook
+- Sagemath : .ipynb is Jupyter notebook, most of *.ipynb files in a-boy/playmath are used Sagemath, to view by Jupyter nbviewer, but to run codes only in Sagemath env; .sagews is Sagemath worksheet
 - Maple
 - GeoGebra
 - Octave
