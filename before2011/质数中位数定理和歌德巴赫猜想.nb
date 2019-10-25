@@ -1,0 +1,2778 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     91071,       2769]
+NotebookOptionsPosition[     80339,       2447]
+NotebookOutlinePosition[     80747,       2463]
+CellTagsIndexPosition[     80704,       2460]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[
+CounterBox["BookChapterNumber"]], "BookChapterNumber"],
+
+Cell["\:8d28\:6570\:4e2d\:4f4d\:6570\:5b9a\:7406\:548c\:6b4c\:5fb7\:5df4\:8d6b\
+\:731c\:60f3", "BookChapterTitle",
+ CellChangeTimes->{{3.4636937658154974`*^9, 3.463693769420682*^9}, 
+   3.4636959577673693`*^9, 3.4949665655164776`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ". \:8d28\:6570\:4e2d\:4f4d\:6570\:5b9a\:7406\:548c\:6b4c\:5fb7\:5df4\:8d6b\
+\:731c\:60f3"
+}], "Section",
+ CellChangeTimes->{{3.4637023443508253`*^9, 3.463702353493973*^9}, {
+  3.46370248447231*^9, 3.4637025139446898`*^9}, {3.463702661396715*^9, 
+  3.4637026633895807`*^9}, {3.463713356124979*^9, 3.4637133997477055`*^9}, {
+  3.4637134353789406`*^9, 3.463713435388955*^9}}],
+
+Cell[TextData[{
+ "\t\:8fd9\:91cc\:ff0c\:7528",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]]],
+ "\:8868\:793a\:7b2ci\:4e2a\:8d28\:6570\:3002",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "1"], TraditionalForm]]],
+ "=2\:ff0c",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "2"], TraditionalForm]]],
+ "=3\[Ellipsis]\[Ellipsis] \[Pi] (x)\:8868\:793a\:4e0d\:5927\:4e8ex\:7684\
+\:8d28\:6570\:4e2a\:6570\:ff0cx>0\:3002"
+}], "Text",
+ CellChangeTimes->{{3.4637028986979375`*^9, 3.4637029552993264`*^9}, {
+   3.4637029984013042`*^9, 3.4637030311383777`*^9}, {3.4637030631944723`*^9, 
+   3.463703118103427*^9}, {3.463703248631117*^9, 3.463703254489541*^9}, {
+   3.4637033513788605`*^9, 3.4637033582787824`*^9}, {3.463703416252144*^9, 
+   3.4637034568805647`*^9}, {3.463703490609064*^9, 3.463703515264517*^9}, {
+   3.463703566668432*^9, 3.463703566698475*^9}, {3.4637040562123613`*^9, 
+   3.4637040562323904`*^9}, {3.4637040950381904`*^9, 3.463704265333062*^9}, {
+   3.463704492780115*^9, 3.463704496004752*^9}, {3.4637045883174915`*^9, 
+   3.4637045911315374`*^9}, {3.463704839278355*^9, 3.463704911171733*^9}, {
+   3.463705053225997*^9, 3.4637051843845935`*^9}, {3.4637052532636366`*^9, 
+   3.463705256348072*^9}, {3.4637054187115393`*^9, 3.4637054318304033`*^9}, 
+   3.463706440681059*^9, {3.4637067590388355`*^9, 3.463706819005062*^9}, {
+   3.463707423954938*^9, 3.463707443493032*^9}, {3.463713444802491*^9, 
+   3.4637134876841516`*^9}, {3.4637135317074547`*^9, 3.46371366648125*^9}, {
+   3.4637157236993837`*^9, 3.4637157270642223`*^9}, {3.4637187994821424`*^9, 
+   3.46371880503012*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:5b9a\:4e49\[MediumSpace]", "DefinitionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "DefinitionLabel"],
+ StyleBox[".1.1 ", "DefinitionLabel"],
+ "P(n)={",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["p", "1"], ",", 
+    SubscriptBox["p", "2"], ",", "\[Ellipsis]", ",", 
+    SubscriptBox["p", "n"]}], TraditionalForm]]],
+ "}\:662f\:524dn\:4e2a\:8d28\:6570\:7684\:5e8f\:5217\:3002"
+}], "Text",
+ CellChangeTimes->{{3.4637028986979375`*^9, 3.4637029552993264`*^9}, {
+   3.4637029984013042`*^9, 3.4637030311383777`*^9}, {3.4637030631944723`*^9, 
+   3.463703118103427*^9}, {3.463703248631117*^9, 3.463703254489541*^9}, {
+   3.4637033513788605`*^9, 3.4637033582787824`*^9}, {3.463703416252144*^9, 
+   3.4637034568805647`*^9}, {3.463703490609064*^9, 3.463703515264517*^9}, {
+   3.463703566668432*^9, 3.463703566698475*^9}, {3.4637040562123613`*^9, 
+   3.4637040562323904`*^9}, {3.4637040950381904`*^9, 3.463704265333062*^9}, {
+   3.463704492780115*^9, 3.463704496004752*^9}, {3.4637045883174915`*^9, 
+   3.4637045911315374`*^9}, {3.463704839278355*^9, 3.463704911171733*^9}, {
+   3.463705053225997*^9, 3.4637051843845935`*^9}, {3.4637052532636366`*^9, 
+   3.463705256348072*^9}, {3.4637054187115393`*^9, 3.4637054318304033`*^9}, 
+   3.463706440681059*^9, {3.4637067590388355`*^9, 3.463706819005062*^9}, {
+   3.463707423954938*^9, 3.463707443493032*^9}, 3.463713444802491*^9, {
+   3.4637136795500417`*^9, 3.463713831859051*^9}, {3.4637140345605216`*^9, 
+   3.46371403458055*^9}, {3.4637145987718177`*^9, 3.463714600834784*^9}, 
+   3.463715893022859*^9, 3.463719366948118*^9, 3.4637236424459825`*^9}],
+
+Cell[TextData[{
+ "PrimeMedianList(n) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", " ", 
+    FractionBox["1", "2"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "(",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["p", "i"], "+", 
+    SubscriptBox["p", "j"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") | 2\[LessEqual]i\[LessEqual]j\[LessEqual]n \
+}\:3002\:5b83\:662f\:5305\:542b\:91cd\:590d\:8bb0\:5f55\:7684\:5947\:8d28\
+\:6570\:4e2d\:4f4d\:6570\:5217\:8868\:ff0c\:7b2c\:4e00\:4e2a\:5143\:7d20\:662f\
+3\:3002"
+}], "Text",
+ CellChangeTimes->{{3.4637140483803935`*^9, 3.4637140681187763`*^9}, {
+  3.4637141232881055`*^9, 3.4637141234383216`*^9}, {3.4637141865690994`*^9, 
+  3.463714331667741*^9}, {3.463714384403571*^9, 3.463714565734312*^9}, {
+  3.463714933382965*^9, 3.463714992467925*^9}}],
+
+Cell["\<\
+PrimeMedianSet(n) = Sort[DeleteDuplicates[PrimeMedianList(n)]]\:662f\:6309\
+\:5347\:5e8f\:6392\:5217\:7684\:5947\:8d28\:6570\:4e2d\:4f4d\:6570\:96c6\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.463714572203614*^9, 3.463714703001693*^9}, {
+   3.4637147450020866`*^9, 3.4637148220228367`*^9}, {3.4637148671577377`*^9, 
+   3.463714890581419*^9}, 3.4637150153708577`*^9, {3.4637150604857297`*^9, 
+   3.4637150604957438`*^9}}],
+
+Cell[TextData[{
+ "\:8bb0\[Lambda](n)=primeMedianSup(",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "n"], TraditionalForm]]],
+ ")=x, \:5f53x\:ff0b1\[NotElement]PrimeMedianSet(n)\:5e76\:4e143\:ff0c4\:ff0c\
+\[Ellipsis]\:ff0cx\[Element]",
+ "PrimeMedianSet(n)\:3002"
+}], "Text",
+ CellChangeTimes->{{3.463715066604528*^9, 3.4637150865732417`*^9}, {
+  3.463715130075795*^9, 3.4637152032510157`*^9}, {3.4637153104151106`*^9, 
+  3.4637153691695952`*^9}, {3.4637157459113235`*^9, 3.4637157459313517`*^9}}],
+
+Cell["", "Text"],
+
+Cell[TextData[{
+ StyleBox["\:8d28\:6570\:516c\:8bbe:\[MediumSpace]\[ThinSpace] ", 
+  "AxiomLabel"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "n"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"=", 
+    RowBox[{
+     StyleBox["Min",
+      FontFamily->"Times",
+      FontWeight->"Plain",
+      FontSlant->"Plain"], 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        StyleBox["x",
+         FontFamily->"Times",
+         FontWeight->"Plain",
+         FontSlant->"Plain"], "|", 
+        RowBox[{
+         StyleBox["x",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"], ">", 
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Plain",
+           FontSlant->"Plain"], 
+          RowBox[{
+           StyleBox["n",
+            FontFamily->"Times",
+            FontWeight->"Plain",
+            FontSlant->"Plain"], "-", "1"}]]}]}], ";", 
+       RowBox[{
+        SubscriptBox[
+         StyleBox["p",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"], 
+         StyleBox["i",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"]], 
+        StyleBox["\[NotVerticalBar]",
+         FontFamily->"Times",
+         FontWeight->"Plain",
+         FontSlant->"Plain"], 
+        RowBox[{
+         StyleBox["x",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"], 
+         StyleBox[" ",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"], 
+         StyleBox[
+          RowBox[{
+           StyleBox["\:5f53",
+            FontFamily->"Times",
+            FontWeight->"Plain",
+            FontSlant->"Plain"], "1"}]]}], "\[LessEqual]", 
+        StyleBox["i",
+         FontFamily->"Times",
+         FontWeight->"Plain",
+         FontSlant->"Plain"], "<", "n"}]}], "}"}]}]}], TraditionalForm]]]
+}], "Text",
+ CellChangeTimes->{{3.4637028986979375`*^9, 3.4637029552993264`*^9}, {
+   3.4637029984013042`*^9, 3.4637030311383777`*^9}, {3.4637030631944723`*^9, 
+   3.463703118103427*^9}, {3.463703248631117*^9, 3.463703254489541*^9}, {
+   3.4637033513788605`*^9, 3.4637033582787824`*^9}, {3.463703416252144*^9, 
+   3.4637034568805647`*^9}, {3.463703490609064*^9, 3.463703515264517*^9}, {
+   3.463703566668432*^9, 3.463703566698475*^9}, 3.4637040562123613`*^9, {
+   3.463704369803283*^9, 3.4637044084488525`*^9}, 3.4637082154029837`*^9, {
+   3.4637084201574063`*^9, 3.463708523415885*^9}, {3.463710428855773*^9, 
+   3.4637104306082926`*^9}, {3.4637158064183283`*^9, 
+   3.4637158563000546`*^9}, {3.463715899532219*^9, 3.4637160119739027`*^9}, {
+   3.4637160600930943`*^9, 3.463716060103109*^9}}],
+
+Cell["\<\
+
+\:76f4\:89c2\:7684\:ff0c\:6211\:4ece\:8d28\:6570\:516c\:8bbe\:5f97\:51fa\:4e00\
+\:4e2a\:7ed3\:8bba\:ff1a\
+\>", "Text",
+ CellChangeTimes->{{3.4637028986979375`*^9, 3.4637029552993264`*^9}, {
+   3.4637029984013042`*^9, 3.4637030311383777`*^9}, {3.4637030631944723`*^9, 
+   3.463703118103427*^9}, {3.463703248631117*^9, 3.463703254489541*^9}, {
+   3.4637033513788605`*^9, 3.4637033582787824`*^9}, {3.463703416252144*^9, 
+   3.4637034568805647`*^9}, {3.463703490609064*^9, 3.463703515264517*^9}, {
+   3.463703566668432*^9, 3.463703566698475*^9}, 3.4637040562123613`*^9, {
+   3.463704369803283*^9, 3.4637044084488525`*^9}, 3.4637082154029837`*^9, {
+   3.4637084201574063`*^9, 3.463708523415885*^9}, {3.463710428855773*^9, 
+   3.4637104306082926`*^9}, {3.4637158064183283`*^9, 
+   3.4637158563000546`*^9}, {3.463715899532219*^9, 3.4637160119739027`*^9}, {
+   3.4637160600930943`*^9, 3.463716069076011*^9}, {3.4637161125184784`*^9, 
+   3.4637161356918*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:8d28\:6570\:4e2d\:4f4d\:6570\:5b9a\:7406\[MediumSpace]\
+\[ThinSpace]", "ConjectureLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ConjectureLabel"],
+ StyleBox[".1.1 ", "ConjectureLabel"],
+ "\:5bf9\:4e8e\:4efb\:610f\:6b63\:6574\:6570n>2\:ff0c"
+}], "Text",
+ CellChangeTimes->{{3.4637035686212397`*^9, 3.4637035858560224`*^9}, {
+   3.4637036318221183`*^9, 3.463703766035107*^9}, {3.463703801926717*^9, 
+   3.463703836576541*^9}, {3.463704326661248*^9, 3.463704334792941*^9}, {
+   3.4637058181959696`*^9, 3.463705911960797*^9}, {3.4637059930674224`*^9, 
+   3.463706013166323*^9}, {3.4637060526531024`*^9, 3.4637060964460735`*^9}, {
+   3.4637061781635776`*^9, 3.463706218070962*^9}, {3.4637062967040305`*^9, 
+   3.4637063432709904`*^9}, {3.463716170802286*^9, 3.4637161772916174`*^9}, {
+   3.463716218160384*^9, 3.463716249134923*^9}, 3.4637193795862913`*^9}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\t", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], 
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Bold",
+           FontSlant->"Plain"], 
+          StyleBox["n",
+           FontFamily->"Times",
+           FontWeight->"Bold",
+           FontSlant->"Plain"]], "+", 
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Bold",
+           FontSlant->"Plain"], 
+          RowBox[{
+           StyleBox["n",
+            FontFamily->"Times",
+            FontWeight->"Bold",
+            FontSlant->"Plain"], "-", 
+           RowBox[{
+            StyleBox["\[Pi]",
+             FontFamily->"Times",
+             FontWeight->"Bold",
+             FontSlant->"Plain"], "(", 
+            StyleBox["n",
+             FontFamily->"Times",
+             FontWeight->"Bold",
+             FontSlant->"Plain"], ")"}]}]]}], ")"}]}], "\[LessEqual]", 
+      RowBox[{"\[Lambda]", "(", "n", ")"}]}], "=", 
+     RowBox[{"PrimeMedianSup", "(", 
+      SubscriptBox[
+       StyleBox["p",
+        FontFamily->"Times",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], 
+       StyleBox["n",
+        FontFamily->"Times",
+        FontWeight->"Bold",
+        FontSlant->"Plain"]], ")"}]}]}], TraditionalForm]],
+  FontFamily->"Times New Roman"],
+ "\n\:5373"
+}], "Text",
+ CellChangeTimes->{{3.4637035686212397`*^9, 3.4637035858560224`*^9}, {
+   3.4637036318221183`*^9, 3.463703766035107*^9}, {3.463703801926717*^9, 
+   3.463703836576541*^9}, {3.463704326661248*^9, 3.463704334792941*^9}, {
+   3.4637058181959696`*^9, 3.463705911960797*^9}, {3.4637059930674224`*^9, 
+   3.463706013166323*^9}, {3.4637060526531024`*^9, 3.4637060964460735`*^9}, {
+   3.4637061781635776`*^9, 3.463706218070962*^9}, {3.4637062967040305`*^9, 
+   3.4637063432709904`*^9}, {3.463716170802286*^9, 3.4637161772916174`*^9}, {
+   3.463716218160384*^9, 3.4637162198127604`*^9}, 3.4637162640864224`*^9, {
+   3.4637163611459875`*^9, 3.4637164118188515`*^9}, {3.463716474448909*^9, 
+   3.463716476331616*^9}}],
+
+Cell[TextData[{
+ "\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"[", 
+     RowBox[{"3", ",", 
+      RowBox[{
+       FractionBox["1", "2"], 
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Bold",
+           FontSlant->"Plain"], 
+          StyleBox["n",
+           FontFamily->"Times",
+           FontWeight->"Bold",
+           FontSlant->"Plain"]], "+", 
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Bold",
+           FontSlant->"Plain"], 
+          RowBox[{
+           StyleBox["n",
+            FontFamily->"Times",
+            FontWeight->"Bold",
+            FontSlant->"Plain"], "-", 
+           RowBox[{
+            StyleBox["\[Pi]",
+             FontFamily->"Times",
+             FontWeight->"Bold",
+             FontSlant->"Plain"], "(", 
+            StyleBox["n",
+             FontFamily->"Times",
+             FontWeight->"Bold",
+             FontSlant->"Plain"], ")"}]}]]}], ")"}]}]}], "]"}], 
+    "\[SubsetEqual]", 
+    RowBox[{
+     StyleBox[
+      RowBox[{"Prime", 
+       StyleBox["MedianSet",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Italic"]}]], "(", "n", ")"}]}], TraditionalForm]]]
+}], "Text",
+ CellChangeTimes->{{3.463716610194101*^9, 3.4637166625694127`*^9}}],
+
+Cell["\<\
+
+\t\:663e\:7136\:ff0c\:8fd9\:4e2a\:5b9a\:7406\:8868\:660e\:ff1a\
+\>", "Text",
+ CellChangeTimes->{{3.4637028986979375`*^9, 3.4637029552993264`*^9}, {
+   3.4637029984013042`*^9, 3.4637030311383777`*^9}, {3.4637030631944723`*^9, 
+   3.463703118103427*^9}, {3.463703248631117*^9, 3.463703254489541*^9}, {
+   3.4637033513788605`*^9, 3.4637033582787824`*^9}, {3.463703416252144*^9, 
+   3.4637034568805647`*^9}, {3.463703490609064*^9, 3.463703515264517*^9}, {
+   3.463703566668432*^9, 3.463703566698475*^9}, 3.4637040562123613`*^9, {
+   3.463704369803283*^9, 3.4637044084488525`*^9}, 3.4637082154029837`*^9, {
+   3.4637084201574063`*^9, 3.463708523415885*^9}, {3.463710428855773*^9, 
+   3.4637104306082926`*^9}, {3.4637158064183283`*^9, 
+   3.4637158563000546`*^9}, {3.463715899532219*^9, 3.4637160119739027`*^9}, {
+   3.4637160600930943`*^9, 3.463716069076011*^9}, {3.4637161125184784`*^9, 
+   3.4637161356918*^9}, {3.4637166896483507`*^9, 3.463716713502651*^9}, 
+   3.4637188563038483`*^9}],
+
+Cell[TextData[{
+ StyleBox["\:52a0\:5f3a\:7684", "ConjectureLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"],
+ StyleBox["\:6b4c\:5fb7\:5df4\:8d6b\:731c\:60f3\[ThinSpace]\:ff1a ", 
+  "ConjectureLabel"],
+ "\:7ed9\:5b9a\:4e00\:4e2a\:5076\:65702a\:ff0c\:5982\:679c",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    RowBox[{"8", "\[LessEqual]", 
+     RowBox[{"2", 
+      StyleBox["a",
+       FontFamily->"Times",
+       FontWeight->"Plain",
+       FontSlant->"Plain"]}], "\[LessEqual]", 
+     RowBox[{
+      SubscriptBox[
+       StyleBox["p",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"], 
+       StyleBox["n",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"]], "+", 
+      SubscriptBox[
+       StyleBox["p",
+        FontFamily->"Times",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], 
+       RowBox[{
+        StyleBox["n",
+         FontFamily->"Times",
+         FontWeight->"Bold",
+         FontSlant->"Plain"], "-", 
+        RowBox[{
+         StyleBox["\[Pi]",
+          FontFamily->"Times",
+          FontWeight->"Bold",
+          FontSlant->"Plain"], "(", 
+         StyleBox["n",
+          FontFamily->"Times",
+          FontWeight->"Bold",
+          FontSlant->"Plain"], ")"}]}]]}]}],
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]],
+ "\:ff0cn>2\:ff0c\:90a3\:4e48\:67092a=p+q\:ff0c\:5176\:4e2dp\:ff0cq\:90fd\
+\:662f\:8d28\:6570\:5e76\:4e14p\[LessEqual]q\[LessEqual]",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "n"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\:3002"
+}], "Text",
+ CellChangeTimes->{{3.4637167534400787`*^9, 3.4637168845586176`*^9}, {
+  3.463716925807931*^9, 3.463717092687893*^9}, {3.4637171345480847`*^9, 
+  3.4637171887460175`*^9}, {3.4637172801474466`*^9, 3.463717284163221*^9}}],
+
+Cell[TextData[{
+ "\:4e5f\:5c31\:662f\:8bf4\:ff0c\:628a\:4e00\:4e2a\:4e0d\:5927\:4e8e",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     StyleBox["p",
+      FontFamily->"Times",
+      FontWeight->"Plain",
+      FontSlant->"Plain"], 
+     StyleBox["n",
+      FontFamily->"Times",
+      FontWeight->"Plain",
+      FontSlant->"Plain"]], "+", 
+    SubscriptBox[
+     StyleBox["p",
+      FontFamily->"Times",
+      FontWeight->"Bold",
+      FontSlant->"Plain"], 
+     RowBox[{
+      StyleBox["n",
+       FontFamily->"Times",
+       FontWeight->"Bold",
+       FontSlant->"Plain"], "-", 
+      RowBox[{
+       StyleBox["\[Pi]",
+        FontFamily->"Times",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], "(", 
+       StyleBox["n",
+        FontFamily->"Times",
+        FontWeight->"Bold",
+        FontSlant->"Plain"], ")"}]}]]}], TraditionalForm]]],
+ "\:7684\:5076\:6570\:5206\:89e3\:6210\:4e24\:8d28\:6570\:4e4b\:548c\:ff0c\
+\:53ea\:9700\:52a8\:7528\:524dn\:4e2a\:8d28\:6570\:3002"
+}], "Text",
+ CellChangeTimes->{{3.463717304822928*^9, 3.463717396705048*^9}, {
+  3.463717453406581*^9, 3.463717463200664*^9}, {3.46371751167036*^9, 
+  3.4637175191911745`*^9}, {3.4637175537408543`*^9, 3.4637175690028*^9}, {
+  3.463717612295051*^9, 3.463717612325094*^9}}],
+
+Cell["\<\
+\t\:8d28\:6570\:516c\:8bbe\[DoubleLongRightArrow]\:8d28\:6570\:4e2d\:4f4d\
+\:6570\:5b9a\:7406\[DoubleLongRightArrow]\:6b4c\:5fb7\:5df4\:8d6b\:731c\:60f3\
+\:ff0c\:8fd9\:662f\:6211\:7684\:8bc1\:660e\:7684\:601d\:8def\:3002n\:ff0d\[Pi]\
+(n)\:662f\:5176\:4e2d\:7684\:5173\:952e\:3002\:5728Mathematica\:4e2d\:8bd5\
+\:9a8c\:ff0c\:6211\:89c2\:5bdf\:5230\:7684\:7ed3\:679c\:662f\:ff0c\:4ec5\:4ec5\
+\:5f53n\[NotEqual]10\:ff0c n\:ff0d\[Pi](n)\:53ef\:88ab\:66ff\:6362\:6210n\
+\:ff0d\[Pi](n)\:ff0b1\:ff0c\:4ee5\:4e0a\:7ed3\:8bba\:4f9d\:7136\:6210\:7acb\
+\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.463717623030488*^9, 3.463717753748451*^9}, {
+   3.4637178071552467`*^9, 3.4637178311597633`*^9}, {3.4637178622344465`*^9, 
+   3.4637183124818707`*^9}, {3.4637185599877663`*^9, 3.463718563482792*^9}, 
+   3.463718858967678*^9, {3.4637324588733826`*^9, 3.4637324784315057`*^9}}],
+
+Cell[TextData[{
+ "\t\:5bf9\:4e8en\:ff1d10\:ff0c\:6709",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "10"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\:ff1d29\:ff0c\[Pi](10)=4\:ff0c10\:ff0d\[Pi](10)=6\:ff0c",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], 
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Plain",
+           FontSlant->"Plain"], "10"], "+", 
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Plain",
+           FontSlant->"Plain"], "6"]}], ")"}]}], "=", "21"}], ",", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], 
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Plain",
+           FontSlant->"Plain"], "10"], "+", 
+         SubscriptBox[
+          StyleBox["p",
+           FontFamily->"Times",
+           FontWeight->"Plain",
+           FontSlant->"Plain"], "7"]}], ")"}]}], "=", "23"}]}],
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]],
+ "\:ff0c"
+}], "Text",
+ CellChangeTimes->{{3.463717623030488*^9, 3.463717753748451*^9}, {
+   3.4637178071552467`*^9, 3.4637178311597633`*^9}, {3.4637178622344465`*^9, 
+   3.463718373559696*^9}, {3.4637184059863234`*^9, 3.4637184261152673`*^9}, 
+   3.463718867770336*^9}],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    StyleBox[
+     StyleBox[
+      RowBox[{"Prime", "MedianSet"}]],
+     FontFamily->"Times",
+     FontWeight->"Plain",
+     FontSlant->"Plain"], "(", "10", ")"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8", ",", "9", ",", 
+     "10", ",", "11", ",", "12", ",", "13", ",", "14", ",", "15", ",", "16", 
+     ",", "17", ",", "18", ",", "19", ",", "20", ",", "21", ",", "23", ",", 
+     "24", ",", "26", ",", "29"}], "}"}]}], TraditionalForm]]]], "Text",
+ CellChangeTimes->{{3.463717623030488*^9, 3.463717753748451*^9}, {
+  3.4637178071552467`*^9, 3.4637178311597633`*^9}, {3.4637178622344465`*^9, 
+  3.463718373559696*^9}, {3.4637184059863234`*^9, 3.4637184261052527`*^9}}],
+
+Cell["\[Lambda](10)=PrimeMedianSup(29)=21\:3002", "Text",
+ CellChangeTimes->{{3.463717623030488*^9, 3.463717753748451*^9}, {
+  3.4637178071552467`*^9, 3.4637178311597633`*^9}, {3.4637178622344465`*^9, 
+  3.463718373559696*^9}, {3.4637184059863234`*^9, 3.463718436900776*^9}, {
+  3.4637186146163187`*^9, 3.4637186146163187`*^9}}],
+
+Cell[TextData[StyleBox["Mathematica\:4ee3\:7801\:ff1a",
+ FontFamily->"Times New Roman",
+ FontSlant->"Italic"]], "Text",
+ CellChangeTimes->{{3.4637186230284147`*^9, 3.4637186279154415`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"n", "=", "10"}], "\[IndentingNewLine]", 
+ RowBox[{"Prime", "[", "n", "]"}], "\n", 
+ RowBox[{"PrimePi", "[", "n", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"primeList3", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Prime", "[", "i", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "2", ",", "n"}], "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"sets", "=", 
+   RowBox[{"Subsets", "[", 
+    RowBox[{"primeList3", ",", 
+     RowBox[{"{", "2", "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"mediumList", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{"primeList3", ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Sum", "[", 
+         RowBox[{"x", ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "#"}], "}"}]}], "]"}], "/", "2"}], "&"}], "/@", 
+      "sets"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"mediumSet", "=", 
+  RowBox[{"Sort", "[", 
+   RowBox[{"DeleteDuplicates", "[", "mediumList", "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{" ", 
+  RowBox[{
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"j", "=", "1"}], ",", 
+     RowBox[{"j", "<=", 
+      RowBox[{"Length", "[", "mediumSet", "]"}]}], ",", 
+     RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"If", " ", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"mediumSet", "[", 
+         RowBox[{"[", "j", "]"}], "]"}], " ", ">", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "j"}], ")"}]}], ",", 
+       RowBox[{"Break", "[", "]"}]}], "]"}]}], "\[IndentingNewLine]", "]"}], 
+   ";"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mediumSup", " ", "=", 
+   RowBox[{"mediumSet", "[", 
+    RowBox[{"[", 
+     RowBox[{"j", "-", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"pos", "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Prime", "[", "n", "]"}], "+", 
+     RowBox[{"Prime", "[", 
+      RowBox[{"n", "-", 
+       RowBox[{"PrimePi", "[", "n", "]"}]}], "]"}]}], ")"}], "/", 
+   "2"}]}], "\[IndentingNewLine]", 
+ RowBox[{"mediumSup", "-", "pos"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tally", "=", 
+   RowBox[{"Tally", "[", "mediumList", "]"}]}], ";"}], "\n", 
+ RowBox[{"Max", "[", 
+  RowBox[{"Last", "/@", "tally"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.463718741638968*^9, 3.463718745594656*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.463718655885661*^9, 3.4637186559056897`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ". \:9760\:8fd1\:7684\:8d28\:6570"
+}], "Section",
+ CellChangeTimes->{
+  3.4637191550834723`*^9, 3.4637192064473295`*^9, {3.463719288795741*^9, 
+   3.4637193123395953`*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:5b9a\:4e49\[MediumSpace]", "DefinitionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "DefinitionLabel"],
+ StyleBox[".2.1  ", "DefinitionLabel"],
+ StyleBox["\:51fd\:6570", "DefinitionLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"],
+ StyleBox["nextPrime",
+  FontFamily->"Times New Roman"],
+ "(n)\:7ed9\:51fan\:7684\:4e0b\:4e00\:4e2a\:8d28\:6570\:ff0c\:5373\:5927\:4e8e\
+n\:7684\:6700\:5c0f\:8d28\:6570\:3002priorPrime(n)\:7ed9\:51fa\:5c0f\:4e8en\
+\:7684\:6700\:5927\:5b9a\:4e49nextPrime(n,k)\:4e3a\:4ecen\:ff0b1\:6570\:8d77\
+\:7684\:7b2ck\:4e2a\:8d28\:6570\:3002priorPrime(n,k)\:4e3a\:4ecen-1\:8d77\
+\:5f80\:5de6\:6570\:7b2ck\:4e2a\:8d28\:6570\:3002"
+}], "Text",
+ CellChangeTimes->{{3.4637191243693075`*^9, 3.4637191243793216`*^9}, {
+   3.463719352787757*^9, 3.4637193563528833`*^9}, {3.4637194222276063`*^9, 
+   3.463719447754312*^9}, {3.463719483605864*^9, 3.463719644136696*^9}, {
+   3.4637196864875937`*^9, 3.463719773282398*^9}, {3.463719806620336*^9, 
+   3.4637198121683135`*^9}, 3.4637198484004126`*^9, 3.4637203686384783`*^9, {
+   3.4637209674294977`*^9, 3.4637211076811695`*^9}}],
+
+Cell["\<\
+\:5141\:8bb8k\:4e3a\:8d1f\:6570\:ff0c\:5b9a\:4e49nextPrime(n,-k)=priorPrime(n,\
+k)\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.463719816264203*^9, 3.4637199470923247`*^9}, {
+  3.4637203815069823`*^9, 3.463720381527011*^9}, {3.463721117154792*^9, 
+  3.463721132256507*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:5b9a\:4e49\[MediumSpace]", "DefinitionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "DefinitionLabel"],
+ StyleBox[".2.2  ", "DefinitionLabel"],
+ StyleBox["\:51fd\:6570", "DefinitionLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    RowBox[{
+     RowBox[{
+      SubscriptBox[
+       StyleBox["f",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"], 
+       StyleBox["n",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"]], "(", 
+      StyleBox["x",
+       FontFamily->"Times",
+       FontWeight->"Plain",
+       FontSlant->"Plain"], ")"}], "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        StyleBox["x",
+         FontFamily->"Times",
+         FontWeight->"Plain",
+         FontSlant->"Plain"], "-", 
+        SubscriptBox[
+         StyleBox["p",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"], "1"]}], ")"}], 
+      RowBox[{"(", 
+       RowBox[{
+        StyleBox["x",
+         FontFamily->"Times",
+         FontWeight->"Plain",
+         FontSlant->"Plain"], "-", 
+        SubscriptBox[
+         StyleBox["p",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"], "2"]}], ")"}], 
+      RowBox[{"\[CenterEllipsis]", "(", 
+       RowBox[{
+        StyleBox["x",
+         FontFamily->"Times",
+         FontWeight->"Plain",
+         FontSlant->"Plain"], "-", 
+        SubscriptBox[
+         StyleBox["p",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"], 
+         StyleBox["n",
+          FontFamily->"Times",
+          FontWeight->"Plain",
+          FontSlant->"Plain"]]}], ")"}]}]}],
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]],
+ StyleBox[";", "DefinitionLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"]
+}], "Text",
+ CellChangeTimes->{{3.463720406693198*^9, 3.463720420252696*^9}}],
+
+Cell[TextData[{
+ "\t\t",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    RowBox[{
+     RowBox[{
+      StyleBox["\[Omega]",
+       FontFamily->"Times",
+       FontWeight->"Plain",
+       FontSlant->"Plain"], "(", 
+      StyleBox["n",
+       FontFamily->"Times",
+       FontWeight->"Plain",
+       FontSlant->"Plain"], ")"}], "=", 
+     RowBox[{
+      SubscriptBox[
+       StyleBox["p",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"], "1"], 
+      SubscriptBox[
+       StyleBox["p",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"], "2"], "\[CenterEllipsis]", 
+      SubscriptBox[
+       StyleBox["p",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"], 
+       StyleBox["n",
+        FontFamily->"Times",
+        FontWeight->"Plain",
+        FontSlant->"Plain"]]}]}],
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]]
+}], "Text",
+ CellChangeTimes->{{3.463720406693198*^9, 3.463720420232667*^9}, {
+  3.4637204554633265`*^9, 3.4637204562244205`*^9}, {3.4637205120246572`*^9, 
+  3.4637205120446863`*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:5b9a\:7406\[MediumSpace]\[ThinSpace]", "ConjectureLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ConjectureLabel"],
+ StyleBox[".2.1(\:6700\:8fd1\:8d28\:6570\:5b9a\:7406) ", "ConjectureLabel"],
+ "n>1",
+ StyleBox["\:ff0c", "ConjectureLabel"],
+ StyleBox["\:5bf9\:4e8e", "ConjectureLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"],
+ "\[Omega](n)\:ff0c\:603b\:6709"
+}], "Text",
+ CellChangeTimes->{
+  3.4637206599373455`*^9, {3.4637207020378833`*^9, 3.4637207049020014`*^9}, {
+   3.4637216128275347`*^9, 3.463721619477096*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\[Omega](n)\:ff0dpriorPrime(\[Omega](n)) \
+\:662f1\:6216\:8005\:8d28\:6570", "Item3Numbered",
+ CellChangeTimes->{{3.4637207663804035`*^9, 3.463720850170888*^9}, 
+   3.463720881115384*^9}],
+
+Cell["nextPrime(\[Omega](n))\:ff0d\[Omega](n) \
+\:662f1\:6216\:8005\:8d28\:6570", "Item3Numbered",
+ CellChangeTimes->{{3.4637208596344957`*^9, 3.4637208893271923`*^9}}],
+
+Cell["\[Omega](n)\:ff0dpriorPrime(\[Omega](n),2)\:662f\:8d28\:6570", \
+"Item3Numbered",
+ CellChangeTimes->{{3.463721645564608*^9, 3.46372164996093*^9}, {
+  3.463721757405427*^9, 3.463721757405427*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["\:5bf9\:4e8e\:9636\:4e58n!", "ConjectureLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"],
+ "\:ff0c\:603b\:6709"
+}], "Text",
+ CellChangeTimes->{{3.4637217734384813`*^9, 3.46372178656736*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["n!\:ff0dpriorPrime(n!) \:662f1\:6216\:8005\:8d28\:6570", "Item3Numbered",
+ CellChangeTimes->{{3.4637216549380865`*^9, 3.4637216937939587`*^9}, {
+  3.4637217932870226`*^9, 3.463721793307051*^9}}],
+
+Cell["nextPrime(n!)\:ff0dn! \:662f1\:6216\:8005\:8d28\:6570", "Item3Numbered",
+ CellChangeTimes->{{3.463721804913741*^9, 3.463721816480373*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["\:8bc1\:660e ", "ProofLabel"],
+ " \:6309\:7167 \[Omega](n)\:7684\:5b9a\:4e49\:ff0c\:8fd9\:4e2a\:5dee\:80af\
+\:5b9a\:4e0d\:88ab",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "n"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\:53ca\:4ee5\:4e0b\:7684\:8d28\:6570\:6574\:9664\:ff0c\:5982\:679c\:8fd9\
+\:4e2a\:5dee\:8fd8\:5c0f\:4e8e",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["p", 
+    RowBox[{"n", "+", "1"}], "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\:ff0c\:90a3\:4e48\:53ea\:80fd\:662f1\:6216\:8005\:8d28\:6570\:4e86\:3002\
+\:4e8b\:5b9e\:4e0a\:ff0c\:5b9a\:7406\:4e2d\:7684\:524d\:4e09\:4e2a\:5dee\:7684\
+\:60c5\:51b5\:6b63\:662f\:5982\:6b64\:3002",
+ StyleBox["\:5bf9\:4e8e\:9636\:4e58n!", "ConjectureLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"],
+ "\:ff0c\:60c5\:5f62\:662f\:7c7b\:4f3c\:7684\:3002"
+}], "Text",
+ CellChangeTimes->{{3.46372118319976*^9, 3.463721206933888*^9}, {
+   3.463721250857046*^9, 3.463721513354499*^9}, 3.4637215470128975`*^9, {
+   3.463721715334933*^9, 3.4637217156353645`*^9}, {3.463721854194603*^9, 
+   3.463721887582613*^9}, {3.4637219265186*^9, 3.4637219604574013`*^9}, {
+   3.463722362024827*^9, 3.463722362074899*^9}}],
+
+Cell[TextData[StyleBox["\tMathematica\:4ee3\:7801\:ff1a",
+ FontFamily->"Times New Roman",
+ FontSlant->"Italic"]], "Text",
+ CellChangeTimes->{{3.4637223650191326`*^9, 3.463722379810402*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"FoldList", "[", 
+      RowBox[{"Times", ",", "1", ",", 
+       RowBox[{"Prime", "[", 
+        RowBox[{"Range", "[", "n", "]"}], "]"}]}], "]"}], ",", "2"}], "]"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{"sub", "=", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"#", "-", 
+      RowBox[{"NextPrime", "[", 
+       RowBox[{"#", ",", 
+        RowBox[{"-", "2"}]}], "]"}]}], " ", "&"}], "/@", " ", "%"}], 
+   ")"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PrimeQ", "[", "#", "]"}], 
+   RowBox[{"(*", 
+    RowBox[{"||", " ", 
+     RowBox[{"(", 
+      RowBox[{"#", "\[Equal]", "1"}], ")"}]}], "*)"}], "&"}], "/@", 
+  "sub"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"q", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Prime", "[", 
+       RowBox[{"i", "+", "1"}], "]"}], "^", "2"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "2", ",", "n"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"q", "-", "sub"}]}], "Input",
+ CellChangeTimes->{{3.463722035605459*^9, 3.463722039531104*^9}, {
+   3.463722167985813*^9, 3.46372218304747*^9}, 3.4637223323321314`*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.4637221359998193`*^9, 3.463722136019848*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ". \:6b63\:6574\:6570\:7684\:552f\:4e00\:8868\:8fbe\:5f62\:5f0f"
+}], "Section",
+ CellChangeTimes->{
+  3.4637191550834723`*^9, 3.4637192064473295`*^9, {3.463719288795741*^9, 
+   3.4637193123395953`*^9}, 3.4637225566346626`*^9, {3.4637225884303827`*^9, 
+   3.463722624572352*^9}, {3.4637226952539873`*^9, 3.463722696826248*^9}}],
+
+Cell[TextData[StyleBox["\t\:6b63\:6574\:6570n\:5177\:6709\:552f\:4e00\:7684\
+\:56e0\:5f0f\:5206\:89e3\:5f62\:5f0f\:3002", "ConjectureLabel",
+ FontFamily->"Times New Roman",
+ FontWeight->"Plain"]], "Text",
+ CellChangeTimes->{{3.4637217734384813`*^9, 3.46372178656736*^9}, {
+  3.4637226654911904`*^9, 3.4637228240291567`*^9}, {3.4637229094019165`*^9, 
+  3.463722913427706*^9}, {3.463822913536309*^9, 3.4638229135463233`*^9}}],
+
+Cell[TextData[StyleBox["\tn\:5728b\:8fdb\:5236\:4e0b\:7684\:8868\:8fbe\:5f62\
+\:5f0f\:662f\:552f\:4e00\:7684\:3002", "ConjectureLabel",
+ FontFamily->"Times New Roman",
+ FontWeight->"Plain"]], "Text",
+ CellChangeTimes->{{3.4637217734384813`*^9, 3.46372178656736*^9}, {
+  3.4637226654911904`*^9, 3.4637228240291567`*^9}, {3.4637229094019165`*^9, 
+  3.463722913427706*^9}, {3.463822913536309*^9, 3.463822920215914*^9}, {
+  3.463824566693432*^9, 3.4638245667034464`*^9}}],
+
+Cell[TextData[{
+ "\t\:9884\:5148\:8bbe\:8ba1\:597d\:4e00\:4e2a\:65e0\:7a77\:6b63\:6574\:6570\
+\:6570\:5217{",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "}\:ff0c\:7136\:540e\:5c06\:6b63\:6574\:6570\:75311\:5f00\:59cb\:ff0c\:4ece\
+\:5de6\:5230\:53f3\:4ece\:4e0a\:5f80\:4e0b\:4f9d\:6b21\:5b89\:6392\:5728\:5e73\
+\:9762\:4e0a\:ff0c\:8981\:6c42\:7b2ci\:884c\:521a\:597d",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "i"], TraditionalForm]]],
+ "\:4e2a\:6570\:ff0c\:8fd9\:6837\:ff0cn\:5bf9\:5e94\:4e00\:4e2a\:552f\:4e00\
+\:7684\:6570\:5bf9(r, d) \:ff0cr\:8868\:793a\:884c\:6570\:ff0cd\:8868\:793a\
+\:5217\:6570\:3002\:4f8b\:5982\:ff0c"
+}], "Text",
+ CellChangeTimes->{{3.4638245671540947`*^9, 3.4638246041573024`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\[Congruent] a, \:90a3\:4e48n= (r-1)a+d, 1\[LessEqual]d",
+ "\[LessEqual]a"
+}], "Item1Numbered",
+ CellChangeTimes->{{3.463824799848693*^9, 3.46382490162504*^9}, {
+  3.463824956914542*^9, 3.463824992135187*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "i"], TraditionalForm]]],
+ "=i, \:90a3\:4e48n = r(r-1)/2+d"
+}], "Item1Numbered",
+ CellChangeTimes->{{3.463825004883518*^9, 3.46382507997149*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "i"], TraditionalForm]]],
+ "=",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]]],
+ ", \:8fd9\:91cc\:ff0c\:7528",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]]],
+ "\:8868\:793a\:7b2ci\:4e2a\:8d28\:6570\:3002\:90a3\:4e48\:5f53n\:662f\:8d28\
+\:6570\:65f6\:ff0c\:5f88\:53ef\:80fd\:6709r\:ff0bd\:4e5f\:662f\:8d28\:6570\
+\:ff0c\:4f46\:4e5f\:6709\:4f8b\:5916\:ff0cn=37\:ff1ar=6,d=9\tn=43:7,2"
+}], "Item1Numbered",
+ CellChangeTimes->{{3.4638250888542624`*^9, 3.4638251340993214`*^9}, {
+  3.4638261350612783`*^9, 3.4638261441042814`*^9}, {3.4638796691986637`*^9, 
+  3.46387981214421*^9}, {3.4638798612648416`*^9, 3.463879959816552*^9}, {
+  3.463879990841163*^9, 3.4638800257012897`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ". \:8d28\:6570\:7b49\:5f0f\:914d\:5e73"
+}], "Section",
+ CellChangeTimes->{
+  3.4637191550834723`*^9, 3.4637192064473295`*^9, {3.463719288795741*^9, 
+   3.4637193123395953`*^9}, 3.4637225566346626`*^9, {3.4637225884303827`*^9, 
+   3.463722624572352*^9}, {3.4637226952539873`*^9, 3.463722696826248*^9}, {
+   3.4637231215269375`*^9, 3.463723137059272*^9}}],
+
+Cell[TextData[{
+ StyleBox["\t", "ConjectureLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"],
+ "P(n)={",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["p", "1"], ",", 
+    SubscriptBox["p", "2"], ",", "\[Ellipsis]", ",", 
+    SubscriptBox["p", "n"]}], TraditionalForm]]],
+ "}\:662f\:524dn\:4e2a\:8d28\:6570\:7684\:5e8f\:5217",
+ StyleBox["\:3002", "ConjectureLabel",
+  FontFamily->"Times New Roman",
+  FontWeight->"Plain"]
+}], "Text",
+ CellChangeTimes->{{3.4637217734384813`*^9, 3.46372178656736*^9}, {
+  3.4637226654911904`*^9, 3.4637228240291567`*^9}, {3.4637229094019165`*^9, 
+  3.463722913427706*^9}, {3.463723657838115*^9, 3.463723664047043*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ". "
+}], "Section",
+ CellChangeTimes->{
+  3.4637191550834723`*^9, 3.4637192064473295`*^9, {3.463719288795741*^9, 
+   3.4637193123395953`*^9}, 3.4637225566346626`*^9, {3.4637225884303827`*^9, 
+   3.463722624572352*^9}, {3.4637226952539873`*^9, 3.463722696826248*^9}, {
+   3.4637231215269375`*^9, 3.463723137059272*^9}, {3.4637239093497715`*^9, 
+   3.463723929699032*^9}, 3.4637308428997264`*^9}],
+
+Cell[TextData[StyleBox["\t", "ConjectureLabel",
+ FontFamily->"Times New Roman",
+ FontWeight->"Plain"]], "Text",
+ CellChangeTimes->{{3.4637217734384813`*^9, 3.46372178656736*^9}, {
+   3.4637226654911904`*^9, 3.4637228240291567`*^9}, {3.4637229094019165`*^9, 
+   3.463722913427706*^9}, {3.463723657838115*^9, 3.463723664047043*^9}, 
+   3.463730131176318*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ".",
+ 
+ CounterBox["Subsection"],
+ ". Enter subsection title here"
+}], "Subsection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "Input"],
+
+Cell[BoxData["4"], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ".",
+ 
+ CounterBox["Subsection"],
+ ". ",
+ "Enter subsection title here"
+}], "Subsection"],
+
+Cell["Enter text here.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1 text here.", "Item1"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1paragraph text here.", "Item1Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2 text here.", "Item2"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2paragraph text here.", "Item2Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item3 text here.", "Item3"],
+
+Cell["Enter item3paragraph text here.", "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[TextData[{
+ "Enter text here. Enter an inline formula like this: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "+", "2"}], TraditionalForm]]],
+ "."
+}], "Text",
+ CellChangeTimes->{3.4637191243693075`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{"x", 
+     RowBox[{"\[DifferentialD]", "x"}]}]}], "+", 
+   SqrtBox["z"]}], TraditionalForm]], "EquationNumbered"],
+
+Cell["Enter text here.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1numbered text here.", "Item1Numbered"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1paragraph text here.", "Item1Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2numbered text here.", "Item2Numbered"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2paragraph text here.", "Item2Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item3numbered text here.", "Item3Numbered"],
+
+Cell["Enter item3paragraph text here.", "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Enter indented text here.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Theorem\[MediumSpace]\[ThinSpace]", "TheoremLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TheoremLabel"],
+ StyleBox[".", "TheoremLabel"],
+ StyleBox[
+ CounterBox["Theorem"], "TheoremLabel"],
+ StyleBox[". ", "TheoremLabel"],
+ "Enter theorem text here."
+}], "Theorem"],
+
+Cell["Enter continued theorem text here.", "TheoremContinuation"],
+
+Cell[TextData[{
+ StyleBox["Corollary\[MediumSpace]\[ThinSpace]", "CorollaryLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "CorollaryLabel"],
+ StyleBox[".", "CorollaryLabel"],
+ StyleBox[
+ CounterBox["Corollary"], "CorollaryLabel"],
+ StyleBox[". ", "CorollaryLabel"],
+ "Enter corollary text here."
+}], "Corollary"],
+
+Cell["Enter continued corollary text here.", "LemmaContinuation"],
+
+Cell[TextData[{
+ StyleBox["Definition\[MediumSpace]", "DefinitionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "DefinitionLabel"],
+ StyleBox[".", "DefinitionLabel"],
+ StyleBox[
+ CounterBox["Definition"], "DefinitionLabel"],
+ StyleBox[". ", "DefinitionLabel"],
+ "Enter definition text here."
+}], "Definition"],
+
+Cell["Enter continued definition text here.", "DefinitionContinuation"],
+
+Cell[TextData[{
+ StyleBox["Proposition\[MediumSpace]\[ThinSpace]", "PropositionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "PropositionLabel"],
+ StyleBox[".", "PropositionLabel"],
+ StyleBox[
+ CounterBox["Proposition"], "PropositionLabel"],
+ StyleBox[". ", "PropositionLabel"],
+ "Enter proposition text here."
+}], "Proposition"],
+
+Cell["Enter continued proposition text here.", "PropositionContinuation"],
+
+Cell[TextData[{
+ StyleBox["Conjecture\[MediumSpace]\[ThinSpace]", "ConjectureLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ConjectureLabel"],
+ StyleBox[".", "ConjectureLabel"],
+ StyleBox[
+ CounterBox["Conjecture"], "ConjectureLabel"],
+ StyleBox[". ", "ConjectureLabel"],
+ "Enter conjecture text here."
+}], "Conjecture"],
+
+Cell["Enter continued conjecture text here.", "ConjectureContinuation"],
+
+Cell[TextData[{
+ StyleBox["Axiom\[MediumSpace]\[ThinSpace]", "AxiomLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "AxiomLabel"],
+ StyleBox[".", "AxiomLabel"],
+ StyleBox[
+ CounterBox["Axiom"], "AxiomLabel"],
+ StyleBox[". ", "AxiomLabel"],
+ "Enter axiom text here."
+}], "Axiom"],
+
+Cell["Enter continued axiom text here.", "AxiomContinuation"],
+
+Cell[TextData[{
+ StyleBox["Rule\[MediumSpace]\[ThinSpace]", "RuleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "RuleLabel"],
+ StyleBox[".", "RuleLabel"],
+ StyleBox[
+ CounterBox["Rule"], "RuleLabel"],
+ StyleBox[". ", "RuleLabel"],
+ "Enter rule text here."
+}], "Rule"],
+
+Cell["Enter continued rule text here.", "RuleContinuation"],
+
+Cell[TextData[{
+ StyleBox["Example\[MediumSpace]\[ThinSpace]", "ExampleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ExampleLabel"],
+ StyleBox[".", "ExampleLabel"],
+ StyleBox[
+ CounterBox["Example"], "ExampleLabel"],
+ StyleBox[". ", "ExampleLabel"],
+ "Enter example text here."
+}], "Example"],
+
+Cell["Enter continued example text here.", "ExampleContinuation"],
+
+Cell[TextData[{
+ StyleBox["Remark\[MediumSpace]\[ThinSpace]", "RemarkLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "RemarkLabel"],
+ StyleBox[".", "RemarkLabel"],
+ StyleBox[
+ CounterBox["Remark"], "RemarkLabel"],
+ StyleBox[". ", "RemarkLabel"],
+ "Enter remark text here."
+}], "Remark"],
+
+Cell["Enter continued remark text here.", "RemarkContinuation"],
+
+Cell[TextData[{
+ StyleBox["Solution\[MediumSpace]\[ThinSpace]", "SolutionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "SolutionLabel"],
+ StyleBox[".", "SolutionLabel"],
+ StyleBox[
+ CounterBox["Remark"], "SolutionLabel"],
+ StyleBox[". ", "SolutionLabel"],
+ "Enter solution text here."
+}], "Solution"],
+
+Cell["Enter continued solution text here.", "SolutionContinuation"],
+
+Cell[TextData[{
+ StyleBox["Proof\[MediumSpace]\[ThinSpace]", "ProofLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ProofLabel"],
+ StyleBox[".", "ProofLabel"],
+ StyleBox[
+ CounterBox["Remark"], "ProofLabel"],
+ StyleBox[". ", "ProofLabel"],
+ "Enter solution text here."
+}], "Proof"],
+
+Cell["Enter continued solution text here.", "ProofContinuation"],
+
+Cell["\[EmptySquare]", "QED"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[Cell[GraphicsData["CompressedBitmap", "\<\
+eJztWLtKA0EUvdnNCwULH30aC7XzFwStbPwAYQlCLEQxYit2FhZpJIVWamMh
+iCCIjTYKNkIKGxEbsRDBQkTs1jl35q6768QQJSA4xc7O3HPfc2Y2ZDJYqszM
+BUuz5aA0sRgsVGbL1dL4/KIS+RkiquEpEeahmpqhRvWxZTXx+R2GIT/rGDMO
+cpCDHOQgB/1zaJBHnzamPmW5lOz65JI82qmsUS/PD1c36Xh9l7H31zc6re/T
+1vQK7VVrdN+4ieQX20cshx/oQwZMrX2eZBNhlbrH+gW2FLGoSCSt001XB2cJ
+7JtoNPKTBhQiGdw+3T3wXMJ6vOrhlCDDCjrQRWjIgEkamEvTLA0w6h7r9ye8
+igoKhDzejJR5s2i/rB8bjujY3JfH51j9xahesUUPsAYZ1Ns37oUXME3XDmYp
+Vc9EhTVE8dqNioma47lgJhLZQv2ycLgF49FeNOCzcD9KSa/0KPzTehizLJN0
+oirbKl5aLKayBQbL2gMNtyjdN3sBM1AFG+el6o+faCE363jMsHwCQFqGt9pP
+d0RLSUvONUzgO05dTf2clfo6XMFKfdHXMfNfYqI2VcNQKybkE0yQzJR1uilI
+HicCa2zV7XkjOg1yEQkG8sSS1ndX8cv9BDUgxp1stFxpePh21F1N34hiCS/2
+2zLfLGLLriTPR5q8xtuARbXLIstaZKPt74v5BnkWb30dzESXnWPiytdA2tmh
+DvyRHwkOcpCDHOQgB3UCkv9qMx+BuT88\
+\>"], "Graphics",
+  ImageSize->{144, 144},
+  ImageMargins->{{0, 0}, {0, 0}},
+  ImageRegion->{{0, 1}, {0, 1}}]], "Figure"],
+
+Cell[TextData[{
+ StyleBox["Figure ", "FigureCaptionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "FigureCaptionLabel"],
+ StyleBox[".", "FigureCaptionLabel"],
+ StyleBox[
+ CounterBox["FigureCaption"], "FigureCaptionLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "FigureCaptionLabel"],
+ "Figure caption."
+}], "FigureCaption"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[Cell[GraphicsData["CompressedBitmap", "\<\
+eJztWLtKA0EUvdnNCwULH30aC7XzFwStbPwAYQlCLEQxYit2FhZpJIVWamMh
+iCCIjTYKNkIKGxEbsRDBQkTs1jl35q6768QQJSA4xc7O3HPfc2Y2ZDJYqszM
+BUuz5aA0sRgsVGbL1dL4/KIS+RkiquEpEeahmpqhRvWxZTXx+R2GIT/rGDMO
+cpCDHOQgB/1zaJBHnzamPmW5lOz65JI82qmsUS/PD1c36Xh9l7H31zc6re/T
+1vQK7VVrdN+4ieQX20cshx/oQwZMrX2eZBNhlbrH+gW2FLGoSCSt001XB2cJ
+7JtoNPKTBhQiGdw+3T3wXMJ6vOrhlCDDCjrQRWjIgEkamEvTLA0w6h7r9ye8
+igoKhDzejJR5s2i/rB8bjujY3JfH51j9xahesUUPsAYZ1Ns37oUXME3XDmYp
+Vc9EhTVE8dqNioma47lgJhLZQv2ycLgF49FeNOCzcD9KSa/0KPzTehizLJN0
+oirbKl5aLKayBQbL2gMNtyjdN3sBM1AFG+el6o+faCE363jMsHwCQFqGt9pP
+d0RLSUvONUzgO05dTf2clfo6XMFKfdHXMfNfYqI2VcNQKybkE0yQzJR1uilI
+HicCa2zV7XkjOg1yEQkG8sSS1ndX8cv9BDUgxp1stFxpePh21F1N34hiCS/2
+2zLfLGLLriTPR5q8xtuARbXLIstaZKPt74v5BnkWb30dzESXnWPiytdA2tmh
+DvyRHwkOcpCDHOQgB3UCkv9qMx+BuT88\
+\>"], "Graphics",
+  Evaluatable->False,
+  ImageSize->{144, 144},
+  ImageMargins->{{0, 0}, {0, 0}},
+  ImageRegion->{{0, 1}, {0, 1}}]], "Picture"],
+
+Cell[TextData[{
+ StyleBox["Picture ", "PictureCaptionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "PictureCaptionLabel"],
+ StyleBox[".", "PictureCaptionLabel"],
+ StyleBox[
+ CounterBox["PictureCaption"], "PictureCaptionLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "PictureCaptionLabel"],
+ "Picture caption."
+}], "PictureCaption"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.499975]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.499975]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.499975]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.333322]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.333322]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.333322]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.249994]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.249994]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.249994]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.199996]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.199996]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.199996]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ". ",
+ "Enter section title here"
+}], "Section",
+ CellChangeTimes->{3.4637191550834723`*^9}],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.4637191243693075`*^9, 3.4637191243793216`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ".",
+ 
+ CounterBox["Subsection"],
+ ". Enter subsection title here"
+}], "Subsection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "Input"],
+
+Cell[BoxData["4"], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["BookChapterNumber"],
+ ".",
+ 
+ CounterBox["Section"],
+ ".",
+ 
+ CounterBox["Subsection"],
+ ". ",
+ "Enter subsection title here"
+}], "Subsection"],
+
+Cell["Enter text here.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1 text here.", "Item1"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1paragraph text here.", "Item1Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2 text here.", "Item2"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2paragraph text here.", "Item2Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item3 text here.", "Item3"],
+
+Cell["Enter item3paragraph text here.", "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[TextData[{
+ "Enter text here. Enter an inline formula like this: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "+", "2"}], TraditionalForm]]],
+ "."
+}], "Text",
+ CellChangeTimes->{3.4637191243693075`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{"x", 
+     RowBox[{"\[DifferentialD]", "x"}]}]}], "+", 
+   SqrtBox["z"]}], TraditionalForm]], "EquationNumbered"],
+
+Cell["Enter text here.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1numbered text here.", "Item1Numbered"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1paragraph text here.", "Item1Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2numbered text here.", "Item2Numbered"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2paragraph text here.", "Item2Paragraph"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item3numbered text here.", "Item3Numbered"],
+
+Cell["Enter item3paragraph text here.", "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Enter indented text here.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Theorem\[MediumSpace]\[ThinSpace]", "TheoremLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TheoremLabel"],
+ StyleBox[".", "TheoremLabel"],
+ StyleBox[
+ CounterBox["Theorem"], "TheoremLabel"],
+ StyleBox[". ", "TheoremLabel"],
+ "Enter theorem text here."
+}], "Theorem"],
+
+Cell["Enter continued theorem text here.", "TheoremContinuation"],
+
+Cell[TextData[{
+ StyleBox["Corollary\[MediumSpace]\[ThinSpace]", "CorollaryLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "CorollaryLabel"],
+ StyleBox[".", "CorollaryLabel"],
+ StyleBox[
+ CounterBox["Corollary"], "CorollaryLabel"],
+ StyleBox[". ", "CorollaryLabel"],
+ "Enter corollary text here."
+}], "Corollary"],
+
+Cell["Enter continued corollary text here.", "LemmaContinuation"],
+
+Cell[TextData[{
+ StyleBox["Definition\[MediumSpace]", "DefinitionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "DefinitionLabel"],
+ StyleBox[".", "DefinitionLabel"],
+ StyleBox[
+ CounterBox["Definition"], "DefinitionLabel"],
+ StyleBox[". ", "DefinitionLabel"],
+ "Enter definition text here."
+}], "Definition"],
+
+Cell["Enter continued definition text here.", "DefinitionContinuation"],
+
+Cell[TextData[{
+ StyleBox["Proposition\[MediumSpace]\[ThinSpace]", "PropositionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "PropositionLabel"],
+ StyleBox[".", "PropositionLabel"],
+ StyleBox[
+ CounterBox["Proposition"], "PropositionLabel"],
+ StyleBox[". ", "PropositionLabel"],
+ "Enter proposition text here."
+}], "Proposition"],
+
+Cell["Enter continued proposition text here.", "PropositionContinuation"],
+
+Cell[TextData[{
+ StyleBox["Conjecture\[MediumSpace]\[ThinSpace]", "ConjectureLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ConjectureLabel"],
+ StyleBox[".", "ConjectureLabel"],
+ StyleBox[
+ CounterBox["Conjecture"], "ConjectureLabel"],
+ StyleBox[". ", "ConjectureLabel"],
+ "Enter conjecture text here."
+}], "Conjecture"],
+
+Cell["Enter continued conjecture text here.", "ConjectureContinuation"],
+
+Cell[TextData[{
+ StyleBox["Axiom\[MediumSpace]\[ThinSpace]", "AxiomLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "AxiomLabel"],
+ StyleBox[".", "AxiomLabel"],
+ StyleBox[
+ CounterBox["Axiom"], "AxiomLabel"],
+ StyleBox[". ", "AxiomLabel"],
+ "Enter axiom text here."
+}], "Axiom"],
+
+Cell["Enter continued axiom text here.", "AxiomContinuation"],
+
+Cell[TextData[{
+ StyleBox["Rule\[MediumSpace]\[ThinSpace]", "RuleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "RuleLabel"],
+ StyleBox[".", "RuleLabel"],
+ StyleBox[
+ CounterBox["Rule"], "RuleLabel"],
+ StyleBox[". ", "RuleLabel"],
+ "Enter rule text here."
+}], "Rule"],
+
+Cell["Enter continued rule text here.", "RuleContinuation"],
+
+Cell[TextData[{
+ StyleBox["Example\[MediumSpace]\[ThinSpace]", "ExampleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ExampleLabel"],
+ StyleBox[".", "ExampleLabel"],
+ StyleBox[
+ CounterBox["Example"], "ExampleLabel"],
+ StyleBox[". ", "ExampleLabel"],
+ "Enter example text here."
+}], "Example"],
+
+Cell["Enter continued example text here.", "ExampleContinuation"],
+
+Cell[TextData[{
+ StyleBox["Remark\[MediumSpace]\[ThinSpace]", "RemarkLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "RemarkLabel"],
+ StyleBox[".", "RemarkLabel"],
+ StyleBox[
+ CounterBox["Remark"], "RemarkLabel"],
+ StyleBox[". ", "RemarkLabel"],
+ "Enter remark text here."
+}], "Remark"],
+
+Cell["Enter continued remark text here.", "RemarkContinuation"],
+
+Cell[TextData[{
+ StyleBox["Solution\[MediumSpace]\[ThinSpace]", "SolutionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "SolutionLabel"],
+ StyleBox[".", "SolutionLabel"],
+ StyleBox[
+ CounterBox["Remark"], "SolutionLabel"],
+ StyleBox[". ", "SolutionLabel"],
+ "Enter solution text here."
+}], "Solution"],
+
+Cell["Enter continued solution text here.", "SolutionContinuation"],
+
+Cell[TextData[{
+ StyleBox["Proof\[MediumSpace]\[ThinSpace]", "ProofLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "ProofLabel"],
+ StyleBox[".", "ProofLabel"],
+ StyleBox[
+ CounterBox["Remark"], "ProofLabel"],
+ StyleBox[". ", "ProofLabel"],
+ "Enter solution text here."
+}], "Proof"],
+
+Cell["Enter continued solution text here.", "ProofContinuation"],
+
+Cell["\[EmptySquare]", "QED"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[Cell[GraphicsData["CompressedBitmap", "\<\
+eJztWLtKA0EUvdnNCwULH30aC7XzFwStbPwAYQlCLEQxYit2FhZpJIVWamMh
+iCCIjTYKNkIKGxEbsRDBQkTs1jl35q6768QQJSA4xc7O3HPfc2Y2ZDJYqszM
+BUuz5aA0sRgsVGbL1dL4/KIS+RkiquEpEeahmpqhRvWxZTXx+R2GIT/rGDMO
+cpCDHOQgB/1zaJBHnzamPmW5lOz65JI82qmsUS/PD1c36Xh9l7H31zc6re/T
+1vQK7VVrdN+4ieQX20cshx/oQwZMrX2eZBNhlbrH+gW2FLGoSCSt001XB2cJ
+7JtoNPKTBhQiGdw+3T3wXMJ6vOrhlCDDCjrQRWjIgEkamEvTLA0w6h7r9ye8
+igoKhDzejJR5s2i/rB8bjujY3JfH51j9xahesUUPsAYZ1Ns37oUXME3XDmYp
+Vc9EhTVE8dqNioma47lgJhLZQv2ycLgF49FeNOCzcD9KSa/0KPzTehizLJN0
+oirbKl5aLKayBQbL2gMNtyjdN3sBM1AFG+el6o+faCE363jMsHwCQFqGt9pP
+d0RLSUvONUzgO05dTf2clfo6XMFKfdHXMfNfYqI2VcNQKybkE0yQzJR1uilI
+HicCa2zV7XkjOg1yEQkG8sSS1ndX8cv9BDUgxp1stFxpePh21F1N34hiCS/2
+2zLfLGLLriTPR5q8xtuARbXLIstaZKPt74v5BnkWb30dzESXnWPiytdA2tmh
+DvyRHwkOcpCDHOQgB3UCkv9qMx+BuT88\
+\>"], "Graphics",
+  ImageSize->{144, 144},
+  ImageMargins->{{0, 0}, {0, 0}},
+  ImageRegion->{{0, 1}, {0, 1}}]], "Figure"],
+
+Cell[TextData[{
+ StyleBox["Figure ", "FigureCaptionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "FigureCaptionLabel"],
+ StyleBox[".", "FigureCaptionLabel"],
+ StyleBox[
+ CounterBox["FigureCaption"], "FigureCaptionLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "FigureCaptionLabel"],
+ "Figure caption."
+}], "FigureCaption"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[Cell[GraphicsData["CompressedBitmap", "\<\
+eJztWLtKA0EUvdnNCwULH30aC7XzFwStbPwAYQlCLEQxYit2FhZpJIVWamMh
+iCCIjTYKNkIKGxEbsRDBQkTs1jl35q6768QQJSA4xc7O3HPfc2Y2ZDJYqszM
+BUuz5aA0sRgsVGbL1dL4/KIS+RkiquEpEeahmpqhRvWxZTXx+R2GIT/rGDMO
+cpCDHOQgB/1zaJBHnzamPmW5lOz65JI82qmsUS/PD1c36Xh9l7H31zc6re/T
+1vQK7VVrdN+4ieQX20cshx/oQwZMrX2eZBNhlbrH+gW2FLGoSCSt001XB2cJ
+7JtoNPKTBhQiGdw+3T3wXMJ6vOrhlCDDCjrQRWjIgEkamEvTLA0w6h7r9ye8
+igoKhDzejJR5s2i/rB8bjujY3JfH51j9xahesUUPsAYZ1Ns37oUXME3XDmYp
+Vc9EhTVE8dqNioma47lgJhLZQv2ycLgF49FeNOCzcD9KSa/0KPzTehizLJN0
+oirbKl5aLKayBQbL2gMNtyjdN3sBM1AFG+el6o+faCE363jMsHwCQFqGt9pP
+d0RLSUvONUzgO05dTf2clfo6XMFKfdHXMfNfYqI2VcNQKybkE0yQzJR1uilI
+HicCa2zV7XkjOg1yEQkG8sSS1ndX8cv9BDUgxp1stFxpePh21F1N34hiCS/2
+2zLfLGLLriTPR5q8xtuARbXLIstaZKPt74v5BnkWb30dzESXnWPiytdA2tmh
+DvyRHwkOcpCDHOQgB3UCkv9qMx+BuT88\
+\>"], "Graphics",
+  Evaluatable->False,
+  ImageSize->{144, 144},
+  ImageMargins->{{0, 0}, {0, 0}},
+  ImageRegion->{{0, 1}, {0, 1}}]], "Picture"],
+
+Cell[TextData[{
+ StyleBox["Picture ", "PictureCaptionLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "PictureCaptionLabel"],
+ StyleBox[".", "PictureCaptionLabel"],
+ StyleBox[
+ CounterBox["PictureCaption"], "PictureCaptionLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "PictureCaptionLabel"],
+ "Picture caption."
+}], "PictureCaption"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.499975]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.499975]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.499975]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.333322]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.333322]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.333322]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.249994]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.249994]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.249994]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Table ", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["BookChapterNumber"], "TableTitleLabel"],
+ StyleBox[".", "TableTitleLabel"],
+ StyleBox[
+ CounterBox["TableTitle"], "TableTitleLabel"],
+ StyleBox[".\[ThickSpace]\[ThickSpace]\[ThickSpace]", "TableTitleLabel"],
+ "Enter table title here"
+}], "TableTitle"],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[GridBox[{
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"], Cell[
+          "Enter column head here", "TableColumnHead"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.199996]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["\t", "TableLineElement"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.9999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]},
+     {
+      StyleBox[GridBox[{
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]},
+         {Cell["Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"], Cell[
+          "Enter data here", "TableText"]}
+        }], "TableSubGrid",
+       GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.199996]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}}}]}
+    }], "TableMasterGrid"], $CellContext`TabularForm]], "Table",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {{
+      Scaled[0.199996]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell["Enter table note here.", "TableNote"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter exercise section title here", "ExerciseSection"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item1exercise text here.", "Item1Exercise"],
+
+Cell[CellGroupData[{
+
+Cell["Enter item2exercise text here.", "Item2Exercise"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{"x", 
+     RowBox[{"\[DifferentialD]", "x"}]}]}], "+", 
+   SqrtBox["z"]}], TraditionalForm]], "ExerciseEquationNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[
+CounterBox["AppendixSectionNumber"]], "AppendixSectionNumber"],
+
+Cell[CellGroupData[{
+
+Cell["Enter appendix title here", "AppendixSection"],
+
+Cell[CellGroupData[{
+
+Cell["Enter appendix text here.", "Appendix"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{"x", 
+     RowBox[{"\[DifferentialD]", "x"}]}]}], "+", 
+   SqrtBox["z"]}], TraditionalForm]], "AppendixEquation"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter reference title here", "ReferenceSection"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A. Authorlast, \[OpenCurlyDoubleQuote]Article \
+Title,\[CloseCurlyDoubleQuote] ",
+ StyleBox["Journal Title",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["Volume",
+  FontWeight->"Bold"],
+ "(Issue), 2005 pp. #\[Dash]#."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast1 and B. Authorlast2, \[OpenCurlyDoubleQuote]Article Title,\
+\[CloseCurlyDoubleQuote] ",
+ StyleBox["Journal Title",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["Volume",
+  FontWeight->"Bold"],
+ "(Issue), 2005 pp. #\[Dash]#."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast1, B. Authorlast2, and C. Authorlast3, \
+\[OpenCurlyDoubleQuote]Article Title,\[CloseCurlyDoubleQuote] ",
+ StyleBox["Journal Title",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["Volume",
+  FontWeight->"Bold"],
+ "(Issue), 2005 pp. #\[Dash]#."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast, ",
+ StyleBox["Book Title",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["n",
+  FontSlant->"Italic"],
+ "th ed., Publisher Location: Publisher Name, 2005."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast1 and B. Authorlast2, ",
+ StyleBox["Book Title",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["n",
+  FontSlant->"Italic"],
+ "th ed., Publisher Location: Publisher Name, 2005."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast1, B. Authorlast2, and C. Authorlast3, ",
+ StyleBox["Book Title",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["n",
+  FontSlant->"Italic"],
+ "th ed., Publisher Location: Publisher Name, 2005."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast, \[OpenCurlyDoubleQuote]Paper Title,\[CloseCurlyDoubleQuote] \
+in ",
+ StyleBox["Conference Proceedings Title (Conference Acronym and Year)",
+  FontSlant->"Italic"],
+ ", Conference Location (A. Authorlast, ed.), Publisher Location: Publisher \
+Name, Publication Date pp. #\[Dash]#."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast1, B. Authorlast2, and C. Authorlast3, \
+\[OpenCurlyDoubleQuote]Paper Title,\[CloseCurlyDoubleQuote] in ",
+ StyleBox["Conference Proceedings Title (Conference Acronym and Year)",
+  FontSlant->"Italic"],
+ ", Conference Location (A. Authorlast, ed.), Publisher Location: Publisher \
+Name, Publication Date pp. #\[Dash]#."
+}], "Reference"],
+
+Cell[TextData[{
+ "A. Authorlast1, B. Authorlast2, and C. Authorlast3, \
+\[OpenCurlyDoubleQuote]Paper Title,\[CloseCurlyDoubleQuote] in ",
+ StyleBox["Conference Proceedings Title (Conference Acronym and Year)",
+  FontSlant->"Italic"],
+ ", Conference Location (A. Authorlast, ed.), Publisher Location: Publisher \
+Name, Publication Date pp. #\[Dash]#."
+}], "Reference"],
+
+Cell["\<\
+A. Authorlast. \[OpenCurlyDoubleQuote]Website Title.\[CloseCurlyDoubleQuote] \
+(Last updated date or date visited in three-character Month Day, Year format) \
+URL.\
+\>", "Reference"],
+
+Cell["\<\
+A. B. Authorlast. \[OpenCurlyDoubleQuote]Entry Title\[CloseCurlyDoubleQuote] \
+from CompanyN\[LongDash]A CompanyN Web Resource. URL.\
+\>", "Reference"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{616, 535},
+WindowMargins->{{35, Automatic}, {Automatic, 10}},
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->FrontEnd`FileName[{"Book"}, "Textbook.nb", 
+  CharacterEncoding -> "CP936"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 69, 1, 148, "BookChapterNumber"],
+Cell[639, 25, 234, 3, 130, "BookChapterTitle"],
+Cell[CellGroupData[{
+Cell[898, 32, 458, 12, 59, "Section"],
+Cell[1359, 46, 1612, 31, 23, "Text"],
+Cell[2974, 79, 1637, 29, 27, "Text"],
+Cell[4614, 110, 826, 22, 33, "Text"],
+Cell[5443, 134, 428, 7, 23, "Text"],
+Cell[5874, 143, 498, 11, 23, "Text"],
+Cell[6375, 156, 16, 0, 23, "Text"],
+Cell[6394, 158, 2778, 81, 23, "Text"],
+Cell[9175, 241, 961, 16, 41, "Text"],
+Cell[10139, 259, 890, 15, 27, "Text"],
+Cell[11032, 276, 2171, 61, 51, "Text"],
+Cell[13206, 339, 1374, 48, 33, "Text"],
+Cell[14583, 389, 995, 16, 41, "Text"],
+Cell[15581, 407, 1833, 57, 44, "Text"],
+Cell[17417, 466, 1267, 39, 26, "Text"],
+Cell[18687, 507, 870, 13, 41, "Text"],
+Cell[19560, 522, 1477, 48, 33, "Text"],
+Cell[21040, 572, 783, 18, 23, "Text"],
+Cell[21826, 592, 328, 4, 23, "Text"],
+Cell[22157, 598, 189, 3, 23, "Text"],
+Cell[22349, 603, 2321, 69, 312, "Input"],
+Cell[24673, 674, 94, 1, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24804, 680, 257, 10, 59, "Section"],
+Cell[25064, 692, 1138, 21, 45, "Text"],
+Cell[26205, 715, 280, 6, 23, "Text"],
+Cell[26488, 723, 2021, 70, 27, "Text"],
+Cell[28512, 795, 1124, 40, 23, "Text"],
+Cell[29639, 837, 573, 14, 27, "Text"],
+Cell[CellGroupData[{
+Cell[30237, 855, 193, 3, 19, "Item3Numbered"],
+Cell[30433, 860, 168, 2, 19, "Item3Numbered"],
+Cell[30604, 864, 201, 3, 19, "Item3Numbered"]
+}, Open  ]],
+Cell[30820, 870, 232, 6, 23, "Text"],
+Cell[CellGroupData[{
+Cell[31077, 880, 200, 2, 19, "Item3Numbered"],
+Cell[31280, 884, 144, 1, 19, "Item3Numbered"]
+}, Open  ]],
+Cell[31439, 888, 1230, 27, 43, "Text"],
+Cell[32672, 917, 189, 3, 23, "Text"],
+Cell[32864, 922, 1303, 41, 132, "Input"],
+Cell[34170, 965, 94, 1, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34301, 971, 411, 11, 59, "Section"],
+Cell[34715, 984, 423, 6, 23, "Text"],
+Cell[35141, 992, 467, 7, 23, "Text"],
+Cell[35611, 1001, 778, 17, 41, "Text"],
+Cell[CellGroupData[{
+Cell[36414, 1022, 333, 9, 20, "Item1Numbered"],
+Cell[36750, 1033, 208, 6, 20, "Item1Numbered"],
+Cell[36961, 1041, 789, 19, 35, "Item1Numbered"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37799, 1066, 439, 12, 59, "Section"],
+Cell[38241, 1080, 673, 18, 23, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38951, 1103, 479, 13, 59, "Section"],
+Cell[39433, 1118, 356, 6, 23, "Text"],
+Cell[CellGroupData[{
+Cell[39814, 1128, 169, 10, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[40008, 1142, 49, 1, 31, "Input"],
+Cell[40060, 1145, 28, 0, 30, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40137, 1151, 174, 11, 36, "Subsection"],
+Cell[40314, 1164, 32, 0, 23, "Text"],
+Cell[CellGroupData[{
+Cell[40371, 1168, 39, 0, 19, "Item1"],
+Cell[CellGroupData[{
+Cell[40435, 1172, 57, 0, 18, "Item1Paragraph"],
+Cell[CellGroupData[{
+Cell[40517, 1176, 39, 0, 18, "Item2"],
+Cell[CellGroupData[{
+Cell[40581, 1180, 57, 0, 18, "Item2Paragraph"],
+Cell[CellGroupData[{
+Cell[40663, 1184, 39, 0, 18, "Item3"],
+Cell[40705, 1186, 57, 0, 18, "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[40825, 1193, 207, 7, 23, "Text"],
+Cell[41035, 1202, 187, 6, 43, "EquationNumbered"],
+Cell[41225, 1210, 32, 0, 23, "Text"],
+Cell[CellGroupData[{
+Cell[41282, 1214, 55, 0, 20, "Item1Numbered"],
+Cell[CellGroupData[{
+Cell[41362, 1218, 57, 0, 18, "Item1Paragraph"],
+Cell[CellGroupData[{
+Cell[41444, 1222, 55, 0, 19, "Item2Numbered"],
+Cell[CellGroupData[{
+Cell[41524, 1226, 57, 0, 18, "Item2Paragraph"],
+Cell[CellGroupData[{
+Cell[41606, 1230, 55, 0, 19, "Item3Numbered"],
+Cell[41664, 1232, 57, 0, 18, "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[41784, 1239, 41, 0, 23, "Text"],
+Cell[CellGroupData[{
+Cell[41850, 1243, 301, 9, 27, "Theorem"],
+Cell[42154, 1254, 65, 0, 23, "TheoremContinuation"],
+Cell[42222, 1256, 319, 9, 27, "Corollary"],
+Cell[42544, 1267, 65, 0, 23, "LemmaContinuation"],
+Cell[42612, 1269, 316, 9, 27, "Definition"],
+Cell[42931, 1280, 71, 0, 23, "DefinitionContinuation"],
+Cell[43005, 1282, 337, 9, 27, "Proposition"],
+Cell[43345, 1293, 73, 0, 23, "PropositionContinuation"],
+Cell[43421, 1295, 328, 9, 27, "Conjecture"],
+Cell[43752, 1306, 71, 0, 23, "ConjectureContinuation"],
+Cell[43826, 1308, 283, 9, 27, "Axiom"],
+Cell[44112, 1319, 61, 0, 23, "AxiomContinuation"],
+Cell[44176, 1321, 274, 9, 27, "Rule"],
+Cell[44453, 1332, 59, 0, 23, "RuleContinuation"],
+Cell[44515, 1334, 301, 9, 27, "Example"],
+Cell[44819, 1345, 65, 0, 23, "ExampleContinuation"],
+Cell[44887, 1347, 292, 9, 27, "Remark"],
+Cell[45182, 1358, 63, 0, 23, "RemarkContinuation"],
+Cell[45248, 1360, 308, 9, 27, "Solution"],
+Cell[45559, 1371, 67, 0, 23, "SolutionContinuation"],
+Cell[45629, 1373, 287, 9, 27, "Proof"],
+Cell[45919, 1384, 64, 0, 23, "ProofContinuation"],
+Cell[45986, 1386, 29, 0, 24, "QED"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46052, 1391, 943, 17, 160, "Figure"],
+Cell[46998, 1410, 346, 9, 21, "FigureCaption"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47381, 1424, 966, 18, 160, "Picture"],
+Cell[48350, 1444, 355, 9, 21, "PictureCaption"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48742, 1458, 331, 9, 25, "TableTitle"],
+Cell[49076, 1469, 1490, 35, 113, "Table"],
+Cell[50569, 1506, 43, 0, 16, "TableNote"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50649, 1511, 331, 9, 25, "TableTitle"],
+Cell[50983, 1522, 1748, 40, 113, "Table"],
+Cell[52734, 1564, 43, 0, 16, "TableNote"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52814, 1569, 331, 9, 25, "TableTitle"],
+Cell[53148, 1580, 2006, 45, 113, "Table"],
+Cell[55157, 1627, 43, 0, 16, "TableNote"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55237, 1632, 331, 9, 25, "TableTitle"],
+Cell[55571, 1643, 2264, 50, 128, "Table"],
+Cell[57838, 1695, 43, 0, 16, "TableNote"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[57942, 1702, 177, 9, 59, "Section"],
+Cell[58122, 1713, 86, 1, 23, "Text"],
+Cell[CellGroupData[{
+Cell[58233, 1718, 169, 10, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[58427, 1732, 49, 1, 31, "Input"],
+Cell[58479, 1735, 28, 0, 30, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58556, 1741, 174, 11, 36, "Subsection"],
+Cell[58733, 1754, 32, 0, 23, "Text"],
+Cell[CellGroupData[{
+Cell[58790, 1758, 39, 0, 19, "Item1"],
+Cell[CellGroupData[{
+Cell[58854, 1762, 57, 0, 18, "Item1Paragraph"],
+Cell[CellGroupData[{
+Cell[58936, 1766, 39, 0, 18, "Item2"],
+Cell[CellGroupData[{
+Cell[59000, 1770, 57, 0, 18, "Item2Paragraph"],
+Cell[CellGroupData[{
+Cell[59082, 1774, 39, 0, 18, "Item3"],
+Cell[59124, 1776, 57, 0, 18, "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[59244, 1783, 207, 7, 23, "Text"],
+Cell[59454, 1792, 187, 6, 43, "EquationNumbered"],
+Cell[59644, 1800, 32, 0, 23, "Text"],
+Cell[CellGroupData[{
+Cell[59701, 1804, 55, 0, 20, "Item1Numbered"],
+Cell[CellGroupData[{
+Cell[59781, 1808, 57, 0, 18, "Item1Paragraph"],
+Cell[CellGroupData[{
+Cell[59863, 1812, 55, 0, 19, "Item2Numbered"],
+Cell[CellGroupData[{
+Cell[59943, 1816, 57, 0, 18, "Item2Paragraph"],
+Cell[CellGroupData[{
+Cell[60025, 1820, 55, 0, 19, "Item3Numbered"],
+Cell[60083, 1822, 57, 0, 18, "Item3Paragraph"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[60203, 1829, 41, 0, 23, "Text"],
+Cell[CellGroupData[{
+Cell[60269, 1833, 301, 9, 27, "Theorem"],
+Cell[60573, 1844, 65, 0, 23, "TheoremContinuation"],
+Cell[60641, 1846, 319, 9, 27, "Corollary"],
+Cell[60963, 1857, 65, 0, 23, "LemmaContinuation"],
+Cell[61031, 1859, 316, 9, 27, "Definition"],
+Cell[61350, 1870, 71, 0, 23, "DefinitionContinuation"],
+Cell[61424, 1872, 337, 9, 27, "Proposition"],
+Cell[61764, 1883, 73, 0, 23, "PropositionContinuation"],
+Cell[61840, 1885, 328, 9, 27, "Conjecture"],
+Cell[62171, 1896, 71, 0, 23, "ConjectureContinuation"],
+Cell[62245, 1898, 283, 9, 27, "Axiom"],
+Cell[62531, 1909, 61, 0, 23, "AxiomContinuation"],
+Cell[62595, 1911, 274, 9, 27, "Rule"],
+Cell[62872, 1922, 59, 0, 23, "RuleContinuation"],
+Cell[62934, 1924, 301, 9, 27, "Example"],
+Cell[63238, 1935, 65, 0, 23, "ExampleContinuation"],
+Cell[63306, 1937, 292, 9, 27, "Remark"],
+Cell[63601, 1948, 63, 0, 23, "RemarkContinuation"],
+Cell[63667, 1950, 308, 9, 27, "Solution"],
+Cell[63978, 1961, 67, 0, 23, "SolutionContinuation"],
+Cell[64048, 1963, 287, 9, 27, "Proof"],
+Cell[64338, 1974, 64, 0, 23, "ProofContinuation"],
+Cell[64405, 1976, 29, 0, 24, "QED"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[64471, 1981, 943, 17, 160, "Figure"],
+Cell[65417, 2000, 346, 9, 21, "FigureCaption"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65800, 2014, 966, 18, 160, "Picture"],
+Cell[66769, 2034, 355, 9, 21, "PictureCaption"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67161, 2048, 331, 9, 25, "TableTitle"],
+Cell[67495, 2059, 1490, 35, 113, "Table"],
+Cell[68988, 2096, 43, 0, 16, "TableNote"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69068, 2101, 331, 9, 25, "TableTitle"],
+Cell[69402, 2112, 1748, 40, 113, "Table"],
+Cell[71153, 2154, 43, 0, 16, "TableNote"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[71233, 2159, 331, 9, 25, "TableTitle"],
+Cell[71567, 2170, 2006, 45, 113, "Table"],
+Cell[73576, 2217, 43, 0, 16, "TableNote"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73656, 2222, 331, 9, 25, "TableTitle"],
+Cell[73990, 2233, 2264, 50, 128, "Table"],
+Cell[76257, 2285, 43, 0, 16, "TableNote"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76361, 2292, 60, 0, 279, "ExerciseSection"],
+Cell[CellGroupData[{
+Cell[76446, 2296, 55, 0, 20, "Item1Exercise"],
+Cell[CellGroupData[{
+Cell[76526, 2300, 55, 0, 19, "Item2Exercise"],
+Cell[76584, 2302, 195, 6, 43, "ExerciseEquationNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76840, 2315, 77, 1, 148, "AppendixSectionNumber"],
+Cell[CellGroupData[{
+Cell[76942, 2320, 52, 0, 130, "AppendixSection"],
+Cell[CellGroupData[{
+Cell[77019, 2324, 45, 0, 23, "Appendix"],
+Cell[77067, 2326, 187, 6, 43, "AppendixEquation"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77315, 2339, 54, 0, 279, "ReferenceSection"],
+Cell[CellGroupData[{
+Cell[77394, 2343, 249, 9, 19, "Reference"],
+Cell[77646, 2354, 269, 9, 19, "Reference"],
+Cell[77918, 2365, 286, 9, 36, "Reference"],
+Cell[78207, 2376, 199, 8, 19, "Reference"],
+Cell[78409, 2386, 219, 8, 19, "Reference"],
+Cell[78631, 2396, 236, 8, 36, "Reference"],
+Cell[78870, 2406, 330, 7, 36, "Reference"],
+Cell[79203, 2415, 367, 7, 53, "Reference"],
+Cell[79573, 2424, 367, 7, 53, "Reference"],
+Cell[79943, 2433, 192, 4, 36, "Reference"],
+Cell[80138, 2439, 161, 3, 19, "Reference"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
