@@ -106,10 +106,17 @@ def f(n):
     while n%2==0 : n/=2
     return n
 
-思路: for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), 
+思路: 
+> 方法1. for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), 
 it will return a less number m, m<n .  
 在大约n*log(3,4)次嵌套调用f(n)之前，总会得到一个比n更小的数m，
 从而由归纳法推出Collatz Conjecture 对所有正整数都成立。
+
+> 方法2. (2019-10-28) 考虑奇数的Collatz回归树, 或者说顶点为1的逆向生成树，你会发现，这棵树的产生只需按照：
+1. 每个节点的长子由 `v(x)=(2*x-1)/3 or (4*x-1)/3` 产生
+2. 其余每个小兄弟由 `h(x)=4*x+1` 规则迭代陆续产生
+
+显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数□
 ```
 
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
