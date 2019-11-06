@@ -34,11 +34,11 @@ def r(theta):= nest(sin,theta,1000)
 polar_plot(r(theta),(theta,0,2*PI))
 
 ```
-<img src="stage2-bread%20curve/bread.png">
-<img src="stage2-bread%20curve/bread-curve-3d.jpg">
+<img src="http://a-boy.tk/playmath/stage2-bread%20curve/bread.png">
+<img src="http://a-boy.tk/playmath/stage2-bread%20curve/bread-curve-3d.jpg">
 
 - before2011/果中的泪滴.png  
-  <img src="before2011/果中的泪滴.png">
+  <img src="http://a-boy.tk/playmath/before2011/果中的泪滴.png">
 - ...
   
 ## idea:(mailto:a_boy@live.com)
@@ -123,6 +123,7 @@ it will return a less number m, m<n .
 是否值得尝试，使用二密分解或p-密分解的一些性质证明费马大定理? 抛开Wiles的复杂理论和过程?
 
 - OPPC(Odd Primes Position Constant) 奇质位常数，`2*k-1`如果是质数则二进制小数点后第k位为1，否则为0
+
 ```
 const OPPC = 0.0111 0110 1101 0011
                1357 9
