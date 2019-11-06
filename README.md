@@ -100,16 +100,16 @@ Guess: for any ineteger n>=1, RamseyNumber(n+1,n+1)-1 = S(n,n) contains only the
 
 - try to prove 3n+1 Conjecture: 
 ```
-def f(n):
+def g(n):
     while n%2==0 : n/=2
     n=3*n+1
     while n%2==0 : n/=2
     return n
 
 思路: 
-> 方法1. for any odd integer n, before the steps=ceil(log(3,4^n))=ceil(n*log(3,4)) calling f(n), 
+> 方法1. for any odd integer n, before the steps=(3*n+1)/2 calling g(n), 
 it will return a less number m, m<n .  
-在大约n*log(3,4)次嵌套调用f(n)之前，总会得到一个比n更小的数m，
+在(n*3+1)/2次嵌套调用g(n)之前，总会得到一个比n更小的数m，
 从而由归纳法推出Collatz Conjecture 对所有正整数都成立。
 
 > 方法2. (2019-10-28) 考虑奇数的Collatz回归树, 或者说顶点为1的逆向生成树，你会发现，这棵树的产生只需按照：
