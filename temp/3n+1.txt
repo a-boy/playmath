@@ -1,0 +1,74 @@
+**3n+1问题(3n+1 Problem)** 是 L. Collatz在1937年提出的一个猜想, 也叫 **Collatz猜想**, 或者被称作 3n+1归一映射(3x+1 Mapping)。 3n+1问题是如此的著名于世，因为它几乎可以让小学一年级学生领会理解，更是数学爱好者们的起步之题，并且被多个数学家提及，如Hasse算法, Kakutani问题, Syracuse算法, Thwaites猜想(Thwaites conjecture), Ulam问题（Ulam's problem, Lagarias 1985)……
+Thwaites (1996) 已经悬赏 £1000为解决3n+1猜想. 
+
+**3n+1问题** 的描述十分简单：对于任意正整数n, 定义递推数组a[0]:=n, a[k]遇到偶数则除以2即取a[k]/2, 遇到奇数则取3*a[k]+1, 为k=0,1,2,3,...递推下去，总会在有限步之内取得1，然后[1,4,2,1,4,2,...]不停循环下去。
+
+```
+a[0]:=n ,
+a[k+1]:= 3*a[k]+1 if is_odd(a[k])
+a[k+1]:= a[k]/2   elif is_even(a[k]) , for k=0,1,2,3,...
+
+
+
+def f(x):= 3*x+1 if x%2==1 else x//2
+a[k+1]:=f(a[k])
+
+# Syracuse function g(n)
+def g(n):
+    while n%2==0 : n/=2
+    n=3*n+1
+    while n%2==0 : n/=2
+    return n
+```
+
+Syracuse函数(Syracuse function, g(x))对其做了简化处理，每次直接去掉其中的2的幂，因此3n+1问题也等同于说: 对于任意正奇数n, 总存在有限步数S(n), 使nest(g,S,n)==1 . 
+
+> sage.misc.misc.nest(f, n, x)
+> Return f(f(...f(x)...)), where the composition occurs n times.
+
+由递推归纳法的思想，我们只需证明：n总会在有限步s(n)嵌套调用g(x)之前便取得一个更小的奇数m, m<n . 
+显然，对于偶数2k, 以及4k+1型的数即(n*3+1) %4==0的数来说，第一步g(n)调用便下降了。
+
+```
+g(2k)<=(k*3+1)/2<2k
+g(4k+1) <= ((4k+1)*3+1)/4 < 4k+1
+```
+
+对于4k-1型的数尤其还是3的倍数来说呢？存在下面的Collatz-Syracuse函数下降定理。
+- - - -
+3n+1猜想证法1：
+
+** Collatz-Syracuse Decent Theorem **:
+for any odd integer n, it will get a less number m, m<n , not after the steps s(n)=(3*n+1)/2 calling g(n). To be brief, It exists v(v<=s(n)=(3*n+1)/2) to make nest(g,v,n)<n .
+
+** Collatz-Syracuse 函数递降定理 **:在`(n*3+1)/2` (含)次嵌套调用g(n)之前，总会得到一个比n更小的数`m, m<n`; 存在`v,v<=s(n)=(3*n+1)/2` 使得`nest(g,v,n)==m <n`
+
+注: 尝试证明有限步内递降，比力图考察证明不存在的循环圈来说，显得更简单更直接更有力。
+
+- - - -
+
+上面给出的Collatz-Syracuse函数递降定理也许并不能让你视之为一个令人信服的证明。  
+现在, 我要探索Collatz-Odd-Tree, 双重迭代逆向生成函数，给出Collatz猜想的绝妙证明! 也许能让Thwaites欣赏并在2020奖励我£1000。
+
+3n+1猜想证法2：
+
+** Collatz正奇数回归树(Collatz-Odd-Tree) ** : 对于任意正奇数n=2k+1, n是g(n)的子节点, g(n)<--n . 
+
+方法2. (2019-10-28) 考察Collatz正奇数回归树, 或者说顶点为1的逆向生成树，你会发现，这棵树的产生只需按照：
+1. 每个节点的长子由 `v(x)=(2*x-1)/3 or (4*x-1)/3` 产生
+2. 其余每个小兄弟由 `h(x)=4*x+1` 规则迭代陆续产生
+
+显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数□
+
+定义 **Collatz 正奇数回归树(Collatz-Odd-Tree)** : 对于任意正奇数 n=2k+1, n 是 g(n)的子节点, g(n)<--n . 或者称之为根节点为1的 **Collatz逆向生成树** .
+
+  首先, 当n满足 `3*n+1 == 2^y` 即 `n=(2^(2*i)-1)/3`, n都会成为根节点1的子节点, 这也是根节点1的全部子节点。
+
+规则 **Collatz正奇数回归树生成规则(Collatz-Odd-Tree Generation Rule)**:
+
+1. 每个节点的长子由 `v(x)=(2*x-1)/3 or (4*x-1)/3` 产生
+2. 其余每个小兄弟由 `h(x)=4*x+1` 规则迭代陆续产生
+3. 在完全的Collatz-Odd-Tree中x是叶节点 iff (x%3==0)
+
+证明3n+1猜想成立也就只需证明Collatz-Odd-Tree中逆向生成了所有的正奇数。
+显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数。□

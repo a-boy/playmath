@@ -1,0 +1,12 @@
+p=93
+while p<100:
+    t=map(is_prime,(p^2-2,p^2+2,p^2-p-1, p^2-p+1, p^2+p-1, p^2+p+1, p-2,p+2))
+    print(p,t,is_prime(p))
+    if(not any(t)):
+        break;
+    p+=1
+    
+(23, [False, False, False, False, False, False, False, False])
+52
+74，82，88
+(92, [False, False, False, False, False, False, False, False])
