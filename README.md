@@ -20,7 +20,7 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 
 	**Goldbach Conjecture Inequality 2**: **`gold(n) < prime_pi(prime_pi(n)+n)`**	
 
-- <b style="color:#0F0"> :star: 2019-10-28, I solved **3n+1 Problem**! 希望能让Thwaites欣赏并在2019奖励我£1000。
+- <b style="color:#0F0"> :star: 2019-10-28, I solved **3n+1 Problem**!</b> 希望能让Thwaites欣赏并在2019奖励我£1000。
 
 ```
 # Syracuse function g(n)
