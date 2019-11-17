@@ -72,3 +72,57 @@ for any odd integer n, it will get a less number m, m<n , not after the steps s(
 
 证明3n+1猜想成立也就只需证明Collatz-Odd-Tree中逆向生成了所有的正奇数。
 显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数。□
+
+%%html
+<textarea name="editor1" id="editor1" cols="160" rows="15">
+1. 首先, 当n满足 `3*n+1 == 2^y` 即 `n=(2^(2*k)-1)/3`, g(n)都会直接返回1, 这也是根节点1的全部子节点，这个数列具有递推函数 h(x)=4*x+1
+2. 接着，考察5的子节点，第一个子节点是3, 通过v(5)= (2*5-1)/3 生成,
+其余小兄弟之间 还是具有递推关系 h(x)=4*x+1
+3. 对于3的倍数, 因为 (3*n+1)/2^y %3 = 2^(-y)%3 == 1 or 2, 所以任意3的倍数都是叶节点。
+4. 继续，考察85的子节点，第一个子节点是113， c[k]=(4*x-1)/3 = 4^k*16/9-7/9
+
+1 
+1,5,21,85,341, ..., a[k]= (2^(2*k)-1)/3=(4^k-1)/3; a[k]= (4*(a[k-1]*3+1) -1)/3=4*a[k-1]+1, for k=1,2,3,... h(x)=4*x+1
+
+5<--3,v(x)= (2*x-1)/3 if(x%3==2); b[k]=(2*a[k]-1)/3=4^k*2/9 - 5/9, for k=2,6,10,14,...
+5<--3,13,53,..., h(x)=4*x+1
+
+21  
+85<--113,v(x)=(4*x-1)/3 elif(x%3==1) ; c[k]=(4*x-1)/3 = 4^k*16/9-7/9, for k=4,8,12,16,...
+85<--113,453,1813, ..., h(x)=4*x+1
+
+h(x)=4*x+1;
+v(x)= (2*x-1)/3 if(x%3==2);
+v(x)=(4*x-1)/3 elif(x%3==1);
+
+</textarea>
+
+def f(x):
+    return 3*x+1 if x%2==1 else x//2
+
+def g(n):
+    while n%2==0 : n/=2
+    n=3*n+1
+    while n%2==0 : n/=2
+    return n
+
+"""
+s(n) return (x,step)
+step: the min steps s makes nest(g,s,n)< n
+x: nest(g,s,n)
+"""
+def s(n):
+    step=1
+    x=g(n)
+    while n>=x:
+        step+=1
+        x=g(n)
+    return (x,step)
+
+" S(n) return the steps S makes nest(g,S,n)==1 "
+def S(n):
+    step=0
+    while x>1:
+        x=g(n)
+        step+=1
+    return step
