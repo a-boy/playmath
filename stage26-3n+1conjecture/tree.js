@@ -1,19 +1,16 @@
 // demo data
 var data = {
-  name: '1',
+  name: 1,
   children: [
-    { name: '1' },
-    { name: '5' ,
-      children: [
-        {name: '3',
-			children: [
-            { name: 'hello' },
-            { name: 'wat' }
-            ]
-        },
-		{name: '13'}]},
-    { name: '21'},
-    { name: '85'}
+    { name: 1 },
+    { name: 5, children: [
+        {name: 3},
+		{name: 13,children: [
+            { name: 17 },
+            { name: 69 }
+            ]}]},
+    { name: 21},
+    { name: 85}
   ]
 }
 
@@ -49,9 +46,14 @@ Vue.component('item', {
     },
     addChild: function () {
 		console.log(this.model.name);
-      this.model.children.push({
-        name: v(+this.model.name)
-      })
+		if(+this.model.name %3!=0){
+		  this.model.children.push(
+			{name: v(+this.model.name)},
+			{name: h(v(+this.model.name))},
+			{name: h(h(v(+this.model.name)))},
+			{name: h(h(h(v(+this.model.name))))}
+		  )
+		}
     }
   }
 })

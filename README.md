@@ -20,6 +20,32 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 
 	**Goldbach Conjecture Inequality 2**: **`gold(n) < prime_pi(prime_pi(n)+n)`**	
 
+- <b style="color:#0F0"> :star: 2019-10-28, I solved **3n+1 Problem**! 希望能让Thwaites欣赏并在2019奖励我£1000。
+
+```
+# Syracuse function g(n)
+def g(n):
+    while n%2==0 : n/=2
+    n=3*n+1
+    while n%2==0 : n/=2
+    return n
+```
+
+ **Collatz-Syracuse Decent Theorem**: For any odd positive integer n=2*k+1, it exists s1,`s1<=g(n)<=(3*n+1)/2` to make `nest(g,s1,n)==1`;  
+Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x). To be brief,  it exists `s0,s0<n` to make `m= nest(g,s0,n)<n` except n=27 or n=31;  
+(n,f(n),g(n),(3*n+1)/2,s(n))  
+(27, 82, 41, 41, (37, 41))  
+(31, 94, 47, 47, (35, 39))  
+
+ **Collatz正奇数回归树生成规则(Collatz-Odd-Tree Generation Rule)**:
+
+1. 每个节点的长子由 `v(x)=(2*x-1)/3 or (4*x-1)/3` 产生
+2. 其余每个小兄弟由 `h(x)=4*x+1` 迭代陆续产生
+3. x在完全的Collatz-Odd-Tree中是叶节点 iff (x%3==0)
+
+证明3n+1猜想成立也就只需证明Collatz-Odd-Tree中逆向生成了所有的正奇数。
+显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数。Collatz猜想证明完毕□
+
 - <b style="color:#0F0"> :star: 2018-03-06, I proved Twin Primes Conjecture!</b>
  [stage9-Prime gap subsequence if repeats twice then infinitely times.nb](stage9-Prime%20gap%20subsequence%20if%20repeats%20twice%20then%20infinitely%20times.nb)   
 
@@ -98,25 +124,6 @@ Guess: for any ineteger n>=1, RamseyNumber(n+1,n+1)-1 = S(n,n) contains only the
 
 - define the integer sequence `x[n+1]:=x[n]^2+1`, if take x[0]>1, then  x[5] is always composite, never be prime. I guess that x[k] can always be written as another form of two square sum, k>=5in.
 
-- try to prove 3n+1 Conjecture: 
-```
-def g(n):
-    while n%2==0 : n/=2
-    n=3*n+1
-    while n%2==0 : n/=2
-    return n
-
-思路: 
-> 方法1. for any odd integer n, before the steps=(3*n+1)/2 calling g(n), 
-it will return a less number m, m<n .  
-在(n*3+1)/2次嵌套调用g(n)之前，总会得到一个比n更小的数m，
-从而由归纳法推出Collatz Conjecture 对所有正整数都成立。
-
-> 方法2. (2019-10-28) 考虑奇数的Collatz回归树, 或者说顶点为1的逆向生成树，你会发现，这棵树的产生只需按照：
-1. 每个节点的长子由???
-2. 其余每个小兄弟由 `h(x)=4*x+1` 规则迭代陆续产生
-...???
-```
 
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
 是否值得尝试，使用二密分解或p-密分解的一些性质证明费马大定理? 抛开Wiles的复杂理论和过程?
