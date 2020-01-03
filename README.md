@@ -70,12 +70,16 @@ polar_plot(r(theta),(theta,0,2*PI))
 ## idea:(mailto:a_boy@live.com)
 - Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` . In other words, `range(n,n+primepi(n)+1)` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
 - Bread curve
-- `range(n^2, n*(n+1))` contains at least one primes. This is because: as to the array `{n*n, n*n+1, n*n+2, ... ,nextprime(n*n)-1 }`, we can dispatch distinct real factors for every item, these real factors are in `{2,3,4,...,n}` , Pigeonhole principle shows `nextprime(n*n)< n*(n+1)` . Samely, `range(n*(n+1), (n+1)*(n+1))` contains at least one prime. so, this is one sentence proof for 
+- `range(n^2, n*(n+1))` contains at least one primes. This is because: as to the array `{n*n, n*n+1, n*n+2, ... ,next_prime(n*n)-1 }`, we can dispatch distinct real factors for every item, these real factors are in `{2,3,4,...,n}` , Pigeonhole principle shows `next_prime(n*n)< n*(n+1)` . Samely, `range(n*(n+1), (n+1)*(n+1))` contains at least one prime. so, this is one sentence proof for 
     ```
     "still unsolved Legendre's conjecture asks whether for every n > 1, there is a prime p, such that n^2 < p < (n + 1)^2 "
 
     https://en.wikipedia.org/wiki/Legendre%27s_conjecture
     ```
+In fact,it holds true that
+
+NextPrime-Square-Inequality; `next_prime_delta(n^2) <= 1+euler_phi(n)`
+
 - Try to prove Goldbach's Conjecture
 ```
     Except n=344,for any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n)+1, satisfies that both n-g and n+g are primes. 
