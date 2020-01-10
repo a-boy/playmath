@@ -139,8 +139,13 @@ const OPPC = 0.0111 0110 1101 0011
                1357 9
 ```
 ## Question
-- 1/(2*3)+1/(5*7)+1/(11*13)+1/(17*19)+1/(23*29)+... == sum(1/(p[2k-1]*p[2k]), k, 1, oo)==16/75 ? 
- sum(1/k^2, k, 1, oo)==1/6*pi^2 Basel problem solved by Euler
+- sum(1/(p[2k-1]*p[2k]), k, 1, oo)==16/75 ?
+
+```
+1/(2*3)+1/(5*7)+1/(11*13)+1/(17*19)+1/(23*29)+... == sum(1/(p[2k-1]*p[2k]), k, 1, oo)==16/75 ? 
+ sum(1/k^2, k, 1, oo)==1/6*pi^2  /*Basel problem solved by Euler*/
+```
+
 https://math.stackexchange.com/questions/3503866
 
 
