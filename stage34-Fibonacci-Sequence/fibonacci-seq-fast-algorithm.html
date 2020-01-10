@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fibonacci数列快速算法</title>
+</head>
+<body>
+<textarea id="editor1" name="editor1" rows="15" cols="120">0,1,1</textarea>
+<script async>
+function fib(i){
+	let [a,b,c]=[0,1,1];	
+	console.log(a,b,c);
+	while (i-->0)
+	{
+		a=b+c;b=c+a;c=a+b;
+		document.getElementById('editor1').insertAdjacentHTML('beforeend', ','+a+','+b+','+c);
+	}
+}
+fib(108/3);
+</script>	
+</body>
+</html>

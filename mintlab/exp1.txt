@@ -5,8 +5,28 @@ while p<100:
     if(not any(t)):
         break;
     p+=1
-    
+
 (23, [False, False, False, False, False, False, False, False])
 52
 74，82，88
 (92, [False, False, False, False, False, False, False, False])
+
+
+
+def next_prime_delta(x):
+    return next_prime(x)-x
+
+[(next_prime_delta(n^2),euler_phi(n)) for n in range(1,50)]
+
+猜想: next_prime_delta(n^2) <= euler_phi(n)+1
+
+def next_prime_delta(x):
+    return next_prime(x)-x
+
+n=1
+while n<500:
+    x=n^2
+    # term=min(euler_phi(n),sigma(n,0))
+    t=prime_range(x,x+1+euler_phi(n)+1)
+    print(n,t,euler_phi(n),next_prime_delta(x))
+    n+=1

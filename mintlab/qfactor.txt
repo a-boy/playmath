@@ -1,0 +1,32 @@
+
+n=
+s=isqrt(isqrt(n))+1
+ss=s^2
+re=(-n)%ss
+re.divisors()
+
+n=p*q=((q+p)/2)^2 - ((q-p)/2)^2
+n=(s^2-a)*(s^2+b) ; b>a
+n-n%ss = a*b = re
+#factor(re)
+ss - re.divisors()
+
+
+p=41
+M=2^p-1
+
+n=M
+print(n)
+print(factor(n))
+s=isqrt(isqrt(n))+1
+print(s)
+ss=s^2
+re=ss-n
+#n=p*q=((q+p)/2)^2 - ((q-p)/2)^2
+#n=(s^2-a)*(s^2+b)= s^4+(b-a)^s2-a*b ; b>a
+# n-n%ss = a*b = re
+
+re=n-(n%ss)
+print(re,factor(re))
+ds=re.divisors();
+[(ss-a) for a in ds[0:len(ds)/2]]
