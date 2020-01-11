@@ -156,6 +156,8 @@ https://math.stackexchange.com/questions/3503947
 
 2^F[2!+1]-1 = 3, 2^F[3!+1]-1= 2^13-1= 8191 is the only two known Ultra-Primes! I guess after 3, 8191 there are more prime heros!
 ```
+I think there exists Inertia Law and Polar Method for integer sequences. But I can not express them clear! 整数数列的惯性定理和极性定理
+
 
 #### math tools
 - Mathematica : .nb is Mathematica notebook
