@@ -23,7 +23,6 @@
             padding: 0, auto, 0, auto;
         }
     </style>
-    <script src="//2293.ml/tide/polar.js"></script>
     <script src="vue.min.js"></script>
 
 </head>
@@ -34,27 +33,12 @@
  <p><b>Collatz conjecture</b>: successive operations on a number as dividing it by 2 if it is even and else multiply it by 3 and add 1. The conjecture says that the sequence ends with 1.<br> It is also known as the <b>3n+1 problem</b> or the <b>Hailstone problem</b>.
  The function is<br> f:(n)=> n%2==1? 3*n+1: n/2<br> For example,f(3)=10. And f(10)=5. This leads to the sequence 3, 10, 5, 16, 4, 2, 1, 4, 2, 1, ... which indeed reaches 1. A sequence obtained by iterating the function from a given starting
  value is sometimes called "the trajectory" of that starting value.</p>
-<pre><code>
-a[0]:=n ,
-a[k+1]:= 3*a[k]+1 if is_odd(a[k])
-a[k+1]:= a[k]/2   elif is_even(a[k]) , for k=0,1,2,3,...
-
-def f(x):= 3*x+1 if x%2==1 else x//2
-a[k+1]:=f(a[k])
-
-# Syracuse function g(n)
-def g(n):
-    while n%2==0 : n/=2
-    n=3*n+1
-    while n%2==0 : n/=2
-    return n
-</pre></code>
 </details>
 <script src="solve_3n+1_problem.js"></script>
 <div style="display:flex">
 <textarea name="editor1" id="editor1" cols="60" rows="18">  
 /* solve_3n+1_probelm.js v1.0.0
-* (c) 2019 Cody Luo (github.com/a-boy)
+* (c) 2019 Cody Luo (github.com/a-boy/playmath)
 */
 var collatz_problem = {
     f: (n) => n % 2 == 1 ? 3 * n + 1 : n / 2,
@@ -67,8 +51,8 @@ var collatz_problem = {
         return n
     },
     //through nest calling g(x),
-    //s0: number of min steps for n to reach a less number m<n
-    //s1: number of min steps for n to reach 1 
+    //s0: min steps for n to reach a less number m<n;
+    //s1: steps for n to reach 1;
     s: (n) => {
         if (n == 1) return (0, 0);
         let [step, s0, s1] = [1, 1, 1]
@@ -92,19 +76,19 @@ Object.assign(window, collatz_problem);
 
 //test Collatz_Conjecture
 n=1
-while (n<20000){
+while (n<30000){
     sd=s(n)
     result=[n,f(n),g(n),(3*n+1)/2,sd[0],sd[1]]
     if(sd[0]>=27){
-        _('output').value=_('output').value+result.toString()+'\n';
-		//console.log(result);
+        document.getElementById('output').value=document.getElementById('output').value+result.toString()+'\n';
+		console.log(result);
 	}
     n+=2
 }
 
 </textarea>
 <textarea name="output" id="output" cols="30" rows="10">
-n,f(n),g(n),(3*n+1)/2,sd[0],sd[1]
+n,f(n),g(n),(3*n+1)/2,s0,s1
 27,82,41,41, 37,41
 31,94,47,47, 35,39
 47,142,71,71, 34,38
@@ -123,45 +107,48 @@ n,f(n),g(n),(3*n+1)/2,sd[0],sd[1]
 <h2>Collatz-Syracuse Decent Theorem</h2>
 <textarea name="DecentTheoremEditor" id="DecentTheoremEditor" cols="120" rows="10">**Collatz-Syracuse Decent Theorem**: 
 For any odd positive integer n=2*k+1, it exists s1,`s1<=g(n)<=(3*n+1)/2` to make `nest(g,s1,n)==1`;  
-Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x). To be brief,  it exists `s0,s0<n` to make `m= nest(g,s0,n)<n` except n=27 or n=31; 
+Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x).
 
        [n,f(n),g(n),(3*n+1)/2,   s(n)]  
        [27, 82, 41, 41,      [37, 41]]  
        [31, 94, 47, 47,      [35, 39]]
+       [47,142,71,71,        [34, 38]]
+       [63,190,95,95,        [34, 39]]
 </textarea>
 <blockquote>
 sage.misc.misc.nest(f, n, x)  <br>
 Return f(f(...f(x)...)), where the composition occurs n times.
 </blockquote>
-<h2>Collatz-Odd-Tree Generation Rule(Collatz正奇数回归树生成规则)</h2>
+<h2>Collatz-Odd-Tree Generation Rule</h2>
 <ol>
-        <li><a href="#">v(x)= x%3==0?null:(x%3==1?(4*x-1)/3:(2*x-1)/3)</a> to generate the first child of x</li>
-        <li><a href="#" onclick="">h(x)=4*x+1</a> to generate the next sibling of x</li>
-        <li>x is a leaf node in the full Collatz-Odd-Tree iff (x%3==0)</li>
+    <li>x is a leaf node in the full Collatz-Odd-Tree iff (x%3==0)</li>    
+    <li><a href="#">v(x)= x%3==0?null:(x%3==1?(4*x-1)/3:(2*x-1)/3)</a> to generate the first child of x if x%3!=0</li>
+    <li><a href="#" onclick="">h(x)=4*x+1</a> to generate the next sibling of x. Because g(4*x+1)=g(3(4*x+1)+1)=g(12*x+4)=g(3*x+1)=g(x)</li>
+        
 </ol>
 <p>To prove 3n+1 Conjecture only needs to prove Collatz-Odd-Tree generating all positive odd integers.<br>
 Obviously, start from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` repeatedly iterate all positive integers formed of 4k+1 or 4k-1, just all positive odd integers. Collatz Conjecture is proved!□</p>
+<!-- 
 <textarea name="CollatzOddTreeEditor" id="CollatzOddTreeEditor" cols="150" rows="10">
 1:{5:{3,13},21,85,341}
 </textarea>
-    <p>x:<input type="text" name="x" id="x"> x%3:<input type="text" name="xmod3" id="xmod3"></p>
+<p>x:<input type="text" name="x" id="x"> x%3:<input type="text" name="xmod3" id="xmod3"></p>
+-->
     <div id="container1">
         <!-- item template -->
         <script type="text/x-template" id="item-template">
             <li>
-                <div :class="{bold: isFolder}" @click="toggle" @dblclick="changeType">
+                <div :class="{bold: isFolder}" @click="toggle();changeType();" @dblclick="changeType">
                     {{model.name}}
                     <span v-if="isFolder">[{{open ? '-' : '+'}}]</span>
                 </div>
                 <ul v-show="open" v-if="isFolder">
                     <item class="item" v-for="model in model.children" :model="model">
                     </item>
-                    <li class="add" @click="addChild">+</li>
+                    <li class="add" @click="addSibling">+</li>
                 </ul>
             </li>
         </script>
-
-        <p>(You can double click on an item to add 5 nodes if n%3!=0)</p>
 
         <!-- the demo root element -->
         <ul id="demo">
@@ -172,7 +159,7 @@ Obviously, start from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` rep
         <!-- demo code -->
         <script src="tree.js"></script>
 
-        <textarea name="editor2" id="editor2" cols="125" rows="15">
+<!--  <textarea name="editor2" id="editor2" cols="125" rows="15">
 1 
 1,5,21,85,341, ..., a[k]= (2^(2*k)-1)/3=(4^k-1)/3; a[k]= (4*(a[k-1]*3+1) -1)/3=4*a[k-1]+1, for k=1,2,3,... h(x)=4*x+1
 
@@ -188,7 +175,7 @@ v(x)=(2*x-1)/3 if(x%3==2);
 v(x)=(4*x-1)/3 elif(x%3==1);
 v(x)=null elif(x%3==0);
 
-</textarea>
+</textarea> -->
 </div>
 <h4>3n+1 Problem solved by, Cody Luo (cody@ustc.edu) 2019-10-28, 2019-11-17 <a href="https://github.com/a-boy/playmath">https://github.com/a-boy/playmath</a></h4>
 </body>
