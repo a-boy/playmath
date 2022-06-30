@@ -23,7 +23,7 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 	**Goldbach Conjecture Inequality 2**: **`gold(n) < prime_pi(prime_pi(n)+n)`**	
 
 - <b style="color:#0F0"> :star: 2019-10-28, I solved **3n+1 Problem**!</b> 
-http://a-boy.tk/playmath/stage26-3n%2B1conjecture/%5Bwebgame%5Dproving-3n%2B1-conjecture.html <br>
+http://a-boy.tk/playmath/stage26-3n%2B1conjecture/proving-3n%2B1-conjecture.html <br>
 希望能让Thwaites欣赏并在2019奖励我£1000。
 
 ```
@@ -36,16 +36,16 @@ def g(n):
 ```
 
  **Collatz-Syracuse Decent Theorem**: For any odd positive integer n=2*k+1, it exists s1,`s1<=g(n)<=(3*n+1)/2` to make `nest(g,s1,n)==1`;  
-Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x). To be brief,  it exists `s0,s0<n` to make `m= nest(g,s0,n)<n` except n=27 or n=31;  
+Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x). 
 (n,f(n),g(n),(3*n+1)/2,s(n))  
 (27, 82, 41, 41, (37, 41))  
 (31, 94, 47, 47, (35, 39))  
 
  **Collatz正奇数回归树生成规则(Collatz-Odd-Tree Generation Rule)**:
 
-1. 每个节点的长子由 `v(x)=(2*x-1)/3 or (4*x-1)/3` 产生
-2. 其余每个小兄弟由 `h(x)=4*x+1` 迭代陆续产生
-3. x在完全的Collatz-Odd-Tree中是叶节点 iff (x%3==0)
+1. x在完全的Collatz-Odd-Tree中是叶节点 iff (x%3==0)
+2. 每个节点的长子由 `v(x)=(2*x-1)/3 or (4*x-1)/3` 产生
+3. 其余每个小兄弟由 `h(x)=4*x+1` 迭代陆续产生, 因为 g(4*x+1)=g(12*x+4)=g(3*x+1)=g(x)
 
 证明3n+1猜想成立也就只需证明Collatz-Odd-Tree中逆向生成了所有的正奇数。
 显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数。Collatz猜想证明完毕□
@@ -53,7 +53,7 @@ Except n=27 or 31, it will get a less number m, m<n before `n` times iterately c
 - <b style="color:#0F0"> :star: 2018-03-06, I proved Twin Primes Conjecture!</b>
  [stage9-Prime gap subsequence if repeats twice then infinitely times.nb](stage9-Prime%20gap%20subsequence%20if%20repeats%20twice%20then%20infinitely%20times.nb)   
 
- 证明孪生质数猜想，并提出更普遍的规律：任意质数阶差子序列如果出现了两遍就会继续出现无数遍，例如`{2},{4},{2*n},{6,6},{2,4,2},......`
+ 证明孪生质数猜想，并提出更普遍的规律：任意质数阶差连续子序列如果出现了两遍就会继续出现无数遍，例如`{2},{4},{2*n},{6,6},{2,4,2},......`
 
 - <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i`</b>
 
@@ -82,17 +82,10 @@ polar_plot(r(theta),(theta,0,2*PI))
     ```
 In fact,it holds true that
 
-NextPrime-Square-Inequality; `next_prime_delta(n^2) <= 1+euler_phi(n)`
+NextPrime-Of-Square-Inequality; `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
-- Try to prove Goldbach's Conjecture
-```
-    Except n=344,for any integer n>=2, there exists g=gold(n) , 0=<g<=primepi(n)+1, satisfies that both n-g and n+g are primes. 
-    
-    ?? because we can dispatch distinct prime factors for {n+1, n+2, ... n+g}.replace( isprime(n+x) => n-x) ?? why n=344 is an exception?
-```
 
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
-Conjecture: for any n>=3, ` n! - prevprime(...(prevprime(n!))) ` is always prime or 1, the count of nest `prevprime` can be from 1 to floor(sqrt(n)) times.
 
 - denote S(k,v):=RamseyNumber(k+1,v+1)-1 . 
 Conjecture: for any integer v>=2, S(2,v)%5 in {0,2,3}, here S(2,v)=RamseyNumber(3,v+1)-1 . 
@@ -118,7 +111,7 @@ m	n	R(m,n)	Reference
 ```
 
 Guess: for any ineteger n>=1, RamseyNumber(n+1,n+1)-1 = S(n,n) contains only the factors of Fermat Numbers ` F[m]=2^2^m+1 `, {1,2,3,5,17,257,641,65537,...}
-现在地球居民都知道 S(2,2)=5, S(3,3)=17, 我猜 S(4,4)=45, S(5,5)=
+S(2,2)=5, S(3,3)=17, I guess S(4,4)=45
 
 - try to prove Twin Prime Conjecture
 ```
@@ -152,7 +145,7 @@ https://math.stackexchange.com/questions/3503947
 
 2^F[2!+1]-1 = 3, 2^F[3!+1]-1= 2^13-1= 8191 are two known Ultra-Primes! I guess after 3, 8191 there are more prime heros!
 ```
-I think there exists Inertia Law and Polar Method for integer sequences.  整数数列的惯性定理和极性定理
+- I think there exists Inertia Law and Polar Method for integer sequences.  整数数列的惯性定理和极性定理
 
 
 #### math tools
