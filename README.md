@@ -37,9 +37,10 @@ def g(n):
 
  **Collatz-Syracuse Decent Theorem**: For any odd positive integer n=2*k+1, it exists s1,`s1<=g(n)<=(3*n+1)/2` to make `nest(g,s1,n)==1`;  
 Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x). 
-(n,f(n),g(n),(3*n+1)/2,s(n))  
-(27, 82, 41, 41, (37, 41))  
-(31, 94, 47, 47, (35, 39))  
+
+	(n,f(n),g(n),(3*n+1)/2,s(n))  
+	(27, 82, 41, 41, (37, 41))  
+	(31, 94, 47, 47, (35, 39))  
 
  **Collatz正奇数回归树生成规则(Collatz-Odd-Tree Generation Rule)**:
 
@@ -51,9 +52,9 @@ Except n=27 or 31, it will get a less number m, m<n before `n` times iterately c
 显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数。Collatz猜想证明完毕□
 
 - <b style="color:#0F0"> :star: 2018-03-06, I proved Twin Primes Conjecture!</b>
- [stage9-Prime gap subsequence if repeats twice then infinitely times.nb](stage9-Prime%20gap%20subsequence%20if%20repeats%20twice%20then%20infinitely%20times.nb)   
+ [stage9-Prime gap subsegment if repeats twice then infinitely times.nb](stage9-Prime%20gap%20subsequence%20if%20repeats%20twice%20then%20infinitely%20times.nb)   
 
- 证明孪生质数猜想，并提出更普遍的规律：任意质数阶差连续子序列如果出现了两遍就会继续出现无数遍，例如`{2},{4},{2*n},{6,6},{2,4,2},......`
+ 证明孪生质数猜想，并提出更普遍的规律：任意质数阶差子段如果出现了两遍就会继续出现无数遍，例如`{2},{4},{2*n},{6,6},{2,4,2},......`
 
 - <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i`</b>
 
@@ -161,4 +162,4 @@ https://math.stackexchange.com/questions/3503947
 <img src="temp/1563593535473.jpg" width="280">
 <img src="temp/mm_facetoface_collect_qrcode_1560552098216.png" width="280">
 
-感谢你的赞助和支持，希望你我每天都能做得更好！！！
+感谢你的赞助和支持，希望我们每天都能做得更好！！！
