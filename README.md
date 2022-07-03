@@ -3,8 +3,8 @@ a boy's math playground; math experiment
 
 Cody Luo(cody@ustc.edu)
 
-https://github.com/a-boy/playmath  
-https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
+[https://github.com/a-boy/playmath](https://github.com/a-boy/playmath)  
+[https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/](https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/)  
 
 ## Records:
 - <b style="color:#0F0"> :star: 2019-09-02, I proved Goldbach's Conjecture!</b>
@@ -24,7 +24,7 @@ https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/
 
 - <b style="color:#0F0"> :star: 2019-10-28, I solved **3n+1 Problem**!</b> 
 http://a-boy.tk/playmath/stage26-3n%2B1conjecture/proving-3n%2B1-conjecture.html <br>
-希望能让Thwaites欣赏并在2019奖励我£1000。
+
 
 ```
 # Syracuse function g(n)
@@ -42,6 +42,10 @@ Except n=27 or 31, it will get a less number m, m<n before `n` times iterately c
 	(27, 82, 41, 41, (37, 41))  
 	(31, 94, 47, 47, (35, 39))  
 
+
+![part of Collatz Odd Tree](stage26-3n+1conjecture/Collatz-Odd-Tree1.png)
+Collatz-Odd-Tree1.png
+
  **Collatz正奇数回归树生成规则(Collatz-Odd-Tree Generation Rule)**:
 
 1. x在完全的Collatz-Odd-Tree中是叶节点 iff (x%3==0)
@@ -56,7 +60,7 @@ Except n=27 or 31, it will get a less number m, m<n before `n` times iterately c
 
  证明孪生质数猜想，并提出更普遍的规律：任意质数阶差子段如果出现了两遍就会继续出现无数遍，例如`{2},{4},{2*n},{6,6},{2,4,2},......`
 
-- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i`</b>
+- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i`</b> In other words, `range(n,n+primepi(n)+1)` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
 
 - <b style="color:#0F0"> :star: I discovered Bread Curve and Bread Model by chance in 2011: </b>
   
@@ -70,22 +74,30 @@ polar_plot(r(theta),(theta,0,2*PI))
 
 - before2011/果中的泪滴.png  
   <img src="http://a-boy.tk/playmath/before2011/果中的泪滴.png">
-- ...
+
+- <b style="color:#0F0"> :star: 2022-02-07, I improved Oppermann's Conjecture!</b>
+
+NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
   
 ## idea:(mailto:a_boy@live.com)
-- Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` . In other words, `range(n,n+primepi(n)+1)` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
-- Bread curve
-- `range(n^2, n*(n+1))` contains at least one primes. This is because: as to the array `{n*n, n*n+1, n*n+2, ... ,next_prime(n*n)-1 }`, we can dispatch distinct real factors for every item, these real factors are in `{2,3,4,...,n}` , Pigeonhole principle shows `next_prime(n*n)< n*(n+1)` . Samely, `range(n*(n+1), (n+1)*(n+1))` contains at least one prime. so, this is one sentence proof for 
-    ```
-    "still unsolved Legendre's conjecture asks whether for every n > 1, there is a prime p, such that n^2 < p < (n + 1)^2 "
 
-    https://en.wikipedia.org/wiki/Legendre%27s_conjecture
-    ```
-In fact,it holds true that
+- Goldbach-Triangle: every item is the average of top and right primes.
 
-NextPrime-Of-Square-Inequality; `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
+|   |   |   |   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|---|---|---|
+|3|
+|4|  5|
+|5|  6|  7|
+|7|  8|  9|  11|
+|8|  9|  10| 12| 13|
+|10| 11| 12| 14| 15| 17|
+|11| 12| 13| 15| 16| 18| 19|
+|13| 14| 15| 17| 18| 20| 21| 23|
+|16| 17| 18| 20| 21| 23| 24| 26| 29|
+|17| 18| 19| 21| 22| 24| 25| 27| 30| 31|
+|20| 21| 22| 24| 25| 27| 28| 30| 33| 34| 37|
 
-
+- 
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
 
 - denote S(k,v):=RamseyNumber(k+1,v+1)-1 . 
