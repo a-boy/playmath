@@ -1,5 +1,5 @@
 /*!
- * solve_3n+1_probelm.js v1.0.0
+ * solve_3n+1_probelm.js v1.0
  * (c) 2019 Cody Luo (github.com/a-boy)
  * 
  */
@@ -13,6 +13,13 @@ var collatz_problem = {
 		while (n % 2 == 0) n /= 2;
 		return n
 	},
+	path:(n)=>{
+        pa=[];
+        do{
+            pa.push(n); n=g(n);
+        }while(n>1);
+        return pa;
+    },
     //through nest calling g(x),
 	//s0: number of min steps for n to reach a less number m<n
 	//s1: number of min steps for n to reach 1 

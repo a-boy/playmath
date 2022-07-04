@@ -152,12 +152,13 @@ const OPPC = 0.0111 0110 1101 0011
 
 - Ultra-Primes-Conjecture
 ```
-There exists infinitely many primes formed of 2^(F[n!+1])-1 . here 2^p-1 is Mersenne number, F[n+2]=F[n+1]+F[n], 0,1,1,2,3,5,8,... is Fibonacci number, n! is factorial
+There exists infinitely many primes formed of 2^(F[n!+1])-1 . here 2^p-1 is Mersenne number, F[n+2]=F[n+1]+F[n], 0,1,1,2,3,5,8,... is Fibonacci number, n! is factorial.
 
 https://math.stackexchange.com/questions/3503947
 
 2^F[2!+1]-1 = 3, 2^F[3!+1]-1= 2^13-1= 8191 are two known Ultra-Primes! I guess after 3, 8191 there are more prime heros!
 ```
+
 - I think there exists Inertia Law and Polar Method for integer sequences.  整数数列的惯性定理和极性定理
 
 
