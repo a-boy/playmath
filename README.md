@@ -50,7 +50,7 @@ Collatz-Odd-Tree1.png
 
 1. x在完全的Collatz-Odd-Tree中是叶节点 iff (x%3==0)
 2. 每个节点的长子由 `v(x)=(2*x-1)/3 or (4*x-1)/3` 产生
-3. 其余每个小兄弟由 `h(x)=4*x+1` 迭代陆续产生, 因为 g(4*x+1)=g(12*x+4)=g(3*x+1)=g(x)
+3. 其余每个小兄弟由 `h(x)=4*x+1` 迭代陆续产生, 因为 3(4*x+1)+1 = 12*x+4 = 4*(3*x+1) 。
 
 证明3n+1猜想成立也就只需证明Collatz-Odd-Tree中逆向生成了所有的正奇数。
 显然，从`x0=1`出发，通过 `h(x)=4*x+1` 和 `v(x)=(2*x-1)/3 or (4*x-1)/3` 反复迭代，会生成所有形如4k+1和4k-1的数，即所有正奇数。Collatz猜想证明完毕□
@@ -60,7 +60,7 @@ Collatz-Odd-Tree1.png
 
  证明孪生质数猜想，并提出更普遍的规律：任意质数阶差子段如果出现了两遍就会继续出现无数遍，例如`{2},{4},{2*n},{6,6},{2,4,2},......`
 
-- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i`</b> In other words, `range(n,n+primepi(n)+1)` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
+- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i`</b> In other words, `range(n,n+primepi(n))` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
 
 - <b style="color:#0F0"> :star: I discovered Bread Curve and Bread Model by chance in 2011: </b>
   
@@ -101,7 +101,7 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
 
 - denote S(k,v):=RamseyNumber(k+1,v+1)-1 . 
-Conjecture: for any integer v>=2, S(2,v)%5 in {0,2,3}, here S(2,v)=RamseyNumber(3,v+1)-1 . 
+Conjecture: for any integer v>=2, S(2,v)%5 in {0,2,3}, here S(2,v)=RamseyNumber(3,v+1)-1 . That is to say,
 RamseyNumber(3,v+1) can NOT be the form 5*k or 5*k+2
 
 ```
@@ -136,7 +136,7 @@ S(2,2)=5, S(3,3)=17, I guess S(4,4)=45
     1, 2, 2, 4, 2, 4, 2, 4, 6, 2, 6, 4, 2, 4, 6, 6, 2, 6, 4, 2, 6, 4, 6, 8, 4, 2, 4, 2, 4, 14, 4, 6, 2, 10, 2, 6, 6, 4, 6, 6, 2, 10, 2, 4, 2, 12, 12, 4, 2, 4, 6, 2, 10, 6, 6, 6, 2, 6, 4, 2, ... (sequence A001223 in the OEIS).
 ```
 
-- define the integer sequence `x[n+1]:=x[n]^2+1`, if take x[0]>1, then  x[5] is always composite, never be prime. I guess that x[k] can always be written as another form of two square sum, k>=5in.
+- define the integer sequence `x[n+1]:=x[n]^2+1`, if take x[0]>1, then  x[5] is very often composite.
 
 
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。

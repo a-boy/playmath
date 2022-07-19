@@ -129,7 +129,7 @@ Return f(f(...f(x)...)), where the composition occurs n times.
 <ol>
     <li>x is a leaf node in the full Collatz-Odd-Tree iff (x%3==0)</li>    
     <li><a href="#">v(x)= x%3==0?null:(x%3==1?(4*x-1)/3:(2*x-1)/3)</a> to generate the first child of x if x%3!=0</li>
-    <li><a href="#" onclick="">h(x)=4*x+1</a> to generate the next sibling of x. Because g(4*x+1)=g(3(4*x+1)+1)=g(12*x+4)=g(3*x+1)=g(x)</li>
+    <li><a href="#" onclick="">h(x)=4*x+1</a> to generate the next sibling of x. Because 3(4*x+1)+1 = 12*x+4 = 4*(3*x+1) .</li>
         
 </ol>
 <p>To prove 3n+1 Conjecture only needs to prove Collatz-Odd-Tree generating all positive odd integers.<br>
