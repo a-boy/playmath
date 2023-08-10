@@ -76,7 +76,7 @@ polar_plot(r(theta),(theta,0,2*PI))
 
 NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
--:star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): while $n>1$ and $ 0\lt b \lt \sqrt{n}-1$, $2^{n^2\pm b}-1$ is always composite. In other words, the index p of a Mersenne prime $2^p-1$ is NOT too close to some perfect square number.
+-:star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): when `n>1` and `0<b<sqrt(n)-1`, `2^(n^2±b)-1` is always composite. This is to say, the index `p` of a Mersenne prime `2^p-1` is NOT too close to some perfect square number.
 
 https://math.stackexchange.com/questions/4750543
 
