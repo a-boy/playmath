@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Menlo, Consolas, monospace;
-            color: #444;
+            color: #bbb;
         }
         
         .item {
@@ -15,33 +15,32 @@
         .bold {
             font-weight: bold;
         }
-        
+        ol {margin: 2px}
         ul {
             list-style-type: square;
             margin: 0, auto, 0, auto;
             padding: 0, auto, 0, auto;
+            color: #00f
         }
     </style>
     <script src="vue.min.js"></script>
-
 </head>
-
 <body>
-<h2>Solve 3n+1 Problem, Collatz conjecture (解决3n+1问题, Collatz猜想)</h2>
+<h1>Solve 3n+1 Problem(解决3n+1问题)</h1>
 <details>
+ <summary>3n+1 Problem, Collatz conjecture</summary>
  <p><b>Collatz conjecture</b>: successive operations on a number as dividing it by 2 if it is even and else multiply it by 3 and add 1. The conjecture says that the sequence ends with 1.<br> It is also known as the <b>3n+1 problem</b> or the <b>Hailstone problem</b>.
- The function is<br> f:(n)=> n%2==1? 3*n+1: n/2<br> For example,f(3)=10. And f(10)=5. This leads to the sequence 3, 10, 5, 16, 4, 2, 1, 4, 2, 1, ... which indeed reaches 1. A sequence obtained by iterating the function from a given starting
- value is sometimes called "the trajectory" of that starting value.</p>
+ The function is<br> f:(n)=> n%2==1? 3*n+1: n/2<br> For example,f(3)=10. And f(10)=5. This leads to the sequence 3, 10, 5, 16, 4, 2, 1, 4, 2, 1, ... which indeed reaches 1. Syracuse function g(n) only considers odd numbers. A sequence obtained by iterating the function from a given starting value is sometimes called "the trajectory" of that starting value.</p>
 </details>
 <script src="solve_3n+1_problem.js"></script>
 <div style="display:flex">
-<textarea name="editor1" id="editor1" cols="60" rows="18">  
+<textarea name="editor1" id="editor1" cols="60" rows="55">
 /* solve_3n+1_probelm.js v1.0.0
 * (c) 2019 Cody Luo (github.com/a-boy/playmath)
 */
 var collatz_problem = {
     f: (n) => n % 2 == 1 ? 3 * n + 1 : n / 2,
-
+  
     //Syracuse function
     g: (n) => {
         while (n % 2 == 0) n /= 2;
@@ -49,16 +48,22 @@ var collatz_problem = {
         while (n % 2 == 0) n /= 2;
         return n
     },
-    path:(n)=>{
-        pa=[];
+  
+    tr:(n)=>{
+        trajectory=[];
         do{
-            pa.push(n); n=g(n);
+            trajectory.push(n); n=g(n);
         }while(n>1);
-        return pa;
+        return trajectory;
     },
-    //through nest calling g(x),
-    //s0: min steps for n to reach a less number m<n;
-    //s1: steps for n to reach 1;
+  
+//through nest calling g(x),
+//s0: min steps for n to reach a less number m<n;
+//s1: steps for n to reach 1. 
+/*Collatz-Syracuse Decent Theorem says
+  1. Except n=27 or 31, s0<n
+  2. s1<=g(n)<=(3*n+1)/2
+*/
     s: (n) => {
         if (n == 1) return (0, 0);
         let [step, s0, s1] = [1, 1, 1]
@@ -75,6 +80,7 @@ var collatz_problem = {
         s1 = step;
         return [s0, s1]
     },
+  
     h: (n) => 4 * n + 1,
     v: (n) => n % 3 == 0 ? null : (n % 3 == 1 ? (4 * n - 1) / 3 : (2 * n - 1) / 3)
 }      
@@ -85,15 +91,14 @@ n=1
 while (n<30000){
     sd=s(n)
     result=[n,f(n),g(n),(3*n+1)/2,sd[0],sd[1]]
-    if(sd[0]>=27){
-        document.getElementById('output').value=document.getElementById('output').value+result.toString()+'\n';
+    if(sd[0]>=27){               document.getElementById('output').value=document.getElementById('output').value+result.toString()+'\n';
 		console.log(result);
 	}
     n+=2
 }
-
+  
 </textarea>
-<textarea name="output" id="output" cols="30" rows="10">
+<textarea name="output" id="output" cols="35" rows="25">
 n,f(n),g(n),(3*n+1)/2,s0,s1
 27,82,41,41, 37,41
 31,94,47,47, 35,39
@@ -118,8 +123,8 @@ Except n=27 or 31, it will get a less number m, m<n before `n` times iterately c
        [n,f(n),g(n),(3*n+1)/2,   s(n)]  
        [27, 82, 41, 41,      [37, 41]]  
        [31, 94, 47, 47,      [35, 39]]
-       [47,142,71,71,        [34, 38]]
-       [63,190,95,95,        [34, 39]]
+       [47, 142,71, 71,      [34, 38]]
+       [63, 190,95, 95,      [34, 39]]
 </textarea>
 <blockquote>
 sage.misc.misc.nest(f, n, x)  <br>
@@ -127,10 +132,9 @@ Return f(f(...f(x)...)), where the composition occurs n times.
 </blockquote>
 <h2>Collatz-Odd-Tree Generation Rule</h2>
 <ol>
-    <li>x is a leaf node in the full Collatz-Odd-Tree iff (x%3==0)</li>    
-    <li><a href="#">v(x)= x%3==0?null:(x%3==1?(4*x-1)/3:(2*x-1)/3)</a> to generate the first child of x if x%3!=0</li>
-    <li><a href="#" onclick="">h(x)=4*x+1</a> to generate the next sibling of x. Because 3(4*x+1)+1 = 12*x+4 = 4*(3*x+1) .</li>
-        
+<li>x is a leaf node in the full Collatz-Odd-Tree iff (x%3==0)</li>
+<li><a href="#">v(x)= x%3==0?null:(x%3==1?(4*x-1)/3:(2*x-1)/3)</a> to generate the first child of x if x%3!=0</li>
+<li><a href="#" onclick="">h(x)=4*x+1</a> to generate the next sibling of x. Because 3(4*x+1)+1 = 12*x+4 = 4*(3*x+1) .</li>
 </ol>
 <p>To prove 3n+1 Conjecture only needs to prove Collatz-Odd-Tree generating all positive odd integers.<br>
 Obviously, start from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` repeatedly iterate all positive integers formed of 4k+1 or 4k-1, just all positive odd integers. Collatz Conjecture is proved!□</p>

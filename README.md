@@ -46,7 +46,7 @@ Collatz-Odd-Tree1.png
 To prove 3n+1 Conjecture only needs to prove Collatz-Odd-Tree generating all positive odd integers.
 Obviously, starting from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` will iterate all positive integers formed of 4k+1 or 4k-1, just all positive odd integers. Collatz Conjecture is proved!□
 
-- **:star: 2018-03-06, I proved Twin Primes Conjecture!** and found a general law:
+- **:star: 2018-03-06, I proved Twin Primes Conjecture** and found a general law:
 
 **Prime-Gap-Subsegments-Theorem**: If a prime gap subsegment occurs twice, then it will continue to occur infinitely times.  such as `{2}, {4},{2*k},{2,4,2},{6,6},{2,6,4,2}...`
 
@@ -54,7 +54,9 @@ Obviously, starting from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` 
 
 
 
-- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` </b> In other words, `range(n,n+primepi(n))` contains one or more primes. So, the i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`
+- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` </b> In other words, `next_prime(n)-n <= primepi(n)`. This is because you can dispatch distinct prime factors for {p[i],p[i]+1,...,p[i+1]-1}. Corollary: The i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`.
+  
+  Historical Prime Factor
 
 - <b style="color:#0F0"> :star: I discovered Bread Curve and Bread Model by chance in 2011: </b>
 
@@ -76,7 +78,7 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
 ## idea:(mailto:a_boy@live.com)
 
-- Goldbach-Triangle: every item is the average of the top prime and the right prime.
+- Goldbach-Triangle: every item is the average of top and right primes.
 
 |   |   |   |   |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|---|---|---|---|
