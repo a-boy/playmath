@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Menlo, Consolas, monospace;
-            color: #bbb;
+            color: #333;
         }
         
         .item {
@@ -34,7 +34,7 @@
 </details>
 <script src="solve_3n+1_problem.js"></script>
 <div style="display:flex">
-<textarea name="editor1" id="editor1" cols="60" rows="55">
+<textarea name="editor1" id="editor1" cols="50" rows="25">
 /* solve_3n+1_probelm.js v1.0.0
 * (c) 2019 Cody Luo (github.com/a-boy/playmath)
 */
@@ -98,7 +98,7 @@ while (n<30000){
 }
   
 </textarea>
-<textarea name="output" id="output" cols="35" rows="25">
+<textarea name="output" id="output" cols="30" rows="25">
 n,f(n),g(n),(3*n+1)/2,s0,s1
 27,82,41,41, 37,41
 31,94,47,47, 35,39
@@ -115,21 +115,7 @@ n,f(n),g(n),(3*n+1)/2,s0,s1
 </textarea>
 </div>
 <input type="button" value="Eval Selection" onclick="eval(getSelection().toString())"><input type="button" value="Clear Output" onclick="_('output').value=''">
-<h2>Collatz-Syracuse Decent Theorem</h2>
-<textarea name="DecentTheoremEditor" id="DecentTheoremEditor" cols="120" rows="10">**Collatz-Syracuse Decent Theorem**: 
-For any odd positive integer n=2*k+1, it exists s1,`s1<=g(n)<=(3*n+1)/2` to make `nest(g,s1,n)==1`;  
-Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x).
 
-       [n,f(n),g(n),(3*n+1)/2,   s(n)]  
-       [27, 82, 41, 41,      [37, 41]]  
-       [31, 94, 47, 47,      [35, 39]]
-       [47, 142,71, 71,      [34, 38]]
-       [63, 190,95, 95,      [34, 39]]
-</textarea>
-<blockquote>
-sage.misc.misc.nest(f, n, x)  <br>
-Return f(f(...f(x)...)), where the composition occurs n times.
-</blockquote>
 <h2>Collatz-Odd-Tree Generation Rule</h2>
 <ol>
 <li>x is a leaf node in the full Collatz-Odd-Tree iff (x%3==0)</li>
@@ -187,6 +173,21 @@ v(x)=null elif(x%3==0);
 
 </textarea> -->
 </div>
+<h2>Collatz-Syracuse Decent Theorem</h2>
+<textarea name="DecentTheoremEditor" id="DecentTheoremEditor" cols="120" rows="10">**Collatz-Syracuse Decent Theorem**: 
+For any odd positive integer n=2*k+1, it exists s1,`s1<=g(n)<=(3*n+1)/2` to make `nest(g,s1,n)==1`;  
+Except n=27 or 31, it will get a less number m, m<n before `n` times iterately calling g(x).
+
+       [n,f(n),g(n),(3*n+1)/2,   s(n)]  
+       [27, 82, 41, 41,      [37, 41]]  
+       [31, 94, 47, 47,      [35, 39]]
+       [47, 142,71, 71,      [34, 38]]
+       [63, 190,95, 95,      [34, 39]]
+</textarea>
+<blockquote>
+sage.misc.misc.nest(f, n, x)  <br>
+Return f(f(...f(x)...)), where the composition occurs n times.
+</blockquote>
 <h4>3n+1 Problem solved by Cody Luo (cody@ustc.edu) 2019-10-28, 2019-11-17 <a href="https://github.com/a-boy/playmath">https://github.com/a-boy/playmath</a></h4>
 </body>
 </html>
