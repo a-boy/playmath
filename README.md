@@ -76,6 +76,11 @@ polar_plot(r(theta),(theta,0,2*PI))
 
 NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
+-:star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): while $n>1$ and $ 0\lt b \lt \sqrt{n}-1$, $2^{n^2\pm b}-1$ is always composite. In other words, the index p of a Mersenne prime $2^p-1$ is NOT too close to some perfect square number.
+
+https://math.stackexchange.com/questions/4750543
+
+  
 ## idea:(mailto:a_boy@live.com)
 
 - Goldbach-Triangle: every item is the average of top and right primes.
