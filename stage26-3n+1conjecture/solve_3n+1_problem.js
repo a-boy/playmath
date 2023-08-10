@@ -28,7 +28,7 @@ var collatz_problem = {
   2. s1<=g(n)<=(3*n+1)/2
 */
     s: (n) => {
-        if (n == 1) return (0, 0);
+        if (n == 1) return [0, 0];
         let [step, s0, s1] = [1, 1, 1]
         let x = g(n)
         while (x >= n) {
