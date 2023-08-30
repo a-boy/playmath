@@ -100,6 +100,11 @@ https://math.stackexchange.com/questions/4750543
 |17| 18| 19| 21| 22| 24| 25| 27| 30| 31|
 |20| 21| 22| 24| 25| 27| 28| 30| 33| 34| 37|
 
+  [I am a Goldbach triangle observer](stage12-Goldbach%20Conjecture/I%20am%20a%20Goldbach%20triangle%20observer.ipynb)
+  
+  **Observation Conclusion 1**: Using the first `n-1` odd prime numbers { 3,5, ... ,p[n]}, take half of the sum of any pair, and the result will traverse all integers between `3..(p[n]+p[n -prime_pi(n)])/2`,without omissions...
+  
+
 
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
 
