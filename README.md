@@ -48,13 +48,14 @@ Obviously, starting from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` 
 
 - **:star: 2018-03-06, I proved Twin Primes Conjecture** and found a general law:
 
-**Prime-Gap-Subsegments-Theorem**: If a prime gap subsegment occurs twice, then it will continue to occur infinitely times.  such as `{2}, {4},{2*k},{2,4,2},{6,6},{2,6,4,2}...`
+**Prime-Gap-Subsegments-Theorem**: In prime gap sequence, if a prime gap subsegment occurs twice, then it will continue to occur infinitely times.  such as `{2}, {4},{2*k},{2,4,2},{6,6},{2,6,4,2}...`
 
  [stage9-Prime gap subsegment if repeats twice then infinitely times.nb](stage9-Prime%20gap%20subsequence%20if%20repeats%20twice%20then%20infinitely%20times.nb)
 
 
 
-- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` </b> In other words, `next_prime(n)-n <= primepi(n)`. This is because you can dispatch distinct prime factors for {p[i],p[i]+1,...,p[i+1]-1}. Corollary: The i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`.
+- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` </b> In other words, `next_prime(n)-n <= primepi(n)`. This is because you can dispatch distinct prime factors for {p[i],p[i]+1,...,p[i+1]-1}.  
+Corollary: The i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`.
   
   Historical Prime Factor
 
@@ -139,7 +140,7 @@ S(2,2)=5, S(3,3)=17, I guess S(4,4)=45
     1, 2, 2, 4, 2, 4, 2, 4, 6, 2, 6, 4, 2, 4, 6, 6, 2, 6, 4, 2, 6, 4, 6, 8, 4, 2, 4, 2, 4, 14, 4, 6, 2, 10, 2, 6, 6, 4, 6, 6, 2, 10, 2, 4, 2, 12, 12, 4, 2, 4, 6, 2, 10, 6, 6, 6, 2, 6, 4, 2, ... (sequence A001223 in the OEIS).
 ```
 
-- define the integer sequence `x[n+1]:=x[n]^2+1`, if take x[0>1, then  x[5] is very often composite.
+- define the integer sequence `x[n+1]:=x[n]^2+1`, if take x[0]>1, then  x[5] is very often composite.
 
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
   是否值得尝试，使用二密分解或p-密分解的一些性质证明费马大定理? 
