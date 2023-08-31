@@ -52,8 +52,6 @@ Obviously, starting from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` 
 
  [stage9-Prime gap subsegment if repeats twice then infinitely times.nb](stage9-Prime%20gap%20subsequence%20if%20repeats%20twice%20then%20infinitely%20times.nb)
 
-
-
 - <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` </b> In other words, `next_prime(n)-n <= primepi(n)`. This is because you can dispatch distinct prime factors for {p[i],p[i]+1,...,p[i+1]-1}.  
 Corollary: The i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`.
   
@@ -81,16 +79,18 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
 https://math.stackexchange.com/questions/4750543
 
-- :star: Around 2010, I formulated **Fence-Conjecture**: RamseyNumber(3,n)≡1,3,4 mod 5; R(3,n) can NOT be the form 5*m or 5*m+2.   
-  denote S(k,v):=RamseyNumber(k+1,v+1)-1 . When constructing critical graph for RamseyNumber(3,v+1)-1, I guess that the s(2,v) vertices can  be layouted as two or three staggered ways. This means S(2,v)%5 ∈{0,2,3}. 
-  
+- :star: 2023\-08\-31, **Fence\-Conjecture**:`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The s\(2,v\) vertices of the critical Ramsey Graph  can  layout in `k` or `k+1` staggered ways.   
+
+denote S\(k,v\):=RamseyNumber\(k\+1,v\+1\)\-1 . When constructing critical graph for RamseyNumber\(3,v\+1\)\-1, I guess that the s\(2,v\) vertices can  be layouted as two or three staggered ways. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` .
+
 ```
   o o o o o o o
   o   o   o   o 
   o o o o o o o
-``` 
-According to this conjecture, R(3,10) will be 41 or 43, R(3,11) will be choose from {46, 48,49,51}
-  
+```
+
+This conjecture implies\``R(3,10)=41, R(5,5)=46, and R(6,6)>=105``.
+
 ## idea:(mailto:a_boy@live.com)
 
 - Goldbach-Triangle: every item is the average of top and right primes.
@@ -110,12 +110,10 @@ According to this conjecture, R(3,10) will be 41 or 43, R(3,11) will be choose f
 |20| 21| 22| 24| 25| 27| 28| 30| 33| 34| 37|
 
   [I am a Goldbach triangle observer](stage12-Goldbach%20Conjecture/I%20am%20a%20Goldbach%20triangle%20observer.ipynb)
-  
+
   **Observation Conclusion 1**: Using the first `n-1` odd prime numbers { 3,5, ... ,p[n]}, take half of the sum of any pair, and the result will traverse all integers between `3..(p[n]+p[n -prime_pi(n)])/2`,without omissions...
-  
 
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
-
 
 ```
 m	n	R(m,n)	Reference
