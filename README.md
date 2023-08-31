@@ -77,10 +77,19 @@ polar_plot(r(theta),(theta,0,2*PI))
 
 NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
--:star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): when `n>1` and `0<b<sqrt(n)-1`, `2^(n^2±b)-1` is always composite. This is to say, the index `p` of a Mersenne prime `2^p-1` is NOT too close to some perfect square number.
+- :star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): when `n>1` and `0<b<sqrt(n)-1`, `2^(n^2±b)-1` is always composite. This is to say, the index `p` of a Mersenne prime `2^p-1` is NOT too close to some perfect square number.
 
 https://math.stackexchange.com/questions/4750543
 
+- :star: Around 2010, I formulated **Fence-Conjecture**: RamseyNumber(3,n)≡1,3,4 mod 5; R(3,n) can NOT be the form 5*m or 5*m+2.   
+  denote S(k,v):=RamseyNumber(k+1,v+1)-1 . When constructing critical graph for RamseyNumber(3,v+1)-1, I guess that the s(2,v) vertices can  be layouted as two or three staggered ways. This means S(2,v)%5 ∈{0,2,3}. 
+  
+```
+  o o o o o o o
+  o   o   o   o 
+  o o o o o o o
+``` 
+According to this conjecture, R(3,10) will be 41 or 43, R(3,11) will be choose from {46, 48,49,51}
   
 ## idea:(mailto:a_boy@live.com)
 
@@ -105,12 +114,8 @@ https://math.stackexchange.com/questions/4750543
   **Observation Conclusion 1**: Using the first `n-1` odd prime numbers { 3,5, ... ,p[n]}, take half of the sum of any pair, and the result will traverse all integers between `3..(p[n]+p[n -prime_pi(n)])/2`,without omissions...
   
 
-
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
 
-- denote S(k,v):=RamseyNumber(k+1,v+1)-1 . 
-Conjecture: for any integer v>=2, S(2,v)%5 in {0,2,3}, here S(2,v)=RamseyNumber(3,v+1)-1 . That is to say,
-RamseyNumber(3,v+1) can NOT be the form 5*k or 5*k+2
 
 ```
 m	n	R(m,n)	Reference
