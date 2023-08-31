@@ -79,7 +79,7 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
 https://math.stackexchange.com/questions/4750543
 
-- :star: 2023\-08\-31, **Fence\-Conjecture**:`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The s\(2,v\) vertices of the critical Ramsey Graph  can  layout in `k` or `k+1` staggered ways.   
+- :star: 2010\-?\-?,I formulated [Fence\-Conjecture](stage17-Ramsey-Numbers/Fence-Conjecture%3ARamseyNumber(k%2B1%2Cv%2B1)-1≡0%2Ck%2Ck%2B1mod(2k%2B1).ipynb):`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The s\(2,v\) vertices of the critical Ramsey Graph  can  layout in `k` or `k+1` staggered ways.
 
 denote S\(k,v\):=RamseyNumber\(k\+1,v\+1\)\-1 . When constructing critical graph for RamseyNumber\(3,v\+1\)\-1, I guess that the s\(2,v\) vertices can  be layouted as two or three staggered ways. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` .
 
@@ -89,7 +89,7 @@ denote S\(k,v\):=RamseyNumber\(k\+1,v\+1\)\-1 . When constructing critical graph
   o o o o o o o
 ```
 
-This conjecture implies\``R(3,10)=41, R(5,5)=46, and R(6,6)>=105``.
+This conjecture implies \`R\(3,10\)=41, R\(5,5\)=46, and R\(6,6\)&gt;=105\`.
 
 ## idea:(mailto:a_boy@live.com)
 
