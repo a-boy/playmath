@@ -195,6 +195,10 @@ https://math.stackexchange.com/questions/3503947
 
 <img src="temp/1563593535473.jpg" width="280">
 <img src="temp/mm_facetoface_collect_qrcode_1560552098216.png" width="280">
+  
+PayPal: https://paypal.me/luojl
+
+BTC: bc1qtlkhl9cusez69pephgfljuqzy5nht3la4r7vy0
 
 感谢你的赞助和支持，希望我们每天都能做得更好！！！
 
