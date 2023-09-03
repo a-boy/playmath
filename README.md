@@ -5,7 +5,6 @@ a boy's math playground; math experiment
 Cody Luo(cody@ustc.edu)
 
 [https://github.com/a-boy/playmath](https://github.com/a-boy/playmath)  
-[https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/](https://nbviewer.jupyter.org/github/a-boy/playmath/tree/master/)  
 
 ## Records:
 
@@ -113,28 +112,9 @@ This conjecture implies \`R\(3,10\)=41, R\(5,5\)=46, and R\(6,6\)&gt;=105\`.
 
   **Observation Conclusion 1**: Using the first `n-1` odd prime numbers { 3,5, ... ,p[n]}, take half of the sum of any pair, and the result will traverse all integers between `3..(p[n]+p[n -prime_pi(n)])/2`,without omissions...
 
-- n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` .
+- n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` 
 
-```
-m	n	R(m,n)	Reference
-3	3	6	Greenwood and Gleason 1955
-3	4	9	Greenwood and Gleason 1955
-3	5	14	Greenwood and Gleason 1955
-3	6	18	Graver and Yackel 1968
-3	7	23	Kalbfleisch 1966
-3	8	28	McKay and Min 1992
-3	9	36	Grinstead and Roberts 1982
-3	10	[40, 43]	Exoo 1989c, Radziszowski and Kreher 1988
-3	11	[46, 51]	Radziszowski and Kreher 1988
-3	12	[52, 59]	Exoo 1993, Radziszowski and Kreher 1988, Exoo 1998, Lesser 2001
-3	13	[59, 69]	Piwakowski 1996, Radziszowski and Kreher 1988
-
-5	5	[43, 49]	Exoo 1989b, McKay and Radziszowski 1995
-6	6	[102, 165]	Kalbfleisch 1965, Mackey 1994
-7	7	[205, 540]	Hill and Irving 1982, Giraud 1973
-```
-
-Guess: for any ineteger n>=1, RamseyNumber(n+1,n+1)-1 = S(n,n) contains only the factors of Fermat Numbers ` F[m]=2^2^m+1 `, {1,2,3,5,17,257,641,65537,...}
+- Guess: for any ineteger n>=1, RamseyNumber(n+1,n+1)-1 = S(n,n) contains only the factors of Fermat Numbers ` F[m]=2^2^m+1 `, {1,2,3,5,17,257,641,65537,...}
 S(2,2)=5, S(3,3)=17, I guess S(4,4)=45
 
 - try to prove Twin Prime Conjecture
