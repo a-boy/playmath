@@ -1,0 +1,42 @@
+hpf(n)的性质确保了我们可以为{n,(n-g)*(n+g)}分配互不相同的质因数。结合鸽巢原理我们立即得到不等式2. 这样就用初等数论的方法完成了Goldbach猜想的一个证明
+
+为了更直观的了解Goldbach's Conjecture，我们观察了goldbach三角形和奇质数半距矩阵，并得出了几个重要的结论
+
+大多数的数学学术专家和数学爱好者认为，用基础数论的方法去证明Goldbach's Conjecture是不可能的。我对此值相反观点，因为基础数论中还有许多漂亮的定理或结论被我们视而不见。质数阶差不等式就是一个鲜明的例子。
+
+
+	\begin{thebibliography}{10}
+		
+		\bibitem{I} Apostol, Tom M. \textit{"The Fundamental Theorem of Arithmetic."} Introduction to Analytic Number Theory. Springer, New York, NY, 1976. 13-23.
+		
+		\bibitem{G} Deshouillers, J-M., Herman JJ te Riele, and Yannick Saouter. \textit{"New Experimental Results Concerning the Goldbach Conjecture."} International Algorithmic Number Theory Symposium. Springer, Berlin, Heidelberg, 1998.
+		
+		\bibitem {B} e Silva, Tom{\'a}s Oliveira, Siegfried Herzog, and Silvio Pardi. \textit{"Empirical Verification of the Even Goldbach Conjecture and Computation of Prime Gaps up to $4 \cdot 10^{18}$."} Mathematics of Computation (2014): 2033-2060.
+		
+		\bibitem{H} Hardy, Godfrey H., and John E. Littlewood. \textit{"Some Problems of 'Partitio Numerorum'; III: On the Expression of a Number as a Sum of Primes."} Acta Mathematica 44.1 (1923): 1-70.
+		
+		\bibitem {D} Helfgott, Harald A. \textit{"The Ternary Goldbach Conjecture is True."} arXiv preprint arXiv:1312.7748 (2013).
+		
+		\bibitem {C} Helfgott, Harald A., and David J. Platt. \textit{"Numerical Verification of the Ternary Goldbach Conjecture up to $8.875 \cdot 10^{30}$."} Experimental Mathematics 22.4 (2013): 406-409.
+		
+		\bibitem{history} J. J. Tattersall
+		\textit{ Elementary Number Theory in Nine Chapters.}
+		Cambridge University Press, ISBN 978-0-521-58503-3, 1999.
+		
+		\bibitem {A} J{\"o}rg Richstein, \textit{"Verifying the Goldbach Conjecture up to $4 \cdot 10^{14}$."} Mathematics of Computation 70.236 (2001): 1745-1749.
+		
+		\bibitem {K} Ruiz, Sebasti{\'a}n Mart{\'i}n. \textit{"80.52 An Algebraic Identity Leading to Wilson's Theorem."} The Mathematical Gazette 80.489 (1996): 579-582.
+		
+		\bibitem {E} Saouter, Yannick. \textit{"Checking the Odd Goldbach Conjecture up to $10^{20}$."} Mathematics of Computation 67.222 (1998): 863-866.
+		
+		
+		\bibitem{J} Selberg, Atle. \textit{"An Elementary Proof of the Prime-Number Theorem."} Annals of Mathematics (1949): 305-313.
+		
+		\bibitem{K} Vi\'ete, Francios. \textit{"Opera Mathematica."} 1579. Reprinted Leiden, Netherlands, 1646.
+		
+		\bibitem {F} Zhang, Yitang. \textit{ "Bounded Gaps Between Primes."} Annals of Mathematics (2014): 1121-1174.
+		
+	\end{thebibliography}
+	
+	
+\end{document}
