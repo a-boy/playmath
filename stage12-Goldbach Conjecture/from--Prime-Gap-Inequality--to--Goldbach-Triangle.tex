@@ -130,10 +130,13 @@
 	\begin{abstract}
 		The i-th prime gap $p_{i+1}-p_{i}\leq i$. This follows from 
 		Prime-Factor-Lemma: We can dispatch distinct prime factors for 
-		$\{p_i,p_i+1,\dots,p_{i+1}-1\}$. A feasible dispatching algorithm 
-		is just to take the significant prime factor of $n$, $spf(n)$. 
+		$\{p_i,p_i+1,\dots,p_{i+1}-1\}$. 
+		
+		XXX: A feasible dispatching algorithm 
+		is to take the significant prime factor $spf(n)$ or the historical prime factor $hpf(n)$. 
+
 		$hpf(n)$ is defined as the prime factor of $n$ that has not appeared for the 
-		longest time in the historical prime factor sequence $\{H_i\}$. 
+		longest time in $hpf(1)..hpf(n-1)$. 
 		Define function $bach(n)$: the min non-negative integer $b$ makes 
 		that both $n-b$ and $n+b$ are primes. We show that 
 	\begin{equation}\label{GoldbachConjectureInequality1}

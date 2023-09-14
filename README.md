@@ -1,14 +1,16 @@
 # playmath
 
-a boy's math playground; math experiment
+a boy's math playground.
 
 Cody Luo(cody@ustc.edu)
 
 [https://github.com/a-boy/playmath](https://github.com/a-boy/playmath)  
 
 ## Records:
-
-- <b style="color:#0F0"> :star: 2019-09-02, I proved Goldbach's Conjecture!
+- :star: <b style="color:#0F0"> 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` </b> In other words, `next_prime(n)-n <= primepi(n)`. This is because you can dispatch distinct prime factors for {p[i],p[i]+1,...,p[i+1]-1}.  
+Corollary: The i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`.
+  
+- :star: 2019-09-02, I proved Goldbach's Conjecture!
   [stage12-try to prove Goldbach Conjecture.ipynb](https://github.com/a-boy/playmath/blob/master/stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb)  
   _Note: in Sagemath env to run the codes_
   
@@ -47,16 +49,14 @@ Obviously, starting from `x0=1`, `h(x)=4*x+1` and `v(x)=(2*x-1)/3 or (4*x-1)/3` 
 
 - **:star: 2018-03-06, I proved Twin Primes Conjecture** and found a general law:
 
-**Prime-Gap-Subsegments-Theorem**: In prime gap sequence, if a prime gap subsegment occurs twice, then it will continue to occur infinitely times.  such as `{2}, {4},{2*k},{2,4,2},{6,6},{2,6,4,2}...`
+**Prime-Gap-Subsegments-Theorem**: In prime gap sequence, if any subsegment occurs twice, then it will continue to occur infinitely times.  such as `{2}, {4},{2*k},{2,4,2},{6,6},{2,6,4,2}...`
 
  [stage9-Prime gap subsegment if repeats twice then infinitely times.nb](stage9-Prime%20gap%20subsequence%20if%20repeats%20twice%20then%20infinitely%20times.nb)
 
-- <b style="color:#0F0"> :star: 2010-02-04, I discovered Prime-Gap-Inequality: The i-th prime gap `p[i+1]-p[i]<=i` </b> In other words, `next_prime(n)-n <= primepi(n)`. This is because you can dispatch distinct prime factors for {p[i],p[i]+1,...,p[i+1]-1}.  
-Corollary: The i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`.
+- :star: 2023-09-09 I submitted a new sequence [Historical Prime Factor hpf(n)](https://2293.github.io/mathdemos/100001historical%20prime%20factor.html) to OEIS. Visit <a href="https://oeis.org/draft/A365521">https://oeis.org/draft/A365521</a> for the latest revision of <a href="https://oeis.org/A365521">A365521</a> in OEIS.  
   
-  Historical Prime Factor
 
-- <b style="color:#0F0"> :star: I discovered Bread Curve and Bread Model by chance in 2011: </b>
+- :star: <b style="color:#0F0"> I discovered Bread Curve and Bread Model by chance in 2011: </b>
 
 ```
 def r(theta):= nest(sin,theta,1000)
@@ -64,13 +64,13 @@ polar_plot(r(theta),(theta,0,2*PI))
 
 ```
 
-<img src="http://a-boy.tk/playmath/stage2-bread%20curve/bread.png">
-<img src="http://a-boy.tk/playmath/stage2-bread%20curve/bread-curve-3d.jpg">
+<img src="https://a-boy.tk/playmath/stage2-bread%20curve/bread.png">
+<img src="https://a-boy.tk/playmath/stage2-bread%20curve/bread-curve-3d.jpg">
 
-- before2011/果中的泪滴.png  
-  <img src="http://a-boy.tk/playmath/before2011/果中的泪滴.png">
+- math and poem: 果中的泪滴.png  
+  <img src="https://a-boy.tk/playmath/before2011/果中的泪滴.png">
 
-- <b style="color:#0F0"> :star: 2022-02-07, I improved Oppermann's Conjecture!</b>
+- :star: <b style="color:#0F0"> 2022-02-07, I improved Oppermann's Conjecture!</b>
 
 NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
@@ -78,9 +78,9 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
 https://math.stackexchange.com/questions/4750543
 
-- :star: 2010\-?\-?,I formulated [Fence\-Conjecture](stage17-Ramsey-Numbers/Fence-Conjecture%3ARamseyNumber(k%2B1%2Cv%2B1)-1≡0%2Ck%2Ck%2B1mod(2k%2B1).ipynb):`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The s\(2,v\) vertices of the critical Ramsey Graph  can  layout in `k` or `k+1` staggered ways.
+- :star: 2010-?-?, 2023-09-02, I formulated [Fence\-Conjecture](stage17-Ramsey-Numbers/Fence-Conjecture%3ARamseyNumber(k%2B1%2Cv%2B1)-1≡0%2Ck%2Ck%2B1mod(2k%2B1).ipynb):`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The `s(2,v)` vertices of the critical Ramsey Graph  can be laid out in `k` or `k+1` staggered ways.
 
-denote S\(k,v\):=RamseyNumber\(k\+1,v\+1\)\-1 . When constructing critical graph for RamseyNumber\(3,v\+1\)\-1, I guess that the s\(2,v\) vertices can  be layouted as two or three staggered ways. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` .
+Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical graph for `RamseyNumber(3,v+1)-1`, I guess that the `S(2,v)` vertices can be laid out interlacing with 2 vertices and 3 vertices. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` .
 
 ```
   o o o o o o o
@@ -88,11 +88,11 @@ denote S\(k,v\):=RamseyNumber\(k\+1,v\+1\)\-1 . When constructing critical graph
   o o o o o o o
 ```
 
-This conjecture implies \`R\(3,10\)=41, R\(5,5\)=46, and R\(6,6\)&gt;=105\`.
+This conjecture implies `R(3,10)=41, R(5,5)=46, and R(6,6)>=105`.
 
-## idea:(mailto:a_boy@live.com)
+## idea:(mailto:cody@ustc.edu)
 
-- Goldbach-Triangle: every item is the average of top and right primes.
+- Goldbach-Triangle: every entry is the average of top and right primes.
 
 |   |   |   |   |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -133,11 +133,12 @@ S(2,2)=5, S(3,3)=17, I guess S(4,4)=45
 - 定义:二密分解 `n=q1*q2` , `q1`取小于或等于`√n`的最大因数, `q2`取大于或等于`√n`的最小因数。
   是否值得尝试，使用二密分解或p-密分解的一些性质证明费马大定理? 
 
-- OPPC(Odd Primes Position Constant) 奇质位常数，`2*k-1`如果是质数则二进制小数点后第k位为1，否则为0
+- [Odd Primes Mask](stage5-Prime_number/OddPrimesMask.ipynb), `if is_prime(2*k+1) 1 else 0`
 
 ```
-const OPPC = .0111 0110 1101 0011
-               1357 9
+OPM=OddPrimesMask=
+011101101101001100101101001001100101100101001000101101101000000101
+ 357                                                         (127)
 ```
 
 - 可能将圆周率Pi的二进制值分段，形成一个有规律的数组吗？如果可以的话，计算Pi的值就存在与之对应的极速算法。
@@ -152,7 +153,7 @@ const OPPC = .0111 0110 1101 0011
 - Ultra-Primes-Conjecture
 
 ```
-There exists infinitely many primes formed of 2^(F[n!+1])-1 . here 2^p-1 is Mersenne number, F[n+2]=F[n+1]+F[n], 0,1,1,2,3,5,8,... is Fibonacci number, n! is factorial.
+Conjecture: There exists infinitely many primes formed of 2^(F[n!+1])-1 . here 2^p-1 is Mersenne number, F[n+2]=F[n+1]+F[n], 0,1,1,2,3,5,8,... is Fibonacci number, n! is factorial.
 
 https://math.stackexchange.com/questions/3503947
 
@@ -168,6 +169,7 @@ https://math.stackexchange.com/questions/3503947
 - Maple
 - GeoGebra
 - Octave
+- PARI/GP
 - MathType
 - Manim
 
