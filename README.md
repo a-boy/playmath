@@ -76,8 +76,6 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
 - :star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): when `n>1` and `0<b<sqrt(n)-1`, `2^(n^2±b)-1` is always composite. This is to say, the index `p` of a Mersenne prime `2^p-1` is NOT too close to some perfect square number.
 
-https://math.stackexchange.com/questions/4750543
-
 - :star: 2010-?-?, 2023-09-02, I formulated [Fence\-Conjecture](stage17-Ramsey-Numbers/Fence-Conjecture%3ARamseyNumber(k%2B1%2Cv%2B1)-1≡0%2Ck%2Ck%2B1mod(2k%2B1).ipynb):`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The `s(2,v)` vertices of the critical Ramsey Graph  can be laid out in `k` or `k+1` staggered ways.
 
 Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical graph for `RamseyNumber(3,v+1)-1`, I guess that the `S(2,v)` vertices can be laid out interlacing with 2 vertices and 3 vertices. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` .
@@ -90,9 +88,11 @@ Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical graph
 
 This conjecture implies `R(3,10)=41, R(5,5)=46, and R(6,6)>=105`.
 
+
+
 ## idea:(mailto:cody@ustc.edu)
 
-- Goldbach-Triangle: every entry is the average of top and right primes.
+- Goldbach-Triangle: every entry is the average of top and right primes. see https://oeis.org/A065305
 
 |   |   |   |   |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -110,7 +110,7 @@ This conjecture implies `R(3,10)=41, R(5,5)=46, and R(6,6)>=105`.
 
   [I am a Goldbach triangle observer](stage12-Goldbach%20Conjecture/I%20am%20a%20Goldbach%20triangle%20observer.ipynb)
 
-  **Observation Conclusion 1**: Using the first `n-1` odd prime numbers { 3,5, ... ,p[n]}, take half of the sum of any pair, and the result will traverse all integers between `3..(p[n]+p[n -prime_pi(n)])/2`,without omissions...
+  **Observation Conclusion 1**: Using the first `n-1` odd prime numbers { 3,5, ... ,p[n]}, take half of the sum of any pair, and the result set will cover all integers between `3..(p[n]+p[n -prime_pi(n)])/2`,without omissions...
 
 - n>=3, let `p=nextprime(n!)-n!` , then p is always prime or 1, because p is less than ` nextprime(n)^2` , very often ` p<n^2 ` 
 
@@ -136,7 +136,7 @@ S(2,2)=5, S(3,3)=17, I guess S(4,4)=45
 - [Odd Primes Mask](stage5-Prime_number/OddPrimesMask.ipynb), `if is_prime(2*k+1) 1 else 0`
 
 ```
-OPM=OddPrimesMask=
+opm=OddPrimesMask=
 011101101101001100101101001001100101100101001000101101101000000101
  357                                                         (127)
 ```
@@ -147,6 +147,19 @@ OPM=OddPrimesMask=
   1   2   4    135     60753
   1|1.0|0100|10000111|1110110101010001|00010000101101000110000100011010011000100110001100110001010001011100000001101110000011100110100010010100100000010010011100000100010001010011001111100110001110100000000100000101110111110101001100011101100010011100110110010001001
 ```
+
+- :star: 2023-11-14，[Represent constant as sum of reciprocals of  primes by greedy algorithm](stage5-Prime_number/Represent%20constant%20as%20sum%20of%20reciprocals%20of%20primes.nb).  
+   
+  Pi/8 = 1/3 + 1/17 + 1/1847 + 1/1249319 + 1/ 965926204003 + 1/56692061119991470137521 + ...
+
+  \[b(1)=\text{NextPrime}\left[\frac{8}{\pi }\right], 
+   b(\text{n$\_$})\text{:=}\text{NextPrime}\left[\frac{1}{\frac{\pi }{8}-\sum _{k=1}^{n-1} \frac{1}{b(k)}}\right]\]
+
+Pi/4=1/2+1/5+1/13+1/127+1/1667+1/839873+1/21673950973+1/236956058634217968937
++1/3377538999822392693512496551940104455329
++1/52388623357918194723121105386888927040659418611756646932784634081667892500901+...
+
+see https://oeis.org/A075442 Slowest-growing sequence of primes whose reciprocals sum to 1.	
 
 ## Question
 
