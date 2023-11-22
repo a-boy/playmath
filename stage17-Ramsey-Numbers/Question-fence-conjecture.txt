@@ -1,0 +1,43 @@
+Today(2023-11-22), I have a conjecture on Ramsey numbers.
+
+Fence Conjecture(栅栏猜想): Ramsey Number 
+
+R(m,n)=(2m-1)*p(2m-6+n,m)+{1,m,m+1}, for 3<=m<=n.
+
+Here p(n,k) denote both the number of partitions of n into exactly k parts (that is, sums of k positive integers that add to n), and the number of partitions of n into parts of maximum size exactly k. see [Triangle_of_partition_numbers][1]. The last summand choose one of three values {1,m,m+1}.
+
+        In[89]:= Column[Table[
+          IntegerPartitions[n, {k}] // Length, {n, 1, 20}, {k, 1, n}]]
+        T[n_, k_] := 
+         T[n, k] = 
+          If[n > 0 && k > 0, T[n - 1, k - 1] + T[n - k, k], 
+           Boole[n == 0 && k == 0]]
+        p = Table[T[n, k], {n, 1, 40}, {k, 1, 40}];
+        MatrixForm@p
+        
+        In[90]:= Table[(2 m - 1)*p[[2*m - 6 + n, m]], {m, 3, 15}, {n, m, 15}]
+    
+    Out[90]= {{5, 5, 10, 15, 20, 25, 35, 40, 50, 60, 70, 80, 95}, 
+    {14, 21,35, 42, 63, 77, 105, 126, 161, 189, 238, 273}, 
+    {45, 63, 90, 117, 162, 207, 270, 333, 423, 513, 630}, 
+    {121, 154, 220, 286, 385, 484, 638, 781, 990, 1210}, 
+    {273, 364, 494, 637, 845, 1066, 1365, 1703, 2132}, 
+    {600, 780, 1050, 1335, 1740, 2190, 2790, 3450}, 
+    {1241, 1598, 2091, 2669, 3417, 4284, 5406}, 
+    {2432, 3116, 4028, 5073, 6460, 8037}, 
+    {4599, 5838, 7455, 9345, 11760}, 
+    {8418, 10580, 13386, 16675}, 
+    {14925, 18675, 23375}, 
+    {25839, 32076}, 
+    {43732}}
+
+If this conjecture is correct, then we are only one step away from solving Ramsey numbers R(m,n). Because this equation basically determines the value of R(m,n), it is only necessary to choose one of three remainders modulo 2m-1. Here is [my Mathematica .nb file][2].
+
+Do you think my Fence Conjecture is correct? Any additions or corrections? Because I haven't found a general way to build a Ramsey critical graph (I'm sure R(3,10)=41, I'm working on building a Ramsey graph of order 40 without K3 and V10, and R(5,5) of order 45 critical graph), so I’m not completely sure yet, so I’ll post it here first to see everyone’s suggestions! I know this conjecture conflicts with many bounds data from [Ramsey’s Theorem,Leo Berggren][3], but perfectly assists the data from 
+[http://users.cecs.anu.edu.au/~bdm/data/ramsey.html][4]
+
+
+  [1]: https://en.wikipedia.org/wiki/Triangle_of_partition_numbers
+  [2]: https://github.com/a-boy/playmath/blob/master/stage15-Integer-Partitions/IntegerPartitions.nb
+  [3]: http://uu.diva-portal.org/smash/get/diva2:1729430/FULLTEXT01.pdf
+  [4]: http://users.cecs.anu.edu.au/~bdm/data/ramsey.html
