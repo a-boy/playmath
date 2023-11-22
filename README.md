@@ -90,7 +90,7 @@ Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical Ramse
 
 ```
   o o o o o o o
-  o   o   o   o 
+    o   o   o  
   o o o o o o o
 ```
 
