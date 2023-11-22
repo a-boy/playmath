@@ -76,9 +76,17 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
 - :star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): when `n>1` and `0<b<sqrt(n)-1`, `2^(n^2±b)-1` is always composite. This is to say, the index `p` of a Mersenne prime `2^p-1` is NOT too close to some perfect square number.
 
-- :star: 2010-?-?, 2023-09-02, I formulated [Fence\-Conjecture](stage17-Ramsey-Numbers/Fence-Conjecture%3ARamseyNumber(k%2B1%2Cv%2B1)-1≡0%2Ck%2Ck%2B1mod(2k%2B1).ipynb):`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The `s(2,v)` vertices of the critical Ramsey Graph  can be laid out in `k` or `k+1` staggered ways.
+- :star:  2023-09-02, I formulated [Fence-Conjecture](stage17-Ramsey-Numbers/Fence-Conjecture%3ARamseyNumber(k%2B1%2Cv%2B1)-1≡0%2Ck%2Ck%2B1mod(2k%2B1).ipynb):`RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) , for k>1 and v>=k`. The `s(k,v)` vertices of the critical Ramsey Graph  can be laid out in `k` or `k+1` staggered ways.
 
-Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical graph for `RamseyNumber(3,v+1)-1`, I guess that the `S(2,v)` vertices can be laid out interlacing with 2 vertices and 3 vertices. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` .
+[2023-11-22, I thinked that](stage15-Integer-Partitions/IntegerPartitions.nb):
+
+`Ramsey Number R(m,n)=(2m-1)*p(2m-6+n,m)+{1,m,m+1}, for 3<=m<=n.`
+
+Here p(n,k) denote both the number of partitions of n into exactly k parts (that is, sums of k positive integers that add to n), and the number of partitions of n into parts of maximum size exactly k. see https://en.wikipedia.org/wiki/Triangle_of_partition_numbers . 
+
+
+
+Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical Ramsey graph for `RamseyNumber(3,v+1)-1`, I guess that the `S(2,v)` vertices can be laid out interlacing with 2 vertices and 3 vertices. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` . (2010-?-?)
 
 ```
   o o o o o o o
