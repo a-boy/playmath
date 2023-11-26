@@ -84,9 +84,7 @@ NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
 
 Here p(n,k) denote both the number of partitions of n into exactly k parts (that is, sums of k positive integers that add to n), and the number of partitions of n into parts of maximum size exactly k. see https://en.wikipedia.org/wiki/Triangle_of_partition_numbers . 
 
-
-
-Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical Ramsey graph for `RamseyNumber(3,v+1)-1`, I guess that the `S(2,v)` vertices can be laid out interlacing with 2 vertices and 3 vertices. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` . (2010-?-?)
+Here denote `S(k,l):=RamseyNumber(k+1,l+1)-1` . When constructing critical Ramsey graph for `RamseyNumber(3,l+1)-1`, I guess that the `S(2,l)` vertices can be laid out interlacing with 2 vertices and 3 vertices. This means `S(2,v)%5 ∈{0,2,3}`. `R(3,n)≡1,3,4 mod 5` . (2010-?-?)
 
 ```
   o o o o o o o
@@ -96,7 +94,7 @@ Here denote `S(k,v):=RamseyNumber(k+1,v+1)-1` . When constructing critical Ramse
 
 This conjecture implies `R(3,10)=41, R(5,5)=46, and R(6,6)>=105`.
 
-
+2023-11-24, I submited a paper [Formula_to_express_Ramsey_numbers_using_partition_numbers](stage17-Ramsey-Numbers/Formula_to_express_Ramsey_numbers_using_partition_numbers.pdf) to arXiv, which is still on hold now.
 
 ## idea:(mailto:cody@ustc.edu)
 
