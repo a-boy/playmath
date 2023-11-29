@@ -1,0 +1,160 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6599,        152]
+NotebookOptionsPosition[      5792,        129]
+NotebookOutlinePosition[      6205,        146]
+CellTagsIndexPosition[      6162,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"gr44", "=", 
+   RowBox[{"CirculantGraph", "[", 
+    RowBox[{"17", ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "4", ",", "8"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.9101525935694838`*^9, 3.9101526393258295`*^9}, {
+  3.9101528597031593`*^9, 3.9101528633796988`*^9}, {3.91016453448575*^9, 
+  3.9101645347754264`*^9}},
+ CellLabel->
+  "In[460]:=",ExpressionUUID->"579b8713-35ff-496f-9e67-290b34429e40"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}, {
+      Null, {{1, 2}, {1, 3}, {1, 5}, {1, 9}, {1, 10}, {1, 14}, {1, 16}, {1, 
+       17}, {2, 3}, {2, 4}, {2, 6}, {2, 10}, {2, 11}, {2, 15}, {2, 17}, {3, 
+       4}, {3, 5}, {3, 7}, {3, 11}, {3, 12}, {3, 16}, {4, 5}, {4, 6}, {4, 
+       8}, {4, 12}, {4, 13}, {4, 17}, {5, 6}, {5, 7}, {5, 9}, {5, 13}, {5, 
+       14}, {6, 7}, {6, 8}, {6, 10}, {6, 14}, {6, 15}, {7, 8}, {7, 9}, {7, 
+       11}, {7, 15}, {7, 16}, {8, 9}, {8, 10}, {8, 12}, {8, 16}, {8, 17}, {9, 
+       10}, {9, 11}, {9, 13}, {9, 17}, {10, 11}, {10, 12}, {10, 14}, {11, 
+       12}, {11, 13}, {11, 15}, {12, 13}, {12, 14}, {12, 16}, {13, 14}, {13, 
+       15}, {13, 17}, {14, 15}, {14, 16}, {15, 16}, {15, 17}, {16, 17}}}, {
+      GraphLayout -> {
+        "VertexLayout" -> {"CircularEmbedding", "OptimalOrder" -> False}, 
+         "PackingLayout" -> None}}]]}, 
+    TagBox[
+     GraphicsGroupBox[
+      GraphicsComplexBox[{{-0.3612416661871537, 
+       0.932472229404356}, {-0.6736956436465578, 
+       0.7390089172206596}, {-0.8951632913550627, 
+       0.44573835577653875`}, {-0.9957341762950346, 
+       0.09226835946330274}, {-0.9618256431728188, -0.273662990072082}, \
+{-0.798017227280239, -0.6026346363792559}, {-0.5264321628773553, \
+-0.850217135729614}, {-0.18374951781656942`, -0.9829730996839017}, {
+       0.18374951781657106`, -0.9829730996839019}, {
+       0.5264321628773563, -0.8502171357296147}, {
+       0.79801722728024, -0.6026346363792572}, {
+       0.9618256431728193, -0.27366299007208317`}, {0.9957341762950345, 
+       0.0922683594633006}, {0.8951632913550622, 0.44573835577653764`}, {
+       0.6736956436465564, 0.7390089172206592}, {0.36124166618715214`, 
+       0.9324722294043555}, {-7.044813998280222*^-16, 1.}}, {
+        {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[0.], 
+         ArrowBox[{{1, 2}, {1, 3}, {1, 5}, {1, 9}, {1, 10}, {1, 14}, {1, 
+          16}, {1, 17}, {2, 3}, {2, 4}, {2, 6}, {2, 10}, {2, 11}, {2, 15}, {2,
+           17}, {3, 4}, {3, 5}, {3, 7}, {3, 11}, {3, 12}, {3, 16}, {4, 5}, {4,
+           6}, {4, 8}, {4, 12}, {4, 13}, {4, 17}, {5, 6}, {5, 7}, {5, 9}, {5, 
+          13}, {5, 14}, {6, 7}, {6, 8}, {6, 10}, {6, 14}, {6, 15}, {7, 8}, {7,
+           9}, {7, 11}, {7, 15}, {7, 16}, {8, 9}, {8, 10}, {8, 12}, {8, 16}, {
+          8, 17}, {9, 10}, {9, 11}, {9, 13}, {9, 17}, {10, 11}, {10, 12}, {10,
+           14}, {11, 12}, {11, 13}, {11, 15}, {12, 13}, {12, 14}, {12, 16}, {
+          13, 14}, {13, 15}, {13, 17}, {14, 15}, {14, 16}, {15, 16}, {15, 
+          17}, {16, 17}}, 0.02254220222992223]}, 
+        {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+         DiskBox[1, 0.02254220222992223], DiskBox[2, 0.02254220222992223], 
+         DiskBox[3, 0.02254220222992223], DiskBox[4, 0.02254220222992223], 
+         DiskBox[5, 0.02254220222992223], DiskBox[6, 0.02254220222992223], 
+         DiskBox[7, 0.02254220222992223], DiskBox[8, 0.02254220222992223], 
+         DiskBox[9, 0.02254220222992223], DiskBox[10, 0.02254220222992223], 
+         DiskBox[11, 0.02254220222992223], DiskBox[12, 0.02254220222992223], 
+         DiskBox[13, 0.02254220222992223], DiskBox[14, 0.02254220222992223], 
+         DiskBox[15, 0.02254220222992223], DiskBox[16, 0.02254220222992223], 
+         DiskBox[17, 0.02254220222992223]}}]],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.9101526427905827`*^9, 3.9101528659138355`*^9},
+ CellLabel->
+  "Out[460]=",ExpressionUUID->"dd157894-926f-4906-b864-e8762fdb1b8d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"FindClique", "[", "gr44", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"FindIndependentVertexSet", "[", "gr44", "]"}]}], "Input",
+ CellChangeTimes->{{3.91015293292396*^9, 3.9101529409998035`*^9}},
+ NumberMarks->False,
+ CellLabel->
+  "In[462]:=",ExpressionUUID->"85e92656-7d36-4d10-8e40-87d503254946"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.910152701952143*^9, 3.9101528707534103`*^9, 
+  3.9101529420546365`*^9},
+ CellLabel->
+  "Out[462]=",ExpressionUUID->"732e087f-ce9b-4487-94ff-0602884083ce"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "4", ",", "7"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.910152701952143*^9, 3.9101528707534103`*^9, 
+  3.9101529420646963`*^9},
+ CellLabel->
+  "Out[463]=",ExpressionUUID->"a06d827f-e445-45e0-a104-60334944f595"]
+}, Open  ]]
+},
+WindowSize->{949., 466.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (2023\:5e741\:670830\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9b471e80-d977-4b9d-8f6b-db51b56328ab"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 488, 12, 64, "Input",ExpressionUUID->"579b8713-35ff-496f-9e67-290b34429e40"],
+Cell[1071, 36, 3776, 61, 396, "Output",ExpressionUUID->"dd157894-926f-4906-b864-e8762fdb1b8d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4884, 102, 320, 6, 78, "Input",ExpressionUUID->"85e92656-7d36-4d10-8e40-87d503254946"],
+Cell[5207, 110, 283, 7, 32, "Output",ExpressionUUID->"732e087f-ce9b-4487-94ff-0602884083ce"],
+Cell[5493, 119, 283, 7, 32, "Output",ExpressionUUID->"a06d827f-e445-45e0-a104-60334944f595"]
+}, Open  ]]
+}
+]
+*)
+
