@@ -14,17 +14,17 @@ Corollary: The i-th prime `p[i]<=1+2+...+ i-1 + p[1] = i*(i-1)/2 +2`.
   [stage12-try to prove Goldbach Conjecture.ipynb](https://github.com/a-boy/playmath/blob/master/stage12-Goldbach%20Conjecture/stage12-try%20to%20prove%20Goldbach%20Conjecture.ipynb)  
   _Note: in Sagemath env to run the codes_
   
-  **Goldbach Conjecture Inequality 1**: **`gold(n) < prime_pi(n)+sigma(n,0)`**  
+  **Goldbach Conjecture Inequality**: **`gold(n) < prime_pi(prime_pi(n)+n)`**
   gold(n): the min non-negative integer `g` makes that both `n-g` and `n+g` are primes  
   prime_pi(n): the count of primes in 1..n  
-  sigma(n,0): the count of n.divisors()  
+
   `gold(n) < prime_pi(n), while n>344`  
   `gold(n) < prime_pi(n)*4395/3449751 ≈ prime_pi(n)*0.0013, while n>6*10^7`  
-  
-  **Goldbach Conjecture Inequality 2**: **`gold(n) < prime_pi(prime_pi(n)+n)`**
+  `gold(n)=o(prime_pi(n)) as n-->+oo`
+
 
 - :star: **2019-10-28, I solved 3n+1 Problem**!  
-  [https://a-boy.tk/playmath/stage26-3n%2B1conjecture/proving-3n%2B1-conjecture.html](https://a-boy.tk/playmath/stage26-3n%2B1conjecture/proving-3n%2B1-conjecture.html) 
+  [https://a-boy.github.io/playmath/stage26-3n%2B1conjecture/proving-3n%2B1-conjecture.html](https://a-boy.github.io/playmath/stage26-3n%2B1conjecture/proving-3n%2B1-conjecture.html) 
 
 ```
 # Syracuse function g(n)
@@ -64,15 +64,25 @@ polar_plot(r(theta),(theta,0,2*PI))
 
 ```
 
-<img src="https://a-boy.tk/playmath/stage2-bread%20curve/bread.png">
-<img src="https://a-boy.tk/playmath/stage2-bread%20curve/bread-curve-3d.jpg">
+<img src="https://a-boy.github.io/playmath/stage2-bread%20curve/bread.png">
+<img src="https://a-boy.github.io/playmath/stage2-bread%20curve/bread-curve-3d.jpg">
 
 - math and poem: 果中的泪滴.png  
-  <img src="https://a-boy.tk/playmath/before2011/果中的泪滴.png">
+  <img src="https://a-boy.github.io/playmath/before2011/果中的泪滴.png">
 
 - :star: <b style="color:#0F0"> 2022-02-07, I improved Oppermann's Conjecture!</b>
 
 NextPrime-Of-Square-Inequality: `next_prime(n^2) - n^2 <= 1+euler_phi(n)`
+
+- :star: Ultra-Primes-Conjecture
+
+```
+Conjecture: There exists infinitely many primes formed of 2^(F[n!+1])-1 . here 2^p-1 is Mersenne number, F[n+2]=F[n+1]+F[n], 0,1,1,2,3,5,8,... is Fibonacci number, n! is factorial.
+
+https://math.stackexchange.com/questions/3503947
+
+2^F[2!+1]-1 = 3, 2^F[3!+1]-1= 2^13-1= 8191 are two known Ultra-Primes! I guess after 3, 8191 there are more prime heros!
+```
 
 - :star: 2023-08-10,I proposed [**Plum Conjecture**](stage7-Mersenne-Prime/Plum-Conjecture.ipynb): when `n>1` and `0<b<sqrt(n)-1`, `2^(n^2±b)-1` is always composite. This is to say, the index `p` of a Mersenne prime `2^p-1` is NOT too close to some perfect square number.
 
@@ -94,7 +104,6 @@ Here denote `S(k,l):=RamseyNumber(k+1,l+1)-1` . When constructing critical Ramse
 
 This conjecture implies `R(3,10)=41, R(5,5)=46, and R(6,6)>=105`.
 
-2023-11-24, I submited a paper [Formula_to_express_Ramsey_numbers_using_partition_numbers](stage17-Ramsey-Numbers/Formula_to_express_Ramsey_numbers_using_partition_numbers.pdf) to arXiv, which is still on hold now.
 
 ## idea:(mailto:cody@ustc.edu)
 
@@ -154,30 +163,9 @@ opm=OddPrimesMask=
   1|1.0|0100|10000111|1110110101010001|00010000101101000110000100011010011000100110001100110001010001011100000001101110000011100110100010010100100000010010011100000100010001010011001111100110001110100000000100000101110111110101001100011101100010011100110110010001001
 ```
 
-- :star: 2023-11-14，[Represent constant as sum of reciprocals of  primes by greedy algorithm](stage5-Prime_number/Represent%20constant%20as%20sum%20of%20reciprocals%20of%20primes.nb).  
-   
-  Pi/8 = 1/3 + 1/17 + 1/1847 + 1/1249319 + 1/ 965926204003 + 1/56692061119991470137521 + ...
-
-  \[b(1)=\text{NextPrime}\left[\frac{8}{\pi }\right], 
-   b(\text{n$\_$})\text{:=}\text{NextPrime}\left[\frac{1}{\frac{\pi }{8}-\sum _{k=1}^{n-1} \frac{1}{b(k)}}\right]\]
-
-Pi/4=1/2+1/5+1/13+1/127+1/1667+1/839873+1/21673950973+1/236956058634217968937
-+1/3377538999822392693512496551940104455329
-+1/52388623357918194723121105386888927040659418611756646932784634081667892500901+...
-
-see https://oeis.org/A075442 Slowest-growing sequence of primes whose reciprocals sum to 1.	
 
 ## Question
 
-- Ultra-Primes-Conjecture
-
-```
-Conjecture: There exists infinitely many primes formed of 2^(F[n!+1])-1 . here 2^p-1 is Mersenne number, F[n+2]=F[n+1]+F[n], 0,1,1,2,3,5,8,... is Fibonacci number, n! is factorial.
-
-https://math.stackexchange.com/questions/3503947
-
-2^F[2!+1]-1 = 3, 2^F[3!+1]-1= 2^13-1= 8191 are two known Ultra-Primes! I guess after 3, 8191 there are more prime heros!
-```
 
 - Inertia Law and Polar Method for integer sequences.  整数数列的惯性定理和极性定理
 
