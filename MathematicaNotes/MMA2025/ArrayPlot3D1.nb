@@ -1,0 +1,213 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7854,        203]
+NotebookOptionsPosition[      7259,        184]
+NotebookOutlinePosition[      7679,        201]
+CellTagsIndexPosition[      7636,        198]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Boole", "@", 
+      RowBox[{"PrimeQ", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"2", "^", "i"}], "*", 
+         RowBox[{"3", "^", "j"}], "*", 
+         RowBox[{"5", "^", "k"}]}], "+", "1"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "n"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "1", ",", "n"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ArrayPlot3D", "[", "t", "]"}]}], "Input",
+ CellChangeTimes->{{3.9607470607159557`*^9, 3.9607470644664707`*^9}, {
+  3.960747106213793*^9, 3.9607472220560856`*^9}, {3.960747256345196*^9, 
+  3.9607474004874325`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"04adc9e2-4165-7142-9963-d17a0532c845"],
+
+Cell[BoxData[
+ Graphics3DBox[{GeometricTransformation3DBox[{
+     {GrayLevel[0.5], Opacity[1], EdgeForm[None], GeometricTransformation3DBox[
+       {GrayLevel[0.5], EdgeForm[None], CuboidBox[{0, 0, 0}]}, CompressedData["
+1:eJxdlouNGzEMRHft218ZaSklpICk4OsjXomiGAvgQC8+wLiHxXA0oqi1f/z6
+8/P3c1mW7/dnfX8Gj7+/ETE+K/jxwa/kJ3gDX+DheUMv3sEneOgLMoi/wDv4
+eHOF3qAxeDb4NKzbUOvI6fB3+HTst0Mf2HtAP/6/cl3xDl6yVy/0U3rxBlY/
+xSV5Be/gC7xkr155jhVrVfgY8hhqHXpHNkdtTz7AJ3jN/ihDQBPQjP7cmL07
+PcVr9kQa8QY+PjQl+QnewAdYvZJGfIKvDzbUNuQUf4E38AF+ZD/13OHvyBBY
+a/SkoG8F81YwbwU9LOkp1uypVnyCNXslc96ovVEr3sAXWHOrzAU5CzQVnhXP
+DesachqyNbBD7/DsyNbhH9BE/N+ril5V9KrmXm5oSvIF1r2ryFyRuca8UxUz
+IP+RwWLeC4t5FwznZTgvQzbDGRnOxWLeBdVW6Cv0FZ4GjXgHa1/yb/B3+Dg0
+4vND07GWWO9eaUZPWsyZbzFnvuG8Gma4YYYbZrKhJ/IRqz9ig8bg07Buw3NH
+bYcmkG1k9ph32bMnYp27+IZerLvmyOwxvzc992jQNPg0+HvyE6x3uJ4H/AOe
+I3PPtcQHeMm9dOyrx3y3d8y2NHfyE6z3fI/5m0HPK2ob1nU8d6zl8O/JF1j7
+Csxe4Owia8Un+AJrJiPm95f0Yt1l+d/Q39AU5CnQG/IYag36Bo14Bz9y76oV
+n+B/gzXOmA==
+       "]]}, 
+     {GrayLevel[1], Opacity[0], EdgeForm[None]}}, {{{1, 0, 0}, {0, -1, 0}, {0,
+      0, -1}}, {0, 0, 0}}], 
+   GeometricTransformation3DBox[GeometricTransformation3DBox[
+     {EdgeForm[GrayLevel[0.2]], FaceForm[None, None], 
+      CuboidBox[{0, 0, 0}]}, CompressedData["
+1:eJxdlouNGzEMRHft218ZaSklpICk4OsjXomiGAvgQC8+wLiHxXA0oqi1f/z6
+8/P3c1mW7/dnfX8Gj7+/ETE+K/jxwa/kJ3gDX+DheUMv3sEneOgLMoi/wDv4
+eHOF3qAxeDb4NKzbUOvI6fB3+HTst0Mf2HtAP/6/cl3xDl6yVy/0U3rxBlY/
+xSV5Be/gC7xkr155jhVrVfgY8hhqHXpHNkdtTz7AJ3jN/ihDQBPQjP7cmL07
+PcVr9kQa8QY+PjQl+QnewAdYvZJGfIKvDzbUNuQUf4E38AF+ZD/13OHvyBBY
+a/SkoG8F81YwbwU9LOkp1uypVnyCNXslc96ovVEr3sAXWHOrzAU5CzQVnhXP
+DesachqyNbBD7/DsyNbhH9BE/N+ril5V9KrmXm5oSvIF1r2ryFyRuca8UxUz
+IP+RwWLeC4t5FwznZTgvQzbDGRnOxWLeBdVW6Cv0FZ4GjXgHa1/yb/B3+Dg0
+4vND07GWWO9eaUZPWsyZbzFnvuG8Gma4YYYbZrKhJ/IRqz9ig8bg07Buw3NH
+bYcmkG1k9ph32bMnYp27+IZerLvmyOwxvzc992jQNPg0+HvyE6x3uJ4H/AOe
+I3PPtcQHeMm9dOyrx3y3d8y2NHfyE6z3fI/5m0HPK2ob1nU8d6zl8O/JF1j7
+Csxe4Owia8Un+AJrJiPm95f0Yt1l+d/Q39AU5CnQG/IYag36Bo14Bz9y76oV
+n+B/gzXOmA==
+     "]], {{{1, 0, 0}, {0, -1, 0}, {0, 0, -1}}, {0, 0, 0}}]},
+  AxesLabel->{None, None, None},
+  DisplayFunction->Identity,
+  ImageSize->{332.44011090195335`, 340.5443208555722},
+  ImageSizeRaw->Automatic,
+  Lighting->"Neutral",
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultColorFunction" -> 
+    "M10DefaultGradient", 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic, "RelieveDPZFighting" -> False},
+  PlotRange->{{0, 10}, {0, 10}, {0, 10}},
+  PlotRangePadding->Scaled[0.02],
+  Ticks->{{{-0.5, 
+      FormBox[
+       TagBox["0", HoldForm], TraditionalForm]}, {0.5, 
+      FormBox[
+       TagBox["1", HoldForm], TraditionalForm]}, {1.5, 
+      FormBox[
+       TagBox["2", HoldForm], TraditionalForm]}, {2.5, 
+      FormBox[
+       TagBox["3", HoldForm], TraditionalForm]}, {3.5, 
+      FormBox[
+       TagBox["4", HoldForm], TraditionalForm]}, {4.5, 
+      FormBox[
+       TagBox["5", HoldForm], TraditionalForm]}, {5.5, 
+      FormBox[
+       TagBox["6", HoldForm], TraditionalForm]}, {6.5, 
+      FormBox[
+       TagBox["7", HoldForm], TraditionalForm]}, {7.5, 
+      FormBox[
+       TagBox["8", HoldForm], TraditionalForm]}, {8.5, 
+      FormBox[
+       TagBox["9", HoldForm], TraditionalForm]}, {9.5, 
+      FormBox[
+       TagBox["10", HoldForm], TraditionalForm]}}, {{10.5, 
+      FormBox[
+       TagBox["0", HoldForm], TraditionalForm]}, {9.5, 
+      FormBox[
+       TagBox["1", HoldForm], TraditionalForm]}, {8.5, 
+      FormBox[
+       TagBox["2", HoldForm], TraditionalForm]}, {7.5, 
+      FormBox[
+       TagBox["3", HoldForm], TraditionalForm]}, {6.5, 
+      FormBox[
+       TagBox["4", HoldForm], TraditionalForm]}, {5.5, 
+      FormBox[
+       TagBox["5", HoldForm], TraditionalForm]}, {4.5, 
+      FormBox[
+       TagBox["6", HoldForm], TraditionalForm]}, {3.5, 
+      FormBox[
+       TagBox["7", HoldForm], TraditionalForm]}, {2.5, 
+      FormBox[
+       TagBox["8", HoldForm], TraditionalForm]}, {1.5, 
+      FormBox[
+       TagBox["9", HoldForm], TraditionalForm]}, {0.5, 
+      FormBox[
+       TagBox["10", HoldForm], TraditionalForm]}}, {{10.5, 
+      FormBox[
+       TagBox["0", HoldForm], TraditionalForm]}, {9.5, 
+      FormBox[
+       TagBox["1", HoldForm], TraditionalForm]}, {8.5, 
+      FormBox[
+       TagBox["2", HoldForm], TraditionalForm]}, {7.5, 
+      FormBox[
+       TagBox["3", HoldForm], TraditionalForm]}, {6.5, 
+      FormBox[
+       TagBox["4", HoldForm], TraditionalForm]}, {5.5, 
+      FormBox[
+       TagBox["5", HoldForm], TraditionalForm]}, {4.5, 
+      FormBox[
+       TagBox["6", HoldForm], TraditionalForm]}, {3.5, 
+      FormBox[
+       TagBox["7", HoldForm], TraditionalForm]}, {2.5, 
+      FormBox[
+       TagBox["8", HoldForm], TraditionalForm]}, {1.5, 
+      FormBox[
+       TagBox["9", HoldForm], TraditionalForm]}, {0.5, 
+      FormBox[
+       TagBox["10", HoldForm], TraditionalForm]}}},
+  ViewPoint->{0.4860559959305665, -3.304345087620491, 0.5431879147571967},
+  ViewVertical->{-0.3145897388583984, -0.5211160005059793, 
+   0.7933923431831548}]], "Output",
+ CellChangeTimes->{
+  3.96074723442614*^9, {3.9607473085755424`*^9, 3.9607473488866997`*^9}, {
+   3.9607473868665295`*^9, 3.960747401723488*^9}},
+ CellLabel->"Out[17]=",ExpressionUUID->"3dcacdb4-35e6-1647-ab59-0214baa310fe"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.960747226618124*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"02b0b70a-f197-004d-bc69-b2cfc8f8bf9f"]
+},
+WindowSize->{571.8, 523.8},
+WindowMargins->{{284.4, Automatic}, {12, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (2023\:5e7412\:670812\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"37e5fcbd-ab76-de4c-be70-442386fef09c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 948, 25, 116, "Input",ExpressionUUID->"04adc9e2-4165-7142-9963-d17a0532c845"],
+Cell[1531, 49, 5563, 128, 357, "Output",ExpressionUUID->"3dcacdb4-35e6-1647-ab59-0214baa310fe"]
+}, Open  ]],
+Cell[7109, 180, 146, 2, 28, "Input",ExpressionUUID->"02b0b70a-f197-004d-bc69-b2cfc8f8bf9f"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

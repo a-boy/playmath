@@ -1,0 +1,214 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8015,        206]
+NotebookOptionsPosition[      6288,        170]
+NotebookOutlinePosition[      6724,        187]
+CellTagsIndexPosition[      6681,        184]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Speak", "[", "\"\<this is some text\>\"", "]"}]], "Input",
+ CellLabel->"In[85]:=",ExpressionUUID->"1860b5fe-bdab-6149-afb6-6e7cf1e6fc42"],
+
+Cell[BoxData[{
+ RowBox[{"Speak", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", "x", "]"}], "^", "2"}], "+", 
+   RowBox[{
+    RowBox[{"Cos", "[", "x", "]"}], "^", "2"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Speak", "[", 
+  "\"\<\:64ad\:653e\:4e00\:4e2a\:6570\:5b66\:8868\:8fbe\:5f0f\:ff1a\>\"", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.9510825255389366`*^9, 3.951082538566492*^9}},
+ CellLabel->"In[88]:=",ExpressionUUID->"0d30aa6d-9057-094e-a3fc-924869f7ba2f"],
+
+Cell[BoxData[
+ RowBox[{"Speak", "[", 
+  RowBox[{"HoldForm", "[", 
+   RowBox[{"1", "+", "1"}], "]"}], "]"}]], "Input",
+ CellLabel->"In[90]:=",ExpressionUUID->"a976589f-87e8-8d4d-ae26-c2233252dbe3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Button", "[", 
+  RowBox[{"\"\<press me\>\"", ",", 
+   RowBox[{"Speak", "[", "\"\<thank you\>\"", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9510825167697735`*^9, 3.951082522724823*^9}, 
+   3.9510825850226746`*^9},
+ CellLabel->"In[91]:=",ExpressionUUID->"2f999dad-027a-ba4d-8b35-fafcf1d34b26"],
+
+Cell[BoxData[
+ ButtonBox["\<\"press me\"\>",
+  Appearance->Automatic,
+  ButtonFunction:>Speak["thank you"],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Output",
+ CellChangeTimes->{3.951082586041622*^9},
+ CellLabel->"Out[91]=",ExpressionUUID->"d047672b-8251-af48-aa1d-89f8ebad5af3"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Speak", "[", 
+  RowBox[{"Graphics3D", "[", 
+   RowBox[{"Cylinder", "[", "]"}], "]"}], "]"}]], "Input",
+ CellLabel->"In[92]:=",ExpressionUUID->"b3afa158-e10b-a345-a30c-30d92f542261"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SpeechSynthesize", "[", "\"\<Hello Wolfram\>\"", "]"}]], "Input",
+ CellLabel->"In[93]:=",ExpressionUUID->"4c5f2550-f812-2e4b-8076-4d608b12ac2f"],
+
+Cell[BoxData[
+ TagBox[
+  DynamicModuleBox[{Audio`AudioObjects`audio$$ = HoldComplete[
+    Audio[
+    "C:\\Users\\PC\\OneDrive\\Documents\\Wolfram\\Audio\\SpeechSynthesize-\
+2025-03-16T10-58-08.wav", "Real32", Appearance -> Automatic, 
+     AudioOutputDevice -> Automatic, SampleRate -> 22050, SoundVolume -> 1]], 
+   Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$ = "Basic", 
+   Audio`AudioObjects`class$$ = "AudioFile", Audio`AudioObjects`label$$ = ""}, 
+   DynamicBox[ToBoxes[
+     Audio`AudioGUI[
+     3, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
+      Audio`AudioObjects`audio$$, Audio`AudioObjects`class$$, 
+      1.9040362811791383`, Audio`AudioObjects`label$$], StandardForm],
+    ImageSizeCache->{200., {25.13403328722343, 31.}},
+    TrackedSymbols:>{}],
+   DynamicModuleValues:>{},
+   UnsavedVariables:>{Audio`AudioObjects`audioID$$}],
+  Audio`AudioBox["AudioClass" -> "AudioFile"],
+  Editable->False,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.9510826887533054`*^9},
+ CellLabel->"Out[93]=",ExpressionUUID->"a6f4915b-3a93-fe4e-8348-6966549a662b"]
+}, Open  ]],
+
+Cell["\:4f7f\:7528\:7279\:5b9a\:7684\:58f0\:97f3\:8fdb\:884c\:8bed\:97f3\:5408\
+\:6210\:ff1a", "Text",
+ CellChangeTimes->{{3.9510827805549717`*^9, 
+  3.9510827829560432`*^9}},ExpressionUUID->"304aeb99-ad93-bf40-82bc-\
+b17787a0f3fd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SpeechSynthesize", "[", 
+  RowBox[{"\"\<Hello Wolfram\>\"", ",", "\"\<Huihui\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.9510828373090343`*^9, 3.951082850164358*^9}},
+ CellLabel->"In[97]:=",ExpressionUUID->"d998a4b5-b522-a344-b965-f23de0f41d5e"],
+
+Cell[BoxData[
+ TagBox[
+  DynamicModuleBox[{Audio`AudioObjects`audio$$ = HoldComplete[
+    Audio[
+    "C:\\Users\\PC\\OneDrive\\Documents\\Wolfram\\Audio\\SpeechSynthesize-\
+2025-03-16T11-00-51.wav", "Real32", Appearance -> Automatic, 
+     AudioOutputDevice -> Automatic, SampleRate -> 22050, SoundVolume -> 1]], 
+   Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$ = "Basic", 
+   Audio`AudioObjects`class$$ = "AudioFile", Audio`AudioObjects`label$$ = ""}, 
+   DynamicBox[ToBoxes[
+     Audio`AudioGUI[
+     3, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
+      Audio`AudioObjects`audio$$, Audio`AudioObjects`class$$, 
+      1.9040362811791383`, Audio`AudioObjects`label$$], StandardForm],
+    ImageSizeCache->{200., {25.13403328722343, 31.}},
+    TrackedSymbols:>{}],
+   DynamicModuleValues:>{},
+   UnsavedVariables:>{Audio`AudioObjects`audioID$$}],
+  Audio`AudioBox["AudioClass" -> "AudioFile"],
+  Editable->False,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.9510827937990437`*^9, {3.9510828389401665`*^9, 3.9510828517482395`*^9}},
+ CellLabel->"Out[97]=",ExpressionUUID->"73cd6ec1-b48e-0a47-8a8e-792620a7c135"]
+}, Open  ]],
+
+Cell[TextData[{
+ "\:4f7f\:7528 ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$VoiceStyles"]], "paclet:ref/$VoiceStyles"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "80df145e-39e1-f04e-8387-c0a1d17525f4"],
+ " \:5f97\:5230\:6240\:6709\:53ef\:7528\:58f0\:97f3\:7684\:5217\:8868\:ff1a"
+}], "Text",
+ CellChangeTimes->{
+  3.95108281425469*^9},ExpressionUUID->"6cce202d-63e4-3343-981d-37b640ea3521"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$VoiceStyles"], "Input",
+ CellLabel->"In[95]:=",ExpressionUUID->"1ba33ed4-dbcf-ad43-ae44-2abb0d703c2d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"AlanWBlack\"\>", ",", "\<\"Hazel\"\>", ",", "\<\"Huihui\"\>", 
+   ",", "\<\"KevinLenzo\"\>", ",", "\<\"KevinLenzo16\"\>", ",", "\<\"RMS\"\>",
+    ",", "\<\"SLT\"\>", ",", "\<\"Zira\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.951082823463463*^9},
+ CellLabel->"Out[95]=",ExpressionUUID->"50d2c7ab-0794-9549-b7e0-f5be38465aa6"]
+}, Open  ]]
+},
+WindowSize->{861, 567.6},
+WindowMargins->{{124.8, Automatic}, {-22.199999999999932`, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (2023\:5e7412\:670812\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fd5d62e3-6671-354f-b9e1-cab167d0a9c4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 161, 2, 43, "Input",ExpressionUUID->"1860b5fe-bdab-6149-afb6-6e7cf1e6fc42"],
+Cell[722, 24, 477, 12, 81, "Input",ExpressionUUID->"0d30aa6d-9057-094e-a3fc-924869f7ba2f"],
+Cell[1202, 38, 196, 4, 43, "Input",ExpressionUUID->"a976589f-87e8-8d4d-ae26-c2233252dbe3"],
+Cell[CellGroupData[{
+Cell[1423, 46, 321, 6, 43, "Input",ExpressionUUID->"2f999dad-027a-ba4d-8b35-fafcf1d34b26"],
+Cell[1747, 54, 288, 7, 42, "Output",ExpressionUUID->"d047672b-8251-af48-aa1d-89f8ebad5af3"]
+}, Open  ]],
+Cell[2050, 64, 205, 4, 43, "Input",ExpressionUUID->"b3afa158-e10b-a345-a30c-30d92f542261"],
+Cell[CellGroupData[{
+Cell[2280, 72, 168, 2, 43, "Input",ExpressionUUID->"4c5f2550-f812-2e4b-8076-4d608b12ac2f"],
+Cell[2451, 76, 1105, 22, 75, "Output",ExpressionUUID->"a6f4915b-3a93-fe4e-8348-6966549a662b"]
+}, Open  ]],
+Cell[3571, 101, 232, 4, 35, "Text",ExpressionUUID->"304aeb99-ad93-bf40-82bc-b17787a0f3fd"],
+Cell[CellGroupData[{
+Cell[3828, 109, 272, 4, 43, "Input",ExpressionUUID->"d998a4b5-b522-a344-b965-f23de0f41d5e"],
+Cell[4103, 115, 1158, 23, 97, "Output",ExpressionUUID->"73cd6ec1-b48e-0a47-8a8e-792620a7c135"]
+}, Open  ]],
+Cell[5276, 141, 480, 13, 40, "Text",ExpressionUUID->"6cce202d-63e4-3343-981d-37b640ea3521"],
+Cell[CellGroupData[{
+Cell[5781, 158, 117, 1, 43, "Input",ExpressionUUID->"1ba33ed4-dbcf-ad43-ae44-2abb0d703c2d"],
+Cell[5901, 161, 371, 6, 32, "Output",ExpressionUUID->"50d2c7ab-0794-9549-b7e0-f5be38465aa6"]
+}, Open  ]]
+}
+]
+*)
+

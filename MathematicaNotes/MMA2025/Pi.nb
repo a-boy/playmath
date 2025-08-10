@@ -1,0 +1,122 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3682,        114]
+NotebookOptionsPosition[      2822,         90]
+NotebookOutlinePosition[      3271,        108]
+CellTagsIndexPosition[      3228,        105]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Column", "[", 
+  RowBox[{"N", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"n", "!"}], "/", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"2", "n"}], "+", "1"}], ")"}], "!!"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"n", ",", "0", ",", "330"}], "}"}]}], "]"}]}], ",", "Pi"}], 
+     "}"}], ",", "103"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9541409922862473`*^9, 3.9541409922872505`*^9}, {
+  3.9541413821605816`*^9, 3.954141391234165*^9}, {3.9541416688704453`*^9, 
+  3.9541416831743507`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"302aa26c-6a6d-b048-895c-be5a9129887f"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"3.1415926535897932384626433832795028841971693993751058209749445923078164\
+062862089986280348253421170679377238273680259`103."},
+    {"3.1415926535897932384626433832795028841971693993751058209749445923078164\
+062862089986280348253421170679821480865132823`103."}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ CellChangeTimes->{
+  3.954141250541044*^9, {3.9541416455251026`*^9, 3.9541416848098907`*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"f8ee0e38-4877-2048-b295-66dd7c85cd2a"]
+}, Open  ]],
+
+Cell["\<\
+#include<stdio.h>
+long a=10000,b=0,c=28000,d,e=0,f[28001],g;
+int main(){
+\tfor(;b-c;)
+\t\tf[b++]=a/5;
+\tfor(;d=0,g=c*2;c-=14,printf(\"%.4d\",e+d/a),e=d%a)
+\t\tfor(b=c;d+=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);
+\treturn 0;
+}\
+\>", "ExternalLanguage",
+ CellEvaluationLanguage->"NodeJS",
+ CellChangeTimes->{
+  3.954141275559681*^9},ExpressionUUID->"37c9e044-ff17-5f4e-8dda-\
+5ede1663fd09"],
+
+Cell[CellGroupData[{
+
+Cell["print(1+3)", "ExternalLanguage",
+ CellChangeTimes->{{3.9541413112506275`*^9, 3.9541413534136486`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"21f41228-2ffd-bc4a-96e9-db0a43c522cd"],
+
+Cell[BoxData["\<\"4\"\>"], "Print",
+ CellChangeTimes->{3.954141659432844*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[7]:=",ExpressionUUID->"7dd844f2-0cbe-d243-bafd-\
+c51637f830a9"]
+}, Open  ]]
+},
+WindowSize->{1152, 579},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (2023\:5e7412\:670812\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7fe9b514-e8b6-7545-bfd4-d3fce7805ba7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 764, 21, 43, "Input",ExpressionUUID->"302aa26c-6a6d-b048-895c-be5a9129887f"],
+Cell[1347, 45, 654, 13, 47, "Output",ExpressionUUID->"f8ee0e38-4877-2048-b295-66dd7c85cd2a"]
+}, Open  ]],
+Cell[2016, 61, 392, 14, 186, "ExternalLanguage",ExpressionUUID->"37c9e044-ff17-5f4e-8dda-5ede1663fd09"],
+Cell[CellGroupData[{
+Cell[2433, 79, 186, 2, 50, "ExternalLanguage",ExpressionUUID->"21f41228-2ffd-bc4a-96e9-db0a43c522cd"],
+Cell[2622, 83, 184, 4, 22, "Print",ExpressionUUID->"7dd844f2-0cbe-d243-bafd-c51637f830a9"]
+}, Open  ]]
+}
+]
+*)
+

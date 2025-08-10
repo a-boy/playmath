@@ -1,9 +1,17 @@
 记S(k,v):=RamseyNumber(k+1,v+1)-1。
 当构建 S(2,v) 的临界拉姆齐图时，我猜想 s(2,v) 顶点可以2个3个的交错方式排列。 这意味着 S(2,v)%5 ∈{0,2,3}，R(3,n) 不能是 5m 或 5m+2 的形式。 所有已知的小拉姆齐数 R(3,n) 都符合。 R(3,n): {6 ,9 ,14 ,18 ,23,28 ,36 ,40–42,46–51,...}
   o o o o o o o
-  o   o   o   o 
+    o   o   o  
   o o o o o o o
 2010 年左右的某一天，我构想了上述内容。 今天（2023-08-31），当我重新思考这些时，我注意到 S(3,3)%7=17%7=3 和 s(3,4)%7=24%7=3，所以我进一步猜测 s(k,v)%(2k+1) ∈{0,k,k+1} 当 k>1 , v>=k时 。
 栅栏猜想(Fence-Conjecture)：RamseyNumber(k+1,v+1)-1≡0,k,k+1mod(2k+1) ，当 k>1 且 v>=k。 临界拉姆齐图的 s(2,v) 个顶点可以按 每列k 个或 k+1 个的交错方式排列。
 如果这个猜想为真，R(5,n)%9∈{1,5,6}，R(6,n)%11∈{1,6,7}，我们将确定R(5,5)= 46、R(3,10)=41,R(6,6)>=105。 
 你认为栅栏猜想正确吗？你怎么看？
+
+Today(2023-11-22), I have a conjecture on Ramsey numbers.
+
+Fence Conjecture(栅栏猜想): Ramsey Number 
+
+R(m,n)=(2m-1)*p(2m-6+n,m)+{1,m,m+1}, for 3<=m<=n.
+
+Here p(n,k) denote both the number of partitions of n into exactly k parts (that is, sums of k positive integers that add to n), and the number of partitions of n into parts of maximum size exactly k. see [Triangle_of_partition_numbers][1]. The last summand choose one of three values {1,m,m+1}.
