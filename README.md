@@ -191,3 +191,5 @@ BTC: bc1qtlkhl9cusez69pephgfljuqzy5nht3la4r7vy0
 
 感谢你的赞助和支持，希望我们每天都能做得更好！！！
 
+<script defer src="https://cloud.umami.is/script.js" data-website-id="3e532e3b-32ee-4ca2-9606-531cafbb93ed"></script>
+
