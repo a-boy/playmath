@@ -104,6 +104,8 @@ Here denote `S(k,l):=RamseyNumber(k+1,l+1)-1` . When constructing critical Ramse
 
 This conjecture implies `R(3,10)=41, R(5,5)=46, and R(6,6)>=105`.
 
+![ramsey_critical_graph17--2-5](stage17-Ramsey-Numbers/ramsey_critical_graph17--2-5.svg)
+**ramsey_critical_graph17--2-5**
 
 ## idea:(mailto:cody@ustc.edu)
 
