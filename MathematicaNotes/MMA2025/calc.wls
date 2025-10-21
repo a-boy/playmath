@@ -1,0 +1,1 @@
+Print[ToExpression[$ScriptCommandLine[[2]]]]

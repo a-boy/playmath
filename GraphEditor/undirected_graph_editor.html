@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>简单无向图编辑器 — 17 顶点重编号</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 12px; }
+    #canvasWrap { position: relative; display: inline-block; border: 1px solid #ccc; }
+    #bg { display: block; max-width: 640px; }
+    canvas { position: absolute; left: 0; top: 0; }
+    .controls { margin-left: 16px; vertical-align: top; display: inline-block; }
+    table { border-collapse: collapse; margin-top: 8px; }
+    td, th { border: 1px solid #ddd; padding: 6px; }
+    .btn { display:inline-block; padding:6px 10px; margin:4px; border-radius:6px; border:1px solid #888; cursor:pointer; }
+    .btn.primary { background:#2d6cdf; color:white; border-color:#1b4fb0 }
+    .small { font-size: 0.9em }
+  </style>
+</head>
+<body>
+  <h2>简单无向图编辑器 — 用来重标号这张 17 顶点图</h2>
+  <div id="canvasWrap">
+    <!-- 默认把图像文件名放在 img src 中；如果你的环境中路径不同，请替换为 /mnt/data/17-0.png 或本地文件名 -->
+    <img id="bg" src="./data/17-0.png" alt="graph" />
+    <canvas id="cv"></canvas>
+  </div>
+
+  <div class="controls">
+    <div>
+      操作说明：点击画布添加顶点；点击顶点选中；选中两个顶点可添加/删除边；双击顶点编辑“原始标签（图片上的编号）”。
+    </div>
+    <div style="margin-top:8px">
+      <button class="btn" id="autoRelabel">自动重编号 0..16</button>
+      <button class="btn" id="genMatrix">生成邻接矩阵</button>
+      <button class="btn" id="exportJSON">导出 JSON</button>
+      <button class="btn" id="clear">清空图</button>
+    </div>
+
+    <div id="nodeTableArea"></div>
+    <div id="matrixArea"></div>
+  </div>
+
+  <script>
+    // 简单的无向图编辑器实现
+    const img = document.getElementById('bg');
+    const cv = document.getElementById('cv');
+    const wrap = document.getElementById('canvasWrap');
+    const ctx = cv.getContext('2d');
+
+    let nodes = []; // {id: internalId, x,y, origLabel: string|null, newLabel: int|null}
+    let edges = new Set(); // store as 'a|b' with a<b
+    let nextId = 1;
+    let selected = [];
+
+    function resizeCanvas(){
+      cv.width = img.clientWidth;
+      cv.height = img.clientHeight;
+      cv.style.width = img.clientWidth + 'px';
+      cv.style.height = img.clientHeight + 'px';
+      render();
+    }
+    img.onload = resizeCanvas;
+    window.addEventListener('resize', resizeCanvas);
+
+    function render(){
+      ctx.clearRect(0,0,cv.width,cv.height);
+      // draw edges
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = 'rgba(30,90,160,0.6)';
+      edges.forEach(k => {
+        const [a,b] = k.split('|').map(Number);
+        const na = nodes.find(n=>n.id===a), nb = nodes.find(n=>n.id===b);
+        if(na && nb){
+          ctx.beginPath(); ctx.moveTo(na.x,na.y); ctx.lineTo(nb.x,nb.y); ctx.stroke();
+        }
+      });
+      // draw nodes
+      nodes.forEach(n => {
+        ctx.beginPath(); ctx.fillStyle = selected.includes(n.id)?'#ff8c42':'#ffffff';
+        ctx.strokeStyle = '#2d6cdf';
+        ctx.lineWidth = 2;
+        ctx.arc(n.x,n.y,10,0,Math.PI*2);
+        ctx.fill(); ctx.stroke();
+        // label inside
+        ctx.fillStyle = '#000'; ctx.font = '12px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+        const label = (n.newLabel!=null?String(n.newLabel):(n.origLabel!=null?String(n.origLabel):n.id));
+        ctx.fillText(label, n.x, n.y);
+      });
+    }
+
+    function posFromEvent(e){
+      const rect = cv.getBoundingClientRect();
+      const x = (e.clientX - rect.left) * (cv.width/rect.width);
+      const y = (e.clientY - rect.top) * (cv.height/rect.height);
+      return {x,y};
+    }
+
+    function nearestNode(x,y, maxDist=14){
+      let best = null, bestd = maxDist;
+      nodes.forEach(n=>{
+        const d = Math.hypot(n.x-x, n.y-y);
+        if(d < bestd){ best = n; bestd = d; }
+      });
+      return best;
+    }
+
+    cv.addEventListener('click', e=>{
+      const {x,y} = posFromEvent(e);
+      const n = nearestNode(x,y);
+      if(n){
+        // click on existing node: select / toggle
+        if(!selected.includes(n.id)){
+          if(selected.length>=2) selected = [];
+          selected.push(n.id);
+        } else {
+          // deselect
+          selected = selected.filter(id=>id!==n.id);
+        }
+        if(selected.length===2){
+          // toggle edge
+          const a = Math.min(...selected), b = Math.max(...selected);
+          const key = a+'|'+b;
+          if(edges.has(key)) edges.delete(key); else edges.add(key);
+          selected = [];
+        }
+      } else {
+        // add new node
+        const id = nextId++;
+        nodes.push({id, x, y, origLabel: null, newLabel: null});
+      }
+      render(); updateNodeTable();
+    });
+
+    cv.addEventListener('dblclick', e=>{
+      const {x,y} = posFromEvent(e);
+      const n = nearestNode(x,y);
+      if(n){
+        const v = prompt('输入该顶点在图片上的原始标签（例如图片上的编号，例如 1..17）：', n.origLabel||'');
+        if(v!==null) n.origLabel = v.trim()||null;
+        render(); updateNodeTable();
+      }
+    });
+
+    document.getElementById('autoRelabel').addEventListener('click', ()=>{
+      // assign newLabel 0..N-1 sorted by numeric origLabel if available, else by id
+      const sortable = nodes.slice();
+      sortable.sort((a,b)=>{
+        const na = a.origLabel!=null?Number(a.origLabel):Infinity;
+        const nb = b.origLabel!=null?Number(b.origLabel):Infinity;
+        if(!isNaN(na) && !isNaN(nb)) return na-nb;
+        if(!isNaN(na)) return -1; if(!isNaN(nb)) return 1;
+        return a.id-b.id;
+      });
+      for(let i=0;i<sortable.length;i++) sortable[i].newLabel = i;
+      render(); updateNodeTable();
+    });
+
+    document.getElementById('genMatrix').addEventListener('click', ()=>{
+      updateMatrixArea();
+    });
+
+    document.getElementById('exportJSON').addEventListener('click', ()=>{
+      const exportObj = {nodes: nodes.map(n=>({id:n.id, origLabel:n.origLabel, newLabel:n.newLabel, x:n.x, y:n.y})), edges: Array.from(edges)};
+      const blob = new Blob([JSON.stringify(exportObj, null, 2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'graph.json'; a.click(); URL.revokeObjectURL(url);
+    });
+
+    document.getElementById('clear').addEventListener('click', ()=>{ if(confirm('清空所有节点与边？')){ nodes=[]; edges.clear(); nextId=1; selected=[]; render(); updateNodeTable(); updateMatrixArea(); }});
+
+    function updateNodeTable(){
+      const area = document.getElementById('nodeTableArea');
+      if(nodes.length===0){ area.innerHTML='(当前无节点)'; return; }
+      let html = '<h3>节点信息表</h3>';
+      html += '<table><tr><th>内部ID</th><th>图片原始标签</th><th>重编号 (newLabel)</th><th>坐标 (px)</th><th>操作</th></tr>';
+      nodes.forEach(n=>{
+        html += `<tr><td>${n.id}</td><td>${n.origLabel||''}</td><td>${n.newLabel!=null?n.newLabel:''}</td><td>${Math.round(n.x)}, ${Math.round(n.y)}</td><td><button class="small" onclick="editOrig(${n.id})">编辑原始标签</button> <button class="small" onclick="removeNode(${n.id})">删除</button></td></tr>`;
+      });
+      html += '</table>';
+      area.innerHTML = html;
+    }
+    window.editOrig = function(id){ const n = nodes.find(x=>x.id===id); if(!n) return; const v = prompt('编辑原始标签', n.origLabel||''); if(v!==null) n.origLabel = v.trim()||null; updateNodeTable(); render(); }
+    window.removeNode = function(id){ if(!confirm('删除节点？\n同时会删除与之相连的边。')) return; nodes = nodes.filter(n=>n.id!==id); // remove edges
+      const newEdges = new Set(); edges.forEach(k=>{ const [a,b]=k.split('|').map(Number); if(a!==id && b!==id) newEdges.add(k); }); edges = newEdges; updateNodeTable(); render(); updateMatrixArea(); }
+
+    function updateMatrixArea(){
+      const area = document.getElementById('matrixArea');
+      if(nodes.length===0){ area.innerHTML='(无邻接矩阵)'; return; }
+      // order by newLabel if exists else origLabel numeric else id
+      const order = nodes.slice();
+      order.sort((a,b)=>{
+        if(a.newLabel!=null && b.newLabel!=null) return a.newLabel - b.newLabel;
+        if(a.newLabel!=null) return -1; if(b.newLabel!=null) return 1;
+        const na = a.origLabel!=null?Number(a.origLabel):Infinity; const nb = b.origLabel!=null?Number(b.origLabel):Infinity;
+        if(!isNaN(na) && !isNaN(nb)) return na-nb;
+        if(!isNaN(na)) return -1; if(!isNaN(nb)) return 1;
+        return a.id-b.id;
+      });
+      const idxMap = new Map(); order.forEach((n,i)=> idxMap.set(n.id,i));
+      const n = order.length;
+      // build matrix
+      const mat = Array.from({length:n}, ()=>Array(n).fill(0));
+      edges.forEach(k=>{ const [a,b]=k.split('|').map(Number); if(idxMap.has(a) && idxMap.has(b)){ mat[idxMap.get(a)][idxMap.get(b)] = mat[idxMap.get(b)][idxMap.get(a)] = 1; }});
+      // render
+      let html = '<h3>邻接矩阵</h3>';
+      html += '<table><tr><th></th>' + order.map(x=>`<th>${x.newLabel!=null?x.newLabel:(x.origLabel||x.id)}</th>`).join('') + '</tr>';
+      for(let i=0;i<n;i++){
+        html += `<tr><th>${order[i].newLabel!=null?order[i].newLabel:(order[i].origLabel||order[i].id)}</th>` + mat[i].map(v=>`<td>${v}</td>`).join('') + '</tr>';
+      }
+      html += '</table>';
+      area.innerHTML = html;
+    }
+
+    // initial render after image loads
+    setTimeout(()=>{ resizeCanvas(); updateNodeTable(); }, 300);
+  </script>
+</body>
+</html>

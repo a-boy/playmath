@@ -1,0 +1,336 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     16299,        326]
+NotebookOptionsPosition[     15565,        305]
+NotebookOutlinePosition[     16013,        323]
+CellTagsIndexPosition[     15970,        320]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+\:7ed9\:51fa\:8ba1\:7b97Pi\:7684\:6709\:6548\:516c\:5f0f
+\
+\>", "ChatInput",
+ CellDingbat->Cell[
+   BoxData[
+    DynamicBox[
+     ToBoxes[
+      If[
+       TrueQ[CloudSystem`$CloudNotebooks], 
+       RawBoxes[
+        TemplateBox[{}, "ChatIconUser"]], 
+       RawBoxes[
+        TemplateBox[{}, "ChatInputCellDingbat"]]], StandardForm]]], 
+   Background -> None, CellFrame -> 0, CellMargins -> 0],
+ CellChangeTimes->{{3.969011338086231*^9, 3.9690113564339237`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"f0f0d041-a5a3-1e40-afa4-a63e3e9d8450"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LLMFunctions", "llmrstrt", 
+   "\"New updates have been installed. Restart the \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Wolfram\\\\\\\"\\\"}]\\) system to apply the \
+changes.\"", 2, 2, 2, 16838956116978812508, "Local", 
+   "LLMServices`Defaults`Private`LLMFunctions"},
+  "MessageTemplate2",
+  BaseStyle->"MSG"]], "Message",
+ CellChangeTimes->{3.9690113720744324`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[2]:=",ExpressionUUID->"e1662a8c-a0be-4341-8320-\
+85115f0f35de"],
+
+Cell[TextData[{
+ "\:8ba1\:7b97 \[Pi] \:7684\:6709\:6548\:516c\:5f0f\:6709\:5f88\:591a\:ff0c\
+\:4ee5\:4e0b\:662f\:5176\:4e2d\:4e00\:4e9b\:5e38\:7528\:7684\:516c\:5f0f\:ff1a\
+\n\n1. ",
+ StyleBox["\:83b1\:5e03\:5c3c\:8328\:516c\:5f0f",
+  FontWeight->Bold],
+ "\:ff1a\n   ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[Pi]", "\[LongEqual]", "4", 
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             FractionBox["1", "3"], "+", 
+             FractionBox["1", "5"], "-", 
+             FractionBox["1", "7"], "+", 
+             FractionBox["1", "9"], "-", "\[CenterEllipsis]"}], ")"}]}], 
+       TraditionalForm], "errors" -> {}, "input" -> 
+     "\\pi = 4 \\left(1 - \\frac{1}{3} + \\frac{1}{5} - \\frac{1}{7} + \
+\\frac{1}{9} - \\cdots \\right)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "6297479b-c313-b345-9f1f-c4ea22d0200c"],
+ "\n   \:8fd9\:4e2a\:516c\:5f0f\:662f\:4e00\:4e2a\:6162\:901f\:6536\:655b\
+\:7684\:65e0\:7a77\:7ea7\:6570\:3002\n\n2. ",
+ StyleBox["\:9a6c\:9752\:516c\:5f0f",
+  FontWeight->Bold],
+ "\:ff1a\n   ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox["\[Pi]", "4"], "\[LongEqual]", "4", "arctan", 
+         FractionBox["1", "5"], "-", "arctan", 
+         FractionBox["1", "239"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\frac{\\pi}{4} = 4 \\arctan \\frac{1}{5} - \\arctan \\frac{1}{239}", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "3accd122-b7a0-4144-b363-f311d656fddc"],
+ "\n   \:8fd9\:662f\:4e00\:79cd\:5229\:7528\:53cd\:6b63\:5207\:51fd\:6570\
+\:7684\:5feb\:901f\:6536\:655b\:516c\:5f0f\:3002\n\n3. ",
+ StyleBox["\:9ad8\:65af-\:52d2\:8ba9\:5fb7\:7b97\:6cd5",
+  FontWeight->Bold],
+ "\:ff1a\n   \:8fd9\:662f\:4e00\:4e2a\:7528\:4e8e\:8ba1\:7b97 \[Pi] \:7684\
+\:5feb\:901f\:8fed\:4ee3\:7b97\:6cd5\:ff0c\:6536\:655b\:901f\:5ea6\:975e\:5e38\
+\:5feb\:3002\:5b83\:4f7f\:7528\:4e86\:7b97\:672f-\:51e0\:4f55\:5e73\:5747\
+\:6570\:ff08AGM\:ff09\:7684\:65b9\:6cd5\:3002\n\n4. ",
+ StyleBox["\:8d1d\:5229-\:535a\:5c14\:6e29-\:666e\:52b3\:592b\:516c\:5f0f\
+\:ff08BBP\:516c\:5f0f\:ff09",
+  FontWeight->Bold],
+ "\:ff1a\n   ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[Pi]", "\[LongEqual]", 
+         UnderoverscriptBox["\[Sum]", 
+          RowBox[{
+            StyleBox["k", "TI"], "\[LongEqual]", "0"}], "\[Infinity]", 
+          LimitsPositioning -> True], 
+         FractionBox["1", 
+          SuperscriptBox["16", 
+           StyleBox["k", "TI"]]], 
+         RowBox[{"(", 
+           RowBox[{
+             FractionBox["4", 
+              RowBox[{"8", 
+                StyleBox["k", "TI"], "+", "1"}]], "-", 
+             FractionBox["2", 
+              RowBox[{"8", 
+                StyleBox["k", "TI"], "+", "4"}]], "-", 
+             FractionBox["1", 
+              RowBox[{"8", 
+                StyleBox["k", "TI"], "+", "5"}]], "-", 
+             FractionBox["1", 
+              RowBox[{"8", 
+                StyleBox["k", "TI"], "+", "6"}]]}], ")"}]}], TraditionalForm],
+      "errors" -> {}, "input" -> 
+     "\\pi = \\sum_{k=0}^{\\infty} \\frac{1}{16^k} \\left(\\frac{4}{8k+1} - \
+\\frac{2}{8k+4} - \\frac{1}{8k+5} - \\frac{1}{8k+6}\\right)", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "8abd9107-1c96-3744-b2ed-419ff80379b5"],
+ "\n   \:8fd9\:4e2a\:516c\:5f0f\:53ef\:4ee5\:76f4\:63a5\:8ba1\:7b97 \[Pi] \
+\:7684\:4efb\:610f\:4f4d\:7684\:6570\:5b57\:ff0c\:800c\:4e0d\:9700\:8981\:8ba1\
+\:7b97\:524d\:9762\:7684\:6240\:6709\:4f4d\:3002\n\n\:8fd9\:4e9b\:516c\:5f0f\
+\:5404\:6709\:4f18\:7f3a\:70b9\:ff0c\:9009\:62e9\:54ea\:4e2a\:516c\:5f0f\:4e3b\
+\:8981\:53d6\:51b3\:4e8e\:4f60\:9700\:8981\:7684\:7cbe\:5ea6\:548c\:8ba1\:7b97\
+\:673a\:7684\:6027\:80fd\:3002"
+}], "ChatOutput",
+ CellDingbat->Cell[
+   BoxData[
+    PaneBox[
+     TemplateBox[{}, "ChatIconCodeAssistant"], ContentPadding -> False, 
+     FrameMargins -> 0, ImageSize -> {35, 35}, ImageSizeAction -> 
+     "ShrinkToFit", Alignment -> {Center, Center}]], Background -> None],
+ TaggingRules-><|
+  "CellToStringData" -> 
+   "\:8ba1\:7b97 \[Pi] \:7684\:6709\:6548\:516c\:5f0f\:6709\:5f88\:591a\:ff0c\
+\:4ee5\:4e0b\:662f\:5176\:4e2d\:4e00\:4e9b\:5e38\:7528\:7684\:516c\:5f0f\:ff1a\
+\n\n1. **\:83b1\:5e03\:5c3c\:8328\:516c\:5f0f**\:ff1a\n   $$\\pi = 4 \\left(1 \
+- \\frac{1}{3} + \\frac{1}{5} - \\frac{1}{7} + \\frac{1}{9} - \\cdots \
+\\right)$$\n   \:8fd9\:4e2a\:516c\:5f0f\:662f\:4e00\:4e2a\:6162\:901f\:6536\
+\:655b\:7684\:65e0\:7a77\:7ea7\:6570\:3002\n\n2. **\:9a6c\:9752\:516c\:5f0f**\
+\:ff1a\n   $$\\frac{\\pi}{4} = 4 \\arctan \\frac{1}{5} - \\arctan \
+\\frac{1}{239}$$\n   \:8fd9\:662f\:4e00\:79cd\:5229\:7528\:53cd\:6b63\:5207\
+\:51fd\:6570\:7684\:5feb\:901f\:6536\:655b\:516c\:5f0f\:3002\n\n3. **\:9ad8\
+\:65af-\:52d2\:8ba9\:5fb7\:7b97\:6cd5**\:ff1a\n   \:8fd9\:662f\:4e00\:4e2a\
+\:7528\:4e8e\:8ba1\:7b97 \[Pi] \:7684\:5feb\:901f\:8fed\:4ee3\:7b97\:6cd5\
+\:ff0c\:6536\:655b\:901f\:5ea6\:975e\:5e38\:5feb\:3002\:5b83\:4f7f\:7528\:4e86\
+\:7b97\:672f-\:51e0\:4f55\:5e73\:5747\:6570\:ff08AGM\:ff09\:7684\:65b9\:6cd5\
+\:3002\n\n4. **\:8d1d\:5229-\:535a\:5c14\:6e29-\:666e\:52b3\:592b\:516c\:5f0f\
+\:ff08BBP\:516c\:5f0f\:ff09**\:ff1a\n   $$\\pi = \\sum_{k=0}^{\\infty} \
+\\frac{1}{16^k} \\left(\\frac{4}{8k+1} - \\frac{2}{8k+4} - \\frac{1}{8k+5} - \
+\\frac{1}{8k+6}\\right)$$\n   \
+\:8fd9\:4e2a\:516c\:5f0f\:53ef\:4ee5\:76f4\:63a5\:8ba1\:7b97 \[Pi] \:7684\
+\:4efb\:610f\:4f4d\:7684\:6570\:5b57\:ff0c\:800c\:4e0d\:9700\:8981\:8ba1\:7b97\
+\:524d\:9762\:7684\:6240\:6709\:4f4d\:3002\n\n\:8fd9\:4e9b\:516c\:5f0f\:5404\
+\:6709\:4f18\:7f3a\:70b9\:ff0c\:9009\:62e9\:54ea\:4e2a\:516c\:5f0f\:4e3b\:8981\
+\:53d6\:51b3\:4e8e\:4f60\:9700\:8981\:7684\:7cbe\:5ea6\:548c\:8ba1\:7b97\:673a\
+\:7684\:6027\:80fd\:3002", "ChatData" -> 
+   "OEM6eJztWltzHMd1pkyIJEY3UhebVlWcFoQqETR2QYKkZKKi2IsbiRJAIJilGBVJCb0zvbsjzM\
+6s54LFmkEVY1kWaYlSooi6K1Z8k6kLpUQuG+JF+gfxe55SFSxAPik/Id/p7pndAUD7KQ+\
+pCotFYnu6T5/rd74zi8KTOfOBguv6DVO4wooc3xvxvUgsRuHt49wNRc7cXqjXj/\
+GaMLePijKP3ShnGoUwdMKIe5ZIt91diKOq8CLH4iTF3DY5OfWEIzfHkT/\
+uBzUehV3FIBZ0I5ZMviBw14IIQnkiTEUZwzwUM4Ffq0flb4Rdk7jK7D7mR6Lk+/\
+Ohef8J3y0HvDbJvUrMK8KMmi5OfXO4WedhOCvCOoSJkaqw5h2vkkq9f6TKI23cTCDqUn7YTapANcfK\
+mffSjtHAWRBeeltyehc9OwpN/KA5KbxKVH32xlZ9ZMKrx/jHJtP9wOz675+/+\
+nHO3Nlp3PHjE6Nh1zHfg6h79AMsz8auCJP1b6n1yGyGkajN+q4o+sdDbEx0uGNUhFbg1KV/\
+Hz0q3DprOFGVNQIngqWMezarCE8EXH7UbmKJn5jl25Cye9QJLT8OsDK2GAW86PvuCHfdMOOLO7Cr7v\
+ImRb58W7hjljeG/UUR4mdjtOnxmmPhM8Lz4PjYDFzGIzE3HsC7Y56NEEC+\
+JWApvENuNKOAQmHunoE5vsdJ6gi0SfIIabJLS92YLd8a83jJFSTrSODHdVNEZF87X3apDUg4UwQLjk\
+UuVUfvH1usi8CpIS+5Oy54FAcwYYvKKYQIF0HNpmdVoboft0XuHA/ED2PhWc0Z4XE3agZvv0V/vvg+\
+nh2Fo10RjMeeLJiwsC1ndpN6hZIfREk4d9DKjB+mC9vlAhTQn+8jz8/SNWE0KyyBvLOTZw+\
+oZyqVj6iYtp/uIA+\
+7cru2c71KT4hmWN6ma6dr2LebZjf9O1KNvXnz3vRHVBm5S9imYUZwT0hRMY0iD+\
+fVZ7N7DOUQUcBy5rajjm0Lr+\
+2lo81S4Nik65SIqn6qz90TnuXGttAFk8mseya8KmIi0aMowjTMWEcac1eWqUA+\
+6vWdiOvYAndjKi4JRHetS537pvginVBZpqtzyw9wlB6oii/\
+681Dc2bLlti0589tYn44jVO2GY1TU3Xis9mcU3ymX22EJR27PmXdNiaAipuBD1FOad9+\
+ccjynFtfSrUUFd7flzNunoLxb+AbyQWeruUtBZeFHyM7puvAKEzmzS1q6q1KPcgf93OC+wYO5fd/\
+L7XsU6DgFDHZqvs1TF3Vt7pYExE7A20IFyLwbCSgAfEi2Scebh6rqxsLMxAgA0RUSrWYnzb3VKKqHQ\
+wMDvO7kfezhTt7yawML+\
+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\
+rkw/Ti6QV6HSYa6UZZ+gPJ8+\
+SxOiVnPmZKNdIDEUArAAYPqIlQPuzTJYCkQN9FDmz6Zjxs1krgIO3gqKjKxONUI1mvAI/\
+QH6Y9uFD2eKfjJFU85brsUBsuknSNHUlBjTDtCSHq8giShJym6qjuh5JfYcNxpHJZD9TIMMSzAqE0l\
+eFaQAK3qXrr9F7FjpGDODKqoIcIC/\
+Ku4volHFzg8A5EhuoGJ3oklLs8QS9keNCkVu42eDOUsKjyhqgO3SR7gKcICqGprLS2xD0iX8kzGhGC\
+EXAjDEyhIN8fk4VC4iiNYBxy04mgDAImURM5SF/G0OuiaIM8OjfH0aq8k/NsEaX+\
+x4un5zqNniuse0h3zshYsxpcGmzkFWmwuey+\
+cgBJksTCtCsJQ931I0AEt3GLmtQAR2jjSAaZ8uq0KyqCKBVsqPF5nS8CU6UkPh2sS4FT2rMdahb05Z\
+T0JFGLEKNDp10yHaiNB74dW0IxMrWtX9EHyGooy55JMPYZkbBgHPXddjSJZ8h4YdaWNZ18Y0RTfj5F\
+Ttn5K77metIiLiUxogEdTQdJjxY6PDY+\
+PTtGwulEKl8mvqT0iotJgsItSjHZ3umJJkXUgEvSJ5Iy0CtlDKXaTjDLoi9v1lp0VGUHFGkG0qlFgv\
+9gDPSaukYB4EFlP/0zqF5wGEahHGUQXC73S+\
+GhHA4UuRBqUJbrqSuSApBJEAjpVdqgFIcDkk6ECyVshIxeLQB24T/52kIwWf79ijaWm/\
+I4DRUUfMEp0/\
+RRbSo8VCIqYPmur8gN8VeMaFJldT1Ff4PRQ2pZZpCBE8jkRAdDQRB5ZQgiJWE35O7EScbDD7PCAgdP\
+RFEmQc3MZywZ0NieAYDkM6H82GfILxmp9ANMogvEaP5Mpwk9p14XUUIDQgEL0EeZEpg3Cokrje4fxt\
+T5cqwAj0UEeG0KIr9MI3HUedvflpJX5dyDqDxCNDNo6iyHqx1AlGFo9f5OzpcwpsH7DALeza7AABSq\
+dp09BXnUg+N6LvJzNo+ETmmukVsnNuMlTFqM0DQiSegd8GANI1QASlyvNkOMTP0QRTiPj/\
+2sqr5HAyAFqH/QQPq6skafCcOQ/5v6h3JCTiJGNxK6HmIJwK/HMhZW/Qaj9VypmaP/\
+UdNuLL21ZxiRFtzr1+DH3b7UQe34pTM3eQs79Gex+RfPGQpOJiN/\
+BXg7HZgHTgtXjTzyse0L1Zqyc0goRGedtbvcPEOnggOJSEoKlKgiOzFNDQq4OmlrCrrrSCPNwQGAO1\
+G4pkY1omh5AkreMVYkMkIC6gXHVjMIb08UxBQSwOabXpZCftSsU05SZpB6ahZXPmnjehjX6/\
+Qdc3u6XRDJSJd2qCmOWorppbkyXSJwQNe0YRicHwlZxigOnJ2h8WljpqspVub53NcX/\
+vFkj0ysntNz/Rq/qY8hOfwKvaMgAI8CN/e4Pgdbk6ETk9OxzYWT59TsluB4+\
+rpQjmlEizEy6iG8xq3Ap5kBKIYdyjrkcezaCZ1WrobYW1gDLf1SJOfXKr1/V4Ln/\
+iYmtImaMG1uFI5T76vp01iyLiIrU2UyqXO3SPaOHJQgOh7LXiJJMSC0mGlh1HZLwJSyHrTVr4yk21X\
+q2KKmXogiq6lyOwdY1VNlTWUk6PFND+KGkcvlDAK1YIjNgOAQJduz2KeG+\
+twhUvqQkf5uTzTEUNYGbTxJHGvxdD87s9iPjf3s0BLml0URThIXYrm/Zmd6Fnv6WY8S2LOk+\
+wfRC8NQ79qG2HQcnfROP84eOunQC9TTe1BDgF9y59DAgE7i3BnHXurLaHEUvP2RUNpBtIxqpbf3FK4\
+6s7jU25vRfsh46CQp/CdlK606fHEU7ixjRuMgS5SRx54aUVKHMXP53vc3+OSI8Ef17z+\
+dlIWhNvazqUIPvCSXjokG0jOYZyNIn57Tpzd1SZJ2J/c/ejB/cD88OEUV2XM6c+\
+UEEXW1g9Xoead2ZHfmrry+Q9kGwJpA3WjMi9APKU8OVNn+x2r9MpHKaCesAdiYUNxvo7nSHn2/\
+1o8NKCuVoJ4/Y92hffl9j7Wtw+\
+Geo4DB9XZSNTdEykHVKW0xTSIo9CBr3QmqDDkCNyQITKCW6Pe36FXKBOh5GaTZqVQx4viNW9ilLEhe\
+kjXWmSKzhAp4oka4i6OK1Mpu0qajbWaYIPzI8dnZsWPFFOnzhm5WuD/S3UCSTyKZVMOaaVNDT+\
+m6fiWXYCMYeTKKpxfmDTmGSrLue52a0Ksm6Zs8fad0q/fe23vHQe/o+4hu+j7ODzAGqpf+\
+7bflXeTsjjN/sXb1rdYLV25c/pe1y2/MOGtv/2T13fOrF8+1nv+4de2V9rnujl9GSQ//+\
+3Z1jv3xLFt3Ej+3vjzX+tXbX197aeXqr1eWX1x989PW879fWf5kZfnsypV3WsvLa6/9FqfU/q+\
+vvW0Y+/Ns794bL/9ra/m51mfXbrz0W/\
+Vs7156yhhBRd1hj7OD7BTlw579wOxTQGzrzP6lMweWMDamnw4tdT57LPPssHxm2RgL2SmZU329vST/\
+xldvrSx/qA1481NSdPnD1ed/cfPsz1df+/3qxXfIyDfeX7v0h7UrH6xe/Oy/\
+zv7YMAZJ6ZuXPr753qsb1ZVXQumlMweXlOJgwPDiekXXrw4eOLyU6qRUWfvgQuvcJfis9cqF1U9+\
+2Tr3QuuF61CCXPjVR6mKSgep2QGp2Udvrr7+\
+aa714qs3Ll9qffkHhGv184upjql4WArZK1dezoRUSb7x1ScrV3+pTiKe6iKst6785uZ7/\
+4xIYhtubF1+\
+buX6V1LKT2nzu7j2hfdXrl9sffF5670XoOvX184Vjkx9fe08OfL1LyBOKnpQxv1378G+\
+XOvC263PXltdvpRbfety62eft371UZIh54aHZ5Kfz29IilNhXHvmzPzj+5aePnPK8cpRc6ntz/\
+2PPj2/pLNGLR5cOvO9+e/ub6fJoFw4mMkbLBxav/Do0i1zpvXKp8j1tXd+t/\
+ryrzNuXLl6dfUnr6xcv0B2X/ys9ckbcOONsy+tLF+4+e7ZG7/5e7W7df7Czfd+\
+QXvOn0UBYb90D11xRQe29Q9UZivX3ly7dmXtx19AzM2z51dfvNT6pw9TNVaWr0Jk65XXWz/\
+9HAFduf6+ugSC1/7tSwSt9epL6sLVd6/QbWc/uPHcdVyVM+/s/AW9dV///Q8GHpAC"|>,
+ GeneratedCell->True,
+ CellAutoOverwrite->
+  True,ExpressionUUID->"b4cb162e-9504-46d7-9ec3-a3d5d2de140d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Import", "wxfcor", 
+   "\"\:6587\:4ef6 \\!\\(\\*RowBox[{\\\"\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\
+\\\\\\\\\\PC\\\\\\\\\\\\\\\\AppData\\\\\\\\\\\\\\\\Roaming\\\\\\\\\\\\\\\\\
+Wolfram\\\\\\\\\\\\\\\\Objects\\\\\\\\\\\\\\\\Resources\\\\\\\\\\\\\\\\b61\\\\\
+\\\\\\\\\\\\b6175ae8-d4ff-461c-ab3d-41b4b03f6a4d\\\\\\\\\\\\\\\\download\\\\\\\
+\\\\\\\\\\EvaluationNet\\\\\\\\\\\\\\\\3a72061f811b5601\\\\\\\\\\\\\\\\data\\\
+\\\\\\\\\\\\\\data.WXF\\\\\\\"\\\"}]\\) \:5df2\:635f\:574f\:4e14\:4e0d\:5305\
+\:542b\:5e8f\:5217\:5316\:6b63\:786e\:7684\:8868\:8fbe\:5f0f.\"", 2, 2, 3, 
+   16838956116978812508, "Local"},
+  "MessageTemplate",
+  BaseStyle->"MSG"]], "Message",
+ CellChangeTimes->{3.969011718371773*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[2]:=",ExpressionUUID->"6bc6982b-5742-c643-b438-\
+910fecaab81d"]
+}, Open  ]]
+},
+WindowSize->{1152, 579},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (2025\:5e747\:67088\
+\:65e5)",
+StyleDefinitions->"Chatbook.nb",
+ExpressionUUID->"d190aeb2-64bf-0e42-9f52-fc1ccfe340c5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 552, 16, 69, "ChatInput",ExpressionUUID->"f0f0d041-a5a3-1e40-afa4-a63e3e9d8450"],
+Cell[1131, 40, 497, 12, 26, "Message",ExpressionUUID->"e1662a8c-a0be-4341-8320-85115f0f35de"],
+Cell[1631, 54, 13078, 230, 459, "ChatOutput",ExpressionUUID->"b4cb162e-9504-46d7-9ec3-a3d5d2de140d"],
+Cell[14712, 286, 837, 16, 44, "Message",ExpressionUUID->"6bc6982b-5742-c643-b438-910fecaab81d"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

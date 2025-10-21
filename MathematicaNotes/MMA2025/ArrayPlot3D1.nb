@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7854,        203]
-NotebookOptionsPosition[      7259,        184]
-NotebookOutlinePosition[      7679,        201]
-CellTagsIndexPosition[      7636,        198]
+NotebookDataLength[     48638,        941]
+NotebookOptionsPosition[     47927,        920]
+NotebookOutlinePosition[     48331,        936]
+CellTagsIndexPosition[     48288,        933]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -178,14 +178,749 @@ n+B/gzXOmA==
  CellLabel->"Out[17]=",ExpressionUUID->"3dcacdb4-35e6-1647-ab59-0214baa310fe"]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{3.960747226618124*^9},
- CellLabel->"In[1]:=",ExpressionUUID->"02b0b70a-f197-004d-bc69-b2cfc8f8bf9f"]
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Cube", "[", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"10", ",", "3"}], "]"}], "]"}], ",", "50"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{
+  3.960747226618124*^9, 3.969220486770918*^9, {3.9692205251413383`*^9, 
+   3.9692205260738087`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"02b0b70a-f197-004d-bc69-b2cfc8f8bf9f"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[9, 2], Rational[17, 2], Rational[17, 2]}, {
+       Rational[11, 2], Rational[17, 2], Rational[17, 2]}, {
+       Rational[11, 2], Rational[15, 2], Rational[17, 2]}, {
+       Rational[9, 2], Rational[15, 2], Rational[17, 2]}, {
+       Rational[9, 2], Rational[17, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[17, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[15, 2], Rational[19, 2]}, {
+       Rational[9, 2], Rational[15, 2], Rational[19, 2]}}, {{4.5, 8.5, 8.5}, {
+      5.5, 8.5, 8.5}, {5.5, 7.5, 8.5}, {4.5, 7.5, 8.5}, {4.5, 8.5, 9.5}, {5.5,
+       8.5, 9.5}, {5.5, 7.5, 9.5}, {4.5, 7.5, 9.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{5, 8, 9}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[-1, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[1, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[1, 2], Rational[1, 2], Rational[13, 2]}, {
+       Rational[-1, 2], Rational[1, 2], Rational[13, 2]}, {
+       Rational[-1, 2], Rational[3, 2], Rational[15, 2]}, {
+       Rational[1, 2], Rational[3, 2], Rational[15, 2]}, {
+       Rational[1, 2], Rational[1, 2], Rational[15, 2]}, {
+       Rational[-1, 2], Rational[1, 2], Rational[15, 2]}}, {{-0.5, 1.5, 
+      6.5}, {0.5, 1.5, 6.5}, {0.5, 0.5, 6.5}, {-0.5, 0.5, 6.5}, {-0.5, 1.5, 
+      7.5}, {0.5, 1.5, 7.5}, {0.5, 0.5, 7.5}, {-0.5, 0.5, 7.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{0, 1, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[3, 2], Rational[-1, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[-1, 2]}, {
+       Rational[19, 2], Rational[1, 2], Rational[-1, 2]}, {
+       Rational[17, 2], Rational[1, 2], Rational[-1, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[1, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[1, 2]}, {
+       Rational[19, 2], Rational[1, 2], Rational[1, 2]}, {
+       Rational[17, 2], Rational[1, 2], Rational[1, 2]}}, {{8.5, 1.5, -0.5}, {
+      9.5, 1.5, -0.5}, {9.5, 0.5, -0.5}, {8.5, 0.5, -0.5}, {8.5, 1.5, 0.5}, {
+      9.5, 1.5, 0.5}, {9.5, 0.5, 0.5}, {8.5, 0.5, 0.5}}], {{1, 2, 3, 4}, {5, 
+     6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 1, 0}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[13, 2], Rational[19, 2], Rational[15, 2]}, {
+       Rational[15, 2], Rational[19, 2], Rational[15, 2]}, {
+       Rational[15, 2], Rational[17, 2], Rational[15, 2]}, {
+       Rational[13, 2], Rational[17, 2], Rational[15, 2]}, {
+       Rational[13, 2], Rational[19, 2], Rational[17, 2]}, {
+       Rational[15, 2], Rational[19, 2], Rational[17, 2]}, {
+       Rational[15, 2], Rational[17, 2], Rational[17, 2]}, {
+       Rational[13, 2], Rational[17, 2], Rational[17, 2]}}, {{6.5, 9.5, 
+      7.5}, {7.5, 9.5, 7.5}, {7.5, 8.5, 7.5}, {6.5, 8.5, 7.5}, {6.5, 9.5, 
+      8.5}, {7.5, 9.5, 8.5}, {7.5, 8.5, 8.5}, {6.5, 8.5, 8.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{7, 9, 8}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[19, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[19, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[17, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[17, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[19, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[19, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[17, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[17, 2], Rational[13, 2]}}, {{8.5, 9.5, 
+      5.5}, {9.5, 9.5, 5.5}, {9.5, 8.5, 5.5}, {8.5, 8.5, 5.5}, {8.5, 9.5, 
+      6.5}, {9.5, 9.5, 6.5}, {9.5, 8.5, 6.5}, {8.5, 8.5, 6.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{9, 9, 6}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[9, 2], Rational[1, 2], Rational[1, 2]}, {
+       Rational[11, 2], Rational[1, 2], Rational[1, 2]}, {
+       Rational[11, 2], Rational[-1, 2], Rational[1, 2]}, {
+       Rational[9, 2], Rational[-1, 2], Rational[1, 2]}, {
+       Rational[9, 2], Rational[1, 2], Rational[3, 2]}, {
+       Rational[11, 2], Rational[1, 2], Rational[3, 2]}, {
+       Rational[11, 2], Rational[-1, 2], Rational[3, 2]}, {
+       Rational[9, 2], Rational[-1, 2], Rational[3, 2]}}, {{4.5, 0.5, 0.5}, {
+      5.5, 0.5, 0.5}, {5.5, -0.5, 0.5}, {4.5, -0.5, 0.5}, {4.5, 0.5, 1.5}, {
+      5.5, 0.5, 1.5}, {5.5, -0.5, 1.5}, {4.5, -0.5, 1.5}}], {{1, 2, 3, 4}, {5,
+      6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{5, 0, 1}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[5, 2], Rational[13, 2], Rational[5, 2]}, {
+       Rational[7, 2], Rational[13, 2], Rational[5, 2]}, {
+       Rational[7, 2], Rational[11, 2], Rational[5, 2]}, {
+       Rational[5, 2], Rational[11, 2], Rational[5, 2]}, {
+       Rational[5, 2], Rational[13, 2], Rational[7, 2]}, {
+       Rational[7, 2], Rational[13, 2], Rational[7, 2]}, {
+       Rational[7, 2], Rational[11, 2], Rational[7, 2]}, {
+       Rational[5, 2], Rational[11, 2], Rational[7, 2]}}, {{2.5, 6.5, 2.5}, {
+      3.5, 6.5, 2.5}, {3.5, 5.5, 2.5}, {2.5, 5.5, 2.5}, {2.5, 6.5, 3.5}, {3.5,
+       6.5, 3.5}, {3.5, 5.5, 3.5}, {2.5, 5.5, 3.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{3, 6, 3}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[13, 2]}}, {{8.5, 2.5, 5.5}, {
+      9.5, 2.5, 5.5}, {9.5, 1.5, 5.5}, {8.5, 1.5, 5.5}, {8.5, 2.5, 6.5}, {9.5,
+       2.5, 6.5}, {9.5, 1.5, 6.5}, {8.5, 1.5, 6.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 2, 6}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[3, 2], Rational[21, 2], Rational[13, 2]}, {
+       Rational[5, 2], Rational[21, 2], Rational[13, 2]}, {
+       Rational[5, 2], Rational[19, 2], Rational[13, 2]}, {
+       Rational[3, 2], Rational[19, 2], Rational[13, 2]}, {
+       Rational[3, 2], Rational[21, 2], Rational[15, 2]}, {
+       Rational[5, 2], Rational[21, 2], Rational[15, 2]}, {
+       Rational[5, 2], Rational[19, 2], Rational[15, 2]}, {
+       Rational[3, 2], Rational[19, 2], Rational[15, 2]}}, {{1.5, 10.5, 
+      6.5}, {2.5, 10.5, 6.5}, {2.5, 9.5, 6.5}, {1.5, 9.5, 6.5}, {1.5, 10.5, 
+      7.5}, {2.5, 10.5, 7.5}, {2.5, 9.5, 7.5}, {1.5, 9.5, 7.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{2, 10, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[11, 2], Rational[7, 2], Rational[19, 2]}, {
+       Rational[13, 2], Rational[7, 2], Rational[19, 2]}, {
+       Rational[13, 2], Rational[5, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[5, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[7, 2], Rational[21, 2]}, {
+       Rational[13, 2], Rational[7, 2], Rational[21, 2]}, {
+       Rational[13, 2], Rational[5, 2], Rational[21, 2]}, {
+       Rational[11, 2], Rational[5, 2], Rational[21, 2]}}, {{5.5, 3.5, 9.5}, {
+      6.5, 3.5, 9.5}, {6.5, 2.5, 9.5}, {5.5, 2.5, 9.5}, {5.5, 3.5, 10.5}, {
+      6.5, 3.5, 10.5}, {6.5, 2.5, 10.5}, {5.5, 2.5, 10.5}}], {{1, 2, 3, 4}, {
+     5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{6, 3, 10}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[13, 2], Rational[13, 2], Rational[13, 2]}, {
+       Rational[15, 2], Rational[13, 2], Rational[13, 2]}, {
+       Rational[15, 2], Rational[11, 2], Rational[13, 2]}, {
+       Rational[13, 2], Rational[11, 2], Rational[13, 2]}, {
+       Rational[13, 2], Rational[13, 2], Rational[15, 2]}, {
+       Rational[15, 2], Rational[13, 2], Rational[15, 2]}, {
+       Rational[15, 2], Rational[11, 2], Rational[15, 2]}, {
+       Rational[13, 2], Rational[11, 2], Rational[15, 2]}}, {{6.5, 6.5, 
+      6.5}, {7.5, 6.5, 6.5}, {7.5, 5.5, 6.5}, {6.5, 5.5, 6.5}, {6.5, 6.5, 
+      7.5}, {7.5, 6.5, 7.5}, {7.5, 5.5, 7.5}, {6.5, 5.5, 7.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{7, 6, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[15, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[15, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[15, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[15, 2]}}, {{8.5, 2.5, 6.5}, {
+      9.5, 2.5, 6.5}, {9.5, 1.5, 6.5}, {8.5, 1.5, 6.5}, {8.5, 2.5, 7.5}, {9.5,
+       2.5, 7.5}, {9.5, 1.5, 7.5}, {8.5, 1.5, 7.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 2, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[7, 2], Rational[9, 2], Rational[-1, 2]}, {
+       Rational[9, 2], Rational[9, 2], Rational[-1, 2]}, {
+       Rational[9, 2], Rational[7, 2], Rational[-1, 2]}, {
+       Rational[7, 2], Rational[7, 2], Rational[-1, 2]}, {
+       Rational[7, 2], Rational[9, 2], Rational[1, 2]}, {
+       Rational[9, 2], Rational[9, 2], Rational[1, 2]}, {
+       Rational[9, 2], Rational[7, 2], Rational[1, 2]}, {
+       Rational[7, 2], Rational[7, 2], Rational[1, 2]}}, {{3.5, 4.5, -0.5}, {
+      4.5, 4.5, -0.5}, {4.5, 3.5, -0.5}, {3.5, 3.5, -0.5}, {3.5, 4.5, 0.5}, {
+      4.5, 4.5, 0.5}, {4.5, 3.5, 0.5}, {3.5, 3.5, 0.5}}], {{1, 2, 3, 4}, {5, 
+     6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{4, 4, 0}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[19, 2], Rational[5, 2], Rational[19, 2]}, {
+       Rational[21, 2], Rational[5, 2], Rational[19, 2]}, {
+       Rational[21, 2], Rational[3, 2], Rational[19, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[19, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[21, 2]}, {
+       Rational[21, 2], Rational[5, 2], Rational[21, 2]}, {
+       Rational[21, 2], Rational[3, 2], Rational[21, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[21, 2]}}, {{9.5, 2.5, 9.5}, {
+      10.5, 2.5, 9.5}, {10.5, 1.5, 9.5}, {9.5, 1.5, 9.5}, {9.5, 2.5, 10.5}, {
+      10.5, 2.5, 10.5}, {10.5, 1.5, 10.5}, {9.5, 1.5, 10.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{10, 2, 10}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[15, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[1, 2], Rational[11, 2]}, {
+       Rational[15, 2], Rational[1, 2], Rational[11, 2]}, {
+       Rational[15, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[1, 2], Rational[13, 2]}, {
+       Rational[15, 2], Rational[1, 2], Rational[13, 2]}}, {{7.5, 1.5, 5.5}, {
+      8.5, 1.5, 5.5}, {8.5, 0.5, 5.5}, {7.5, 0.5, 5.5}, {7.5, 1.5, 6.5}, {8.5,
+       1.5, 6.5}, {8.5, 0.5, 6.5}, {7.5, 0.5, 6.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{8, 1, 6}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[13, 2], Rational[17, 2], Rational[3, 2]}, {
+       Rational[15, 2], Rational[17, 2], Rational[3, 2]}, {
+       Rational[15, 2], Rational[15, 2], Rational[3, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[3, 2]}, {
+       Rational[13, 2], Rational[17, 2], Rational[5, 2]}, {
+       Rational[15, 2], Rational[17, 2], Rational[5, 2]}, {
+       Rational[15, 2], Rational[15, 2], Rational[5, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[5, 2]}}, {{6.5, 8.5, 1.5}, {
+      7.5, 8.5, 1.5}, {7.5, 7.5, 1.5}, {6.5, 7.5, 1.5}, {6.5, 8.5, 2.5}, {7.5,
+       8.5, 2.5}, {7.5, 7.5, 2.5}, {6.5, 7.5, 2.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{7, 8, 2}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[-1, 2], Rational[11, 2], Rational[7, 2]}, {
+       Rational[1, 2], Rational[11, 2], Rational[7, 2]}, {
+       Rational[1, 2], Rational[9, 2], Rational[7, 2]}, {
+       Rational[-1, 2], Rational[9, 2], Rational[7, 2]}, {
+       Rational[-1, 2], Rational[11, 2], Rational[9, 2]}, {
+       Rational[1, 2], Rational[11, 2], Rational[9, 2]}, {
+       Rational[1, 2], Rational[9, 2], Rational[9, 2]}, {
+       Rational[-1, 2], Rational[9, 2], Rational[9, 2]}}, {{-0.5, 5.5, 3.5}, {
+      0.5, 5.5, 3.5}, {0.5, 4.5, 3.5}, {-0.5, 4.5, 3.5}, {-0.5, 5.5, 4.5}, {
+      0.5, 5.5, 4.5}, {0.5, 4.5, 4.5}, {-0.5, 4.5, 4.5}}], {{1, 2, 3, 4}, {5, 
+     6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{0, 5, 4}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[13, 2], Rational[17, 2], Rational[1, 2]}, {
+       Rational[15, 2], Rational[17, 2], Rational[1, 2]}, {
+       Rational[15, 2], Rational[15, 2], Rational[1, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[1, 2]}, {
+       Rational[13, 2], Rational[17, 2], Rational[3, 2]}, {
+       Rational[15, 2], Rational[17, 2], Rational[3, 2]}, {
+       Rational[15, 2], Rational[15, 2], Rational[3, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[3, 2]}}, {{6.5, 8.5, 0.5}, {
+      7.5, 8.5, 0.5}, {7.5, 7.5, 0.5}, {6.5, 7.5, 0.5}, {6.5, 8.5, 1.5}, {7.5,
+       8.5, 1.5}, {7.5, 7.5, 1.5}, {6.5, 7.5, 1.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{7, 8, 1}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[11, 2], Rational[21, 2], Rational[19, 2]}, {
+       Rational[13, 2], Rational[21, 2], Rational[19, 2]}, {
+       Rational[13, 2], Rational[19, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[19, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[21, 2], Rational[21, 2]}, {
+       Rational[13, 2], Rational[21, 2], Rational[21, 2]}, {
+       Rational[13, 2], Rational[19, 2], Rational[21, 2]}, {
+       Rational[11, 2], Rational[19, 2], Rational[21, 2]}}, {{5.5, 10.5, 
+      9.5}, {6.5, 10.5, 9.5}, {6.5, 9.5, 9.5}, {5.5, 9.5, 9.5}, {5.5, 10.5, 
+      10.5}, {6.5, 10.5, 10.5}, {6.5, 9.5, 10.5}, {5.5, 9.5, 10.5}}], {{1, 2, 
+     3, 4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{6, 10, 10}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[7, 2], Rational[15, 2], Rational[19, 2]}, {
+       Rational[9, 2], Rational[15, 2], Rational[19, 2]}, {
+       Rational[9, 2], Rational[13, 2], Rational[19, 2]}, {
+       Rational[7, 2], Rational[13, 2], Rational[19, 2]}, {
+       Rational[7, 2], Rational[15, 2], Rational[21, 2]}, {
+       Rational[9, 2], Rational[15, 2], Rational[21, 2]}, {
+       Rational[9, 2], Rational[13, 2], Rational[21, 2]}, {
+       Rational[7, 2], Rational[13, 2], Rational[21, 2]}}, {{3.5, 7.5, 9.5}, {
+      4.5, 7.5, 9.5}, {4.5, 6.5, 9.5}, {3.5, 6.5, 9.5}, {3.5, 7.5, 10.5}, {
+      4.5, 7.5, 10.5}, {4.5, 6.5, 10.5}, {3.5, 6.5, 10.5}}], {{1, 2, 3, 4}, {
+     5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{4, 7, 10}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[15, 2], Rational[7, 2], Rational[1, 2]}, {
+       Rational[17, 2], Rational[7, 2], Rational[1, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[1, 2]}, {
+       Rational[15, 2], Rational[5, 2], Rational[1, 2]}, {
+       Rational[15, 2], Rational[7, 2], Rational[3, 2]}, {
+       Rational[17, 2], Rational[7, 2], Rational[3, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[3, 2]}, {
+       Rational[15, 2], Rational[5, 2], Rational[3, 2]}}, {{7.5, 3.5, 0.5}, {
+      8.5, 3.5, 0.5}, {8.5, 2.5, 0.5}, {7.5, 2.5, 0.5}, {7.5, 3.5, 1.5}, {8.5,
+       3.5, 1.5}, {8.5, 2.5, 1.5}, {7.5, 2.5, 1.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{8, 3, 1}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[-1, 2], Rational[11, 2], Rational[15, 2]}, {
+       Rational[1, 2], Rational[11, 2], Rational[15, 2]}, {
+       Rational[1, 2], Rational[9, 2], Rational[15, 2]}, {
+       Rational[-1, 2], Rational[9, 2], Rational[15, 2]}, {
+       Rational[-1, 2], Rational[11, 2], Rational[17, 2]}, {
+       Rational[1, 2], Rational[11, 2], Rational[17, 2]}, {
+       Rational[1, 2], Rational[9, 2], Rational[17, 2]}, {
+       Rational[-1, 2], Rational[9, 2], Rational[17, 2]}}, {{-0.5, 5.5, 
+      7.5}, {0.5, 5.5, 7.5}, {0.5, 4.5, 7.5}, {-0.5, 4.5, 7.5}, {-0.5, 5.5, 
+      8.5}, {0.5, 5.5, 8.5}, {0.5, 4.5, 8.5}, {-0.5, 4.5, 8.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{0, 5, 8}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[15, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[7, 2], Rational[13, 2]}, {
+       Rational[15, 2], Rational[7, 2], Rational[13, 2]}, {
+       Rational[15, 2], Rational[9, 2], Rational[15, 2]}, {
+       Rational[17, 2], Rational[9, 2], Rational[15, 2]}, {
+       Rational[17, 2], Rational[7, 2], Rational[15, 2]}, {
+       Rational[15, 2], Rational[7, 2], Rational[15, 2]}}, {{7.5, 4.5, 6.5}, {
+      8.5, 4.5, 6.5}, {8.5, 3.5, 6.5}, {7.5, 3.5, 6.5}, {7.5, 4.5, 7.5}, {8.5,
+       4.5, 7.5}, {8.5, 3.5, 7.5}, {7.5, 3.5, 7.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{8, 4, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[13, 2]}}, {{8.5, 2.5, 5.5}, {
+      9.5, 2.5, 5.5}, {9.5, 1.5, 5.5}, {8.5, 1.5, 5.5}, {8.5, 2.5, 6.5}, {9.5,
+       2.5, 6.5}, {9.5, 1.5, 6.5}, {8.5, 1.5, 6.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 2, 6}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[11, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[13, 2]}}, {{8.5, 2.5, 5.5}, {
+      9.5, 2.5, 5.5}, {9.5, 1.5, 5.5}, {8.5, 1.5, 5.5}, {8.5, 2.5, 6.5}, {9.5,
+       2.5, 6.5}, {9.5, 1.5, 6.5}, {8.5, 1.5, 6.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 2, 6}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[7, 2], Rational[3, 2], Rational[-1, 2]}, {
+       Rational[9, 2], Rational[3, 2], Rational[-1, 2]}, {
+       Rational[9, 2], Rational[1, 2], Rational[-1, 2]}, {
+       Rational[7, 2], Rational[1, 2], Rational[-1, 2]}, {
+       Rational[7, 2], Rational[3, 2], Rational[1, 2]}, {
+       Rational[9, 2], Rational[3, 2], Rational[1, 2]}, {
+       Rational[9, 2], Rational[1, 2], Rational[1, 2]}, {
+       Rational[7, 2], Rational[1, 2], Rational[1, 2]}}, {{3.5, 1.5, -0.5}, {
+      4.5, 1.5, -0.5}, {4.5, 0.5, -0.5}, {3.5, 0.5, -0.5}, {3.5, 1.5, 0.5}, {
+      4.5, 1.5, 0.5}, {4.5, 0.5, 0.5}, {3.5, 0.5, 0.5}}], {{1, 2, 3, 4}, {5, 
+     6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{4, 1, 0}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[5, 2], Rational[19, 2], Rational[17, 2]}, {
+       Rational[7, 2], Rational[19, 2], Rational[17, 2]}, {
+       Rational[7, 2], Rational[17, 2], Rational[17, 2]}, {
+       Rational[5, 2], Rational[17, 2], Rational[17, 2]}, {
+       Rational[5, 2], Rational[19, 2], Rational[19, 2]}, {
+       Rational[7, 2], Rational[19, 2], Rational[19, 2]}, {
+       Rational[7, 2], Rational[17, 2], Rational[19, 2]}, {
+       Rational[5, 2], Rational[17, 2], Rational[19, 2]}}, {{2.5, 9.5, 8.5}, {
+      3.5, 9.5, 8.5}, {3.5, 8.5, 8.5}, {2.5, 8.5, 8.5}, {2.5, 9.5, 9.5}, {3.5,
+       9.5, 9.5}, {3.5, 8.5, 9.5}, {2.5, 8.5, 9.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{3, 9, 9}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[11, 2], Rational[15, 2], Rational[17, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[17, 2]}, {
+       Rational[13, 2], Rational[13, 2], Rational[17, 2]}, {
+       Rational[11, 2], Rational[13, 2], Rational[17, 2]}, {
+       Rational[11, 2], Rational[15, 2], Rational[19, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[19, 2]}, {
+       Rational[13, 2], Rational[13, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[13, 2], Rational[19, 2]}}, {{5.5, 7.5, 
+      8.5}, {6.5, 7.5, 8.5}, {6.5, 6.5, 8.5}, {5.5, 6.5, 8.5}, {5.5, 7.5, 
+      9.5}, {6.5, 7.5, 9.5}, {6.5, 6.5, 9.5}, {5.5, 6.5, 9.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{6, 7, 9}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[13, 2], Rational[1, 2], Rational[9, 2]}, {
+       Rational[15, 2], Rational[1, 2], Rational[9, 2]}, {
+       Rational[15, 2], Rational[-1, 2], Rational[9, 2]}, {
+       Rational[13, 2], Rational[-1, 2], Rational[9, 2]}, {
+       Rational[13, 2], Rational[1, 2], Rational[11, 2]}, {
+       Rational[15, 2], Rational[1, 2], Rational[11, 2]}, {
+       Rational[15, 2], Rational[-1, 2], Rational[11, 2]}, {
+       Rational[13, 2], Rational[-1, 2], Rational[11, 2]}}, {{6.5, 0.5, 
+      4.5}, {7.5, 0.5, 4.5}, {7.5, -0.5, 4.5}, {6.5, -0.5, 4.5}, {6.5, 0.5, 
+      5.5}, {7.5, 0.5, 5.5}, {7.5, -0.5, 5.5}, {6.5, -0.5, 5.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{7, 0, 5}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[3, 2], Rational[19, 2], Rational[13, 2]}, {
+       Rational[5, 2], Rational[19, 2], Rational[13, 2]}, {
+       Rational[5, 2], Rational[17, 2], Rational[13, 2]}, {
+       Rational[3, 2], Rational[17, 2], Rational[13, 2]}, {
+       Rational[3, 2], Rational[19, 2], Rational[15, 2]}, {
+       Rational[5, 2], Rational[19, 2], Rational[15, 2]}, {
+       Rational[5, 2], Rational[17, 2], Rational[15, 2]}, {
+       Rational[3, 2], Rational[17, 2], Rational[15, 2]}}, {{1.5, 9.5, 6.5}, {
+      2.5, 9.5, 6.5}, {2.5, 8.5, 6.5}, {1.5, 8.5, 6.5}, {1.5, 9.5, 7.5}, {2.5,
+       9.5, 7.5}, {2.5, 8.5, 7.5}, {1.5, 8.5, 7.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{2, 9, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[-1, 2], Rational[7, 2], Rational[3, 2]}, {
+       Rational[1, 2], Rational[7, 2], Rational[3, 2]}, {
+       Rational[1, 2], Rational[5, 2], Rational[3, 2]}, {
+       Rational[-1, 2], Rational[5, 2], Rational[3, 2]}, {
+       Rational[-1, 2], Rational[7, 2], Rational[5, 2]}, {
+       Rational[1, 2], Rational[7, 2], Rational[5, 2]}, {
+       Rational[1, 2], Rational[5, 2], Rational[5, 2]}, {
+       Rational[-1, 2], Rational[5, 2], Rational[5, 2]}}, {{-0.5, 3.5, 1.5}, {
+      0.5, 3.5, 1.5}, {0.5, 2.5, 1.5}, {-0.5, 2.5, 1.5}, {-0.5, 3.5, 2.5}, {
+      0.5, 3.5, 2.5}, {0.5, 2.5, 2.5}, {-0.5, 2.5, 2.5}}], {{1, 2, 3, 4}, {5, 
+     6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{0, 3, 2}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[11, 2], Rational[17, 2], Rational[5, 2]}, {
+       Rational[13, 2], Rational[17, 2], Rational[5, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[5, 2]}, {
+       Rational[11, 2], Rational[15, 2], Rational[5, 2]}, {
+       Rational[11, 2], Rational[17, 2], Rational[7, 2]}, {
+       Rational[13, 2], Rational[17, 2], Rational[7, 2]}, {
+       Rational[13, 2], Rational[15, 2], Rational[7, 2]}, {
+       Rational[11, 2], Rational[15, 2], Rational[7, 2]}}, {{5.5, 8.5, 2.5}, {
+      6.5, 8.5, 2.5}, {6.5, 7.5, 2.5}, {5.5, 7.5, 2.5}, {5.5, 8.5, 3.5}, {6.5,
+       8.5, 3.5}, {6.5, 7.5, 3.5}, {5.5, 7.5, 3.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{6, 8, 3}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[9, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[11, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[11, 2], Rational[7, 2], Rational[13, 2]}, {
+       Rational[9, 2], Rational[7, 2], Rational[13, 2]}, {
+       Rational[9, 2], Rational[9, 2], Rational[15, 2]}, {
+       Rational[11, 2], Rational[9, 2], Rational[15, 2]}, {
+       Rational[11, 2], Rational[7, 2], Rational[15, 2]}, {
+       Rational[9, 2], Rational[7, 2], Rational[15, 2]}}, {{4.5, 4.5, 6.5}, {
+      5.5, 4.5, 6.5}, {5.5, 3.5, 6.5}, {4.5, 3.5, 6.5}, {4.5, 4.5, 7.5}, {5.5,
+       4.5, 7.5}, {5.5, 3.5, 7.5}, {4.5, 3.5, 7.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{5, 4, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[19, 2], Rational[11, 2], Rational[3, 2]}, {
+       Rational[21, 2], Rational[11, 2], Rational[3, 2]}, {
+       Rational[21, 2], Rational[9, 2], Rational[3, 2]}, {
+       Rational[19, 2], Rational[9, 2], Rational[3, 2]}, {
+       Rational[19, 2], Rational[11, 2], Rational[5, 2]}, {
+       Rational[21, 2], Rational[11, 2], Rational[5, 2]}, {
+       Rational[21, 2], Rational[9, 2], Rational[5, 2]}, {
+       Rational[19, 2], Rational[9, 2], Rational[5, 2]}}, {{9.5, 5.5, 1.5}, {
+      10.5, 5.5, 1.5}, {10.5, 4.5, 1.5}, {9.5, 4.5, 1.5}, {9.5, 5.5, 2.5}, {
+      10.5, 5.5, 2.5}, {10.5, 4.5, 2.5}, {9.5, 4.5, 2.5}}], {{1, 2, 3, 4}, {5,
+      6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{10, 5, 2}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[9, 2], Rational[7, 2], Rational[17, 2]}, {
+       Rational[11, 2], Rational[7, 2], Rational[17, 2]}, {
+       Rational[11, 2], Rational[5, 2], Rational[17, 2]}, {
+       Rational[9, 2], Rational[5, 2], Rational[17, 2]}, {
+       Rational[9, 2], Rational[7, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[7, 2], Rational[19, 2]}, {
+       Rational[11, 2], Rational[5, 2], Rational[19, 2]}, {
+       Rational[9, 2], Rational[5, 2], Rational[19, 2]}}, {{4.5, 3.5, 8.5}, {
+      5.5, 3.5, 8.5}, {5.5, 2.5, 8.5}, {4.5, 2.5, 8.5}, {4.5, 3.5, 9.5}, {5.5,
+       3.5, 9.5}, {5.5, 2.5, 9.5}, {4.5, 2.5, 9.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{5, 3, 9}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[3, 2], Rational[13, 2], Rational[17, 2]}, {
+       Rational[5, 2], Rational[13, 2], Rational[17, 2]}, {
+       Rational[5, 2], Rational[11, 2], Rational[17, 2]}, {
+       Rational[3, 2], Rational[11, 2], Rational[17, 2]}, {
+       Rational[3, 2], Rational[13, 2], Rational[19, 2]}, {
+       Rational[5, 2], Rational[13, 2], Rational[19, 2]}, {
+       Rational[5, 2], Rational[11, 2], Rational[19, 2]}, {
+       Rational[3, 2], Rational[11, 2], Rational[19, 2]}}, {{1.5, 6.5, 8.5}, {
+      2.5, 6.5, 8.5}, {2.5, 5.5, 8.5}, {1.5, 5.5, 8.5}, {1.5, 6.5, 9.5}, {2.5,
+       6.5, 9.5}, {2.5, 5.5, 9.5}, {1.5, 5.5, 9.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{2, 6, 9}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[9, 2], Rational[9, 2], Rational[11, 2]}, {
+       Rational[11, 2], Rational[9, 2], Rational[11, 2]}, {
+       Rational[11, 2], Rational[7, 2], Rational[11, 2]}, {
+       Rational[9, 2], Rational[7, 2], Rational[11, 2]}, {
+       Rational[9, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[11, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[11, 2], Rational[7, 2], Rational[13, 2]}, {
+       Rational[9, 2], Rational[7, 2], Rational[13, 2]}}, {{4.5, 4.5, 5.5}, {
+      5.5, 4.5, 5.5}, {5.5, 3.5, 5.5}, {4.5, 3.5, 5.5}, {4.5, 4.5, 6.5}, {5.5,
+       4.5, 6.5}, {5.5, 3.5, 6.5}, {4.5, 3.5, 6.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{5, 4, 6}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[-1, 2], Rational[11, 2], Rational[13, 2]}, {
+       Rational[1, 2], Rational[11, 2], Rational[13, 2]}, {
+       Rational[1, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[-1, 2], Rational[9, 2], Rational[13, 2]}, {
+       Rational[-1, 2], Rational[11, 2], Rational[15, 2]}, {
+       Rational[1, 2], Rational[11, 2], Rational[15, 2]}, {
+       Rational[1, 2], Rational[9, 2], Rational[15, 2]}, {
+       Rational[-1, 2], Rational[9, 2], Rational[15, 2]}}, {{-0.5, 5.5, 
+      6.5}, {0.5, 5.5, 6.5}, {0.5, 4.5, 6.5}, {-0.5, 4.5, 6.5}, {-0.5, 5.5, 
+      7.5}, {0.5, 5.5, 7.5}, {0.5, 4.5, 7.5}, {-0.5, 4.5, 7.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{0, 5, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[1, 2], Rational[21, 2], Rational[7, 2]}, {
+       Rational[3, 2], Rational[21, 2], Rational[7, 2]}, {
+       Rational[3, 2], Rational[19, 2], Rational[7, 2]}, {
+       Rational[1, 2], Rational[19, 2], Rational[7, 2]}, {
+       Rational[1, 2], Rational[21, 2], Rational[9, 2]}, {
+       Rational[3, 2], Rational[21, 2], Rational[9, 2]}, {
+       Rational[3, 2], Rational[19, 2], Rational[9, 2]}, {
+       Rational[1, 2], Rational[19, 2], Rational[9, 2]}}, {{0.5, 10.5, 3.5}, {
+      1.5, 10.5, 3.5}, {1.5, 9.5, 3.5}, {0.5, 9.5, 3.5}, {0.5, 10.5, 4.5}, {
+      1.5, 10.5, 4.5}, {1.5, 9.5, 4.5}, {0.5, 9.5, 4.5}}], {{1, 2, 3, 4}, {5, 
+     6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{1, 10, 4}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[19, 2], Rational[11, 2], Rational[7, 2]}, {
+       Rational[21, 2], Rational[11, 2], Rational[7, 2]}, {
+       Rational[21, 2], Rational[9, 2], Rational[7, 2]}, {
+       Rational[19, 2], Rational[9, 2], Rational[7, 2]}, {
+       Rational[19, 2], Rational[11, 2], Rational[9, 2]}, {
+       Rational[21, 2], Rational[11, 2], Rational[9, 2]}, {
+       Rational[21, 2], Rational[9, 2], Rational[9, 2]}, {
+       Rational[19, 2], Rational[9, 2], Rational[9, 2]}}, {{9.5, 5.5, 3.5}, {
+      10.5, 5.5, 3.5}, {10.5, 4.5, 3.5}, {9.5, 4.5, 3.5}, {9.5, 5.5, 4.5}, {
+      10.5, 5.5, 4.5}, {10.5, 4.5, 4.5}, {9.5, 4.5, 4.5}}], {{1, 2, 3, 4}, {5,
+      6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{10, 5, 4}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[7, 2], Rational[1, 2], Rational[17, 2]}, {
+       Rational[9, 2], Rational[1, 2], Rational[17, 2]}, {
+       Rational[9, 2], Rational[-1, 2], Rational[17, 2]}, {
+       Rational[7, 2], Rational[-1, 2], Rational[17, 2]}, {
+       Rational[7, 2], Rational[1, 2], Rational[19, 2]}, {
+       Rational[9, 2], Rational[1, 2], Rational[19, 2]}, {
+       Rational[9, 2], Rational[-1, 2], Rational[19, 2]}, {
+       Rational[7, 2], Rational[-1, 2], Rational[19, 2]}}, {{3.5, 0.5, 8.5}, {
+      4.5, 0.5, 8.5}, {4.5, -0.5, 8.5}, {3.5, -0.5, 8.5}, {3.5, 0.5, 9.5}, {
+      4.5, 0.5, 9.5}, {4.5, -0.5, 9.5}, {3.5, -0.5, 9.5}}], {{1, 2, 3, 4}, {5,
+      6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{4, 0, 9}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[-1, 2], Rational[15, 2], Rational[11, 2]}, {
+       Rational[1, 2], Rational[15, 2], Rational[11, 2]}, {
+       Rational[1, 2], Rational[13, 2], Rational[11, 2]}, {
+       Rational[-1, 2], Rational[13, 2], Rational[11, 2]}, {
+       Rational[-1, 2], Rational[15, 2], Rational[13, 2]}, {
+       Rational[1, 2], Rational[15, 2], Rational[13, 2]}, {
+       Rational[1, 2], Rational[13, 2], Rational[13, 2]}, {
+       Rational[-1, 2], Rational[13, 2], Rational[13, 2]}}, {{-0.5, 7.5, 
+      5.5}, {0.5, 7.5, 5.5}, {0.5, 6.5, 5.5}, {-0.5, 6.5, 5.5}, {-0.5, 7.5, 
+      6.5}, {0.5, 7.5, 6.5}, {0.5, 6.5, 6.5}, {-0.5, 6.5, 6.5}}], {{1, 2, 3, 
+     4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{0, 7, 6}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[15, 2], Rational[15, 2], Rational[-1, 2]}, {
+       Rational[17, 2], Rational[15, 2], Rational[-1, 2]}, {
+       Rational[17, 2], Rational[13, 2], Rational[-1, 2]}, {
+       Rational[15, 2], Rational[13, 2], Rational[-1, 2]}, {
+       Rational[15, 2], Rational[15, 2], Rational[1, 2]}, {
+       Rational[17, 2], Rational[15, 2], Rational[1, 2]}, {
+       Rational[17, 2], Rational[13, 2], Rational[1, 2]}, {
+       Rational[15, 2], Rational[13, 2], Rational[1, 2]}}, {{7.5, 
+      7.5, -0.5}, {8.5, 7.5, -0.5}, {8.5, 6.5, -0.5}, {7.5, 6.5, -0.5}, {7.5, 
+      7.5, 0.5}, {8.5, 7.5, 0.5}, {8.5, 6.5, 0.5}, {7.5, 6.5, 0.5}}], {{1, 2, 
+     3, 4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 
+     5}}],
+    Cube[{8, 7, 0}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[5, 2], Rational[1, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[1, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[1, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[1, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[3, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[3, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[3, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[3, 2]}}, {{8.5, 2.5, 0.5}, {
+      9.5, 2.5, 0.5}, {9.5, 1.5, 0.5}, {8.5, 1.5, 0.5}, {8.5, 2.5, 1.5}, {9.5,
+       2.5, 1.5}, {9.5, 1.5, 1.5}, {8.5, 1.5, 1.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 2, 1}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[1, 2], Rational[3, 2]}, {
+       Rational[19, 2], Rational[1, 2], Rational[3, 2]}, {
+       Rational[19, 2], Rational[-1, 2], Rational[3, 2]}, {
+       Rational[17, 2], Rational[-1, 2], Rational[3, 2]}, {
+       Rational[17, 2], Rational[1, 2], Rational[5, 2]}, {
+       Rational[19, 2], Rational[1, 2], Rational[5, 2]}, {
+       Rational[19, 2], Rational[-1, 2], Rational[5, 2]}, {
+       Rational[17, 2], Rational[-1, 2], Rational[5, 2]}}, {{8.5, 0.5, 1.5}, {
+      9.5, 0.5, 1.5}, {9.5, -0.5, 1.5}, {8.5, -0.5, 1.5}, {8.5, 0.5, 2.5}, {
+      9.5, 0.5, 2.5}, {9.5, -0.5, 2.5}, {8.5, -0.5, 2.5}}], {{1, 2, 3, 4}, {5,
+      6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 0, 2}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[-1, 2], Rational[19, 2], Rational[-1, 2]}, {
+       Rational[1, 2], Rational[19, 2], Rational[-1, 2]}, {
+       Rational[1, 2], Rational[17, 2], Rational[-1, 2]}, {
+       Rational[-1, 2], Rational[17, 2], Rational[-1, 2]}, {
+       Rational[-1, 2], Rational[19, 2], Rational[1, 2]}, {
+       Rational[1, 2], Rational[19, 2], Rational[1, 2]}, {
+       Rational[1, 2], Rational[17, 2], Rational[1, 2]}, {
+       Rational[-1, 2], Rational[17, 2], Rational[1, 2]}}, {{-0.5, 
+      9.5, -0.5}, {0.5, 9.5, -0.5}, {0.5, 8.5, -0.5}, {-0.5, 
+      8.5, -0.5}, {-0.5, 9.5, 0.5}, {0.5, 9.5, 0.5}, {0.5, 8.5, 0.5}, {-0.5, 
+      8.5, 0.5}}], {{1, 2, 3, 4}, {5, 6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {
+     8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{0, 9, 0}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[1, 2], Rational[7, 2], Rational[7, 2]}, {
+       Rational[3, 2], Rational[7, 2], Rational[7, 2]}, {
+       Rational[3, 2], Rational[5, 2], Rational[7, 2]}, {
+       Rational[1, 2], Rational[5, 2], Rational[7, 2]}, {
+       Rational[1, 2], Rational[7, 2], Rational[9, 2]}, {
+       Rational[3, 2], Rational[7, 2], Rational[9, 2]}, {
+       Rational[3, 2], Rational[5, 2], Rational[9, 2]}, {
+       Rational[1, 2], Rational[5, 2], Rational[9, 2]}}, {{0.5, 3.5, 3.5}, {
+      1.5, 3.5, 3.5}, {1.5, 2.5, 3.5}, {0.5, 2.5, 3.5}, {0.5, 3.5, 4.5}, {1.5,
+       3.5, 4.5}, {1.5, 2.5, 4.5}, {0.5, 2.5, 4.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{1, 3, 4}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[13, 2]}, {
+       Rational[17, 2], Rational[5, 2], Rational[15, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[15, 2]}, {
+       Rational[19, 2], Rational[3, 2], Rational[15, 2]}, {
+       Rational[17, 2], Rational[3, 2], Rational[15, 2]}}, {{8.5, 2.5, 6.5}, {
+      9.5, 2.5, 6.5}, {9.5, 1.5, 6.5}, {8.5, 1.5, 6.5}, {8.5, 2.5, 7.5}, {9.5,
+       2.5, 7.5}, {9.5, 1.5, 7.5}, {8.5, 1.5, 7.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 2, 7}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[17, 2], Rational[9, 2], Rational[17, 2]}, {
+       Rational[19, 2], Rational[9, 2], Rational[17, 2]}, {
+       Rational[19, 2], Rational[7, 2], Rational[17, 2]}, {
+       Rational[17, 2], Rational[7, 2], Rational[17, 2]}, {
+       Rational[17, 2], Rational[9, 2], Rational[19, 2]}, {
+       Rational[19, 2], Rational[9, 2], Rational[19, 2]}, {
+       Rational[19, 2], Rational[7, 2], Rational[19, 2]}, {
+       Rational[17, 2], Rational[7, 2], Rational[19, 2]}}, {{8.5, 4.5, 8.5}, {
+      9.5, 4.5, 8.5}, {9.5, 3.5, 8.5}, {8.5, 3.5, 8.5}, {8.5, 4.5, 9.5}, {9.5,
+       4.5, 9.5}, {9.5, 3.5, 9.5}, {8.5, 3.5, 9.5}}], {{1, 2, 3, 4}, {5, 6, 2,
+      1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{9, 4, 9}]], 
+   InterpretationBox[
+    PolyhedronBox[
+     NCache[{{Rational[19, 2], Rational[7, 2], Rational[11, 2]}, {
+       Rational[21, 2], Rational[7, 2], Rational[11, 2]}, {
+       Rational[21, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[11, 2]}, {
+       Rational[19, 2], Rational[7, 2], Rational[13, 2]}, {
+       Rational[21, 2], Rational[7, 2], Rational[13, 2]}, {
+       Rational[21, 2], Rational[5, 2], Rational[13, 2]}, {
+       Rational[19, 2], Rational[5, 2], Rational[13, 2]}}, {{9.5, 3.5, 5.5}, {
+      10.5, 3.5, 5.5}, {10.5, 2.5, 5.5}, {9.5, 2.5, 5.5}, {9.5, 3.5, 6.5}, {
+      10.5, 3.5, 6.5}, {10.5, 2.5, 6.5}, {9.5, 2.5, 6.5}}], {{1, 2, 3, 4}, {5,
+      6, 2, 1}, {6, 7, 3, 2}, {7, 8, 4, 3}, {8, 5, 1, 4}, {8, 7, 6, 5}}],
+    Cube[{10, 3, 6}]]},
+  ImageSize->{330.2504339315218, 345.31719410695587`},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{1.4644725076341283`, -2.638612484253002, 1.5307006344573098`},
+  ViewVertical->{0.04307525457978011, -0.16217629192691466`, 
+   0.9858211667334615}]], "Output",
+ CellChangeTimes->{3.9692204890972958`*^9, 3.969220527386305*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"f284de97-8745-874b-b13d-b22981ff3bc4"]
+}, Open  ]]
 },
 WindowSize->{571.8, 523.8},
 WindowMargins->{{284.4, Automatic}, {12, Automatic}},
-FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (2023\:5e7412\:670812\
-\:65e5)",
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"37e5fcbd-ab76-de4c-be70-442386fef09c"
 ]
@@ -201,13 +936,14 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 948, 25, 116, "Input",ExpressionUUID->"04adc9e2-4165-7142-9963-d17a0532c845"],
+Cell[580, 22, 948, 25, 85, "Input",ExpressionUUID->"04adc9e2-4165-7142-9963-d17a0532c845"],
 Cell[1531, 49, 5563, 128, 357, "Output",ExpressionUUID->"3dcacdb4-35e6-1647-ab59-0214baa310fe"]
 }, Open  ]],
-Cell[7109, 180, 146, 2, 28, "Input",ExpressionUUID->"02b0b70a-f197-004d-bc69-b2cfc8f8bf9f"]
+Cell[CellGroupData[{
+Cell[7131, 182, 426, 11, 28, "Input",ExpressionUUID->"02b0b70a-f197-004d-bc69-b2cfc8f8bf9f"],
+Cell[7560, 195, 40351, 722, 362, "Output",ExpressionUUID->"f284de97-8745-874b-b13d-b22981ff3bc4"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 

@@ -1,0 +1,59 @@
+default(maxprimelimit, 10^7); \\ safety
+is_twinprime(p) = {
+  if(p<2, return(0));
+  if(!isprime(p), return(0));
+  return(isprime(p+2) || (p>2 && isprime(p-2)));
+}
+is_twinprime(p)=if(p<2,return(0));if(!isprime(p),return(0));return(isprime(p+2)||(p>2&&isprime(p-2)));
+first_n_twin_lowers(n) = {
+  local(list = vector(n));
+  k = 3; i = 1;
+  while(i <= n,
+    if(isprime(k) && isprime(k+2),
+      list[i] = k; i++;
+    );
+    k += 2; \\ skip even numbers
+  );
+  return(list);
+}
+first_n_twin_lowers(n)=local(list=vector(n));k=3;i=1;while(i<=n,if(isprime(k)&&isprime(k+2),list[i]=k;i++;);k+=2;);return(list);
+find_prod_and_d(n_start=10, maxD=10^7, auto_increase_prod = 1) = {
+  n = n_start;
+  while(1,
+    lowers = first_n_twin_lowers(n);
+    prod = 1;
+    for(i=1, #lowers, prod *= lowers[i]);
+    if(prod <= 2*10^10,
+      if(auto_increase_prod,
+        n += 1; next; \\ increase n until prod > 2e10
+      ,
+        error("prod <= 2*10^10; increase n or enable auto_increase_prod");
+      );
+    );
+    print("n = ", n, "  prod has ", length(Str(prod)), " decimal digits");
+    nth_lower = lowers[n];
+    \\ compute search bound for d: must satisfy prod - d > nth_lower => d < prod - nth_lower
+    maxD_eff = min(maxD, prod - nth_lower - 1);
+    if(maxD_eff < 2, error("No room to search: prod - nth_lower <= 2"));
+    print("searching even d from 2 to ", maxD_eff, " ...");
+    for(d=2, maxD_eff, 
+      if((d % 2) != 0, next); \\ ensure even d
+      a = prod + d;
+      b = prod - d;
+      if(is_twinprime(a) && is_twinprime(b),
+        print("FOUND: d = ", d);
+        print("prod - d = ", b);
+        print("prod + d = ", a);
+        return([n, prod, d, b, a]);
+      );
+      if((d % 1000000) == 0, print("checked d up to ", d));
+    );
+    print("no d found up to maxD = ", maxD_eff, " for n = ", n);
+    \\ if not found, either increase maxD or increase n; here we increment n and try again
+    n += 1;
+  );
+}
+find_prod_and_d(n_start=10,maxD=10^7,auto_increase_prod=1)=n=n_start;while(1,lowers=first_n_twin_lowers(n);prod=1;for(i=1,#lowers,prod*=lowers[i]);if(prod<=2*10^10,if(auto_increase_prod,n+=1;next;,error("prod <= 2*10^10; increase n or enable auto_increase_prod");););print("n = ",n,"  prod has ",length(Str(prod))," decimal digits");nth_lower=lowers[n];maxD_eff=min(maxD,prod-nth_lower-1);if(maxD_eff<2,error("No room to search: prod - nth_lower <= 2"));print("searching even d from 2 to ",maxD_eff," ...");for(d=2,maxD_eff,if((d%2)!=0,next);a=prod+d;b=prod-d;if(is_twinprime(a)&&is_twinprime(b),print("FOUND: d = ",d);print("prod - d = ",b);print("prod + d = ",a);return([n,prod,d,b,a]););if((d%1000000)==0,print("checked d up to ",d)););print("no d found up to maxD = ",maxD_eff," for n = ",n);n+=1;);
+?/
+?load
+\r verify_Dubner.gp 

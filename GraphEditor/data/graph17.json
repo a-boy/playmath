@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "origLabel": null,
+      "newLabel": 0,
+      "x": 169.5,
+      "y": 262.5
+    },
+    {
+      "id": 1,
+      "origLabel": null,
+      "newLabel": 1,
+      "x": 215.83333333333334,
+      "y": 246.27777777777777
+    },
+    {
+      "id": 2,
+      "origLabel": null,
+      "newLabel": 2,
+      "x": 263,
+      "y": 212.5
+    },
+    {
+      "id": 3,
+      "origLabel": null,
+      "newLabel": 3,
+      "x": 260.5,
+      "y": 187.5
+    },
+    {
+      "id": 4,
+      "origLabel": null,
+      "newLabel": 4,
+      "x": 283.5,
+      "y": 135.5
+    },
+    {
+      "id": 5,
+      "origLabel": null,
+      "newLabel": 5,
+      "x": 265.5,
+      "y": 88.5
+    },
+    {
+      "id": 6,
+      "origLabel": null,
+      "newLabel": 6,
+      "x": 227.33333333333334,
+      "y": 49.166666666666664
+    },
+    {
+      "id": 7,
+      "origLabel": null,
+      "newLabel": 7,
+      "x": 198.5,
+      "y": 23.5
+    },
+    {
+      "id": 8,
+      "origLabel": null,
+      "newLabel": 8,
+      "x": 125,
+      "y": 23.5
+    },
+    {
+      "id": 9,
+      "origLabel": null,
+      "newLabel": 9,
+      "x": 117.71428571428571,
+      "y": 51.785714285714285
+    },
+    {
+      "id": 10,
+      "origLabel": null,
+      "newLabel": 10,
+      "x": 97,
+      "y": 23.5
+    },
+    {
+      "id": 11,
+      "origLabel": null,
+      "newLabel": 11,
+      "x": 44.5,
+      "y": 63.5
+    },
+    {
+      "id": 12,
+      "origLabel": null,
+      "newLabel": 12,
+      "x": 20.1,
+      "y": 139.26666666666668
+    },
+    {
+      "id": 13,
+      "origLabel": null,
+      "newLabel": 13,
+      "x": 31,
+      "y": 212.5
+    },
+    {
+      "id": 14,
+      "origLabel": null,
+      "newLabel": 14,
+      "x": 50.5,
+      "y": 227
+    },
+    {
+      "id": 15,
+      "origLabel": null,
+      "newLabel": 15,
+      "x": 93,
+      "y": 265.25
+    },
+    {
+      "id": 16,
+      "origLabel": null,
+      "newLabel": 16,
+      "x": 145,
+      "y": 275
+    }
+  ],
+  "edges": [
+    "REPLACE_EDGES"
+  ]
+}

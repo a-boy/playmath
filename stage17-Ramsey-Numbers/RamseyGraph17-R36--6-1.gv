@@ -1,0 +1,70 @@
+graph RamseyGraph17K2V5{
+	label = "R(3,6)=18  nodes:17  clique number:2, maximal_independent_set length:5 subgraph(9..16) is cubical_graph"
+	labelloc = b
+	bgcolor = "#FFFFFFFF"
+	splines = "false"
+	outputorder = "edgesfirst"
+	esep = "0"
+	pad = "2"
+	node [penwidth = "0.000000",height = "0.347222",width = "0.347222",tooltip = "",color = "#000000FF",fillcolor = "#7FCDBBFF",shape = "ellipse",style = "solid,filled",fontname = "Dialog.plain",fontsize = "10",fontcolor = "#333333FF",fixedsize = "true",labelloc = "c"]
+	edge [penwidth = "1.000000",tooltip = "",arrowhead = "none",arrowtail = "none",color = "#999999FF",fontname = "Dialog.plain",fontsize = "10",fontcolor = "#333333FF",style = "solid",dir = "both"]
+	5  [pos = "-44.185100,223.031746"]
+	7  [pos = "-238.740025,39.913847"]
+	11  [pos = "77.240923,7.321274"]
+	14  [pos = "-63.467399,156.055125"]
+	8  [pos = "-168.810114,-111.043526"]
+	2  [pos = "130.953229,-110.967587"]
+	16  [pos = "-125.698630,-14.408451"]
+	13  [pos = "6.430152,159.068525"]
+	4  [pos = "107.732033,206.447638"]
+	10  [pos = "12.926899,-74.798708"]
+	15  [pos = "-136.498202,91.703237"]
+	6  [pos = "-186.545301,183.859350"]
+	12  [pos = "68.125478,107.918119"]
+	0  [pos = "-28.730694,17.877836"]
+	9  [pos = "-65.903658,-76.678022"]
+	1  [pos = "-31.392136,-163.758241"]
+	3  [pos = "178.273374,42.834223"]
+	0 -- 5
+	7 -- 8
+	15 -- 16
+	0 -- 7
+	7 -- 6
+	15 -- 8
+	1 -- 11
+	11 -- 12
+	12 -- 15
+	1 -- 14
+	11 -- 10
+	12 -- 13
+	1 -- 8
+	11 -- 16
+	12 -- 2
+	1 -- 2
+	11 -- 4
+	9 -- 10
+	3 -- 16
+	14 -- 9
+	9 -- 16
+	3 -- 13
+	14 -- 15
+	9 -- 2
+	3 -- 2
+	14 -- 13
+	3 -- 4
+	14 -- 4
+	5 -- 10
+	8 -- 4
+	5 -- 15
+	2 -- 6
+	5 -- 6
+	16 -- 6
+	5 -- 4
+	13 -- 6
+	0 -- 1
+	7 -- 12
+	10 -- 13
+	0 -- 3
+	7 -- 9
+	10 -- 8
+}
