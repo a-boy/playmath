@@ -1,0 +1,41 @@
+{
+  "name": "SageMath CoCalc",
+  "image": "sagemathinc/cocalc-docker-x86_64:latest",
+  "remoteUser": "root",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "forwardPorts": [443, 8080, 8888, 9999],
+  "portsAttributes": {
+    "443": {
+      "label": "CoCalc HTTPS",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "HTTP",
+      "onAutoForward": "notify"
+    },
+    "8888": {
+      "label": "Jupyter",
+      "onAutoForward": "notify"
+    },
+    "9999": {
+      "label": "Sage Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.jupyter-hub",
+        "ms-python.python"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install --upgrade pip && which sage && sage --version",
+  "remoteEnv": {
+    "SHELL": "/bin/bash"
+  }
+}
