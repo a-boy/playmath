@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<graphml>
+ <key id='nodeKey1'
+     for='node'
+     attr.name='VertexCoordinates'
+     attr.type='String' />
+ <graph id='Graph1'
+     edgedefault='undirected'>
+  <node id='1'>
+   <data key='nodeKey1'>List[0.`, 0.4860944252252871`]</data>
+  </node>
+  <node id='2'>
+   <data key='nodeKey1'>List[0.5597043027196529`, 0.20142608518897998`]</data>
+  </node>
+  <node id='17'>
+   <data key='nodeKey1'>List[0.9329371537800685`, 0.7977438165771917`]</data>
+  </node>
+  <node id='14'>
+   <data key='nodeKey1'>List[0.42803735683101896`, 1.7641627189532347`]</data>
+  </node>
+  <node id='5'>
+   <data key='nodeKey1'>List[1.1034636947667975`, 0.19826735254716854`]</data>
+  </node>
+  <node id='3'>
+   <data key='nodeKey1'>List[0.90825876973427`, 1.3388861641382563`]</data>
+  </node>
+  <node id='12'>
+   <data key='nodeKey1'>List[1.2113489678655602`, 0.9763930999541821`]</data>
+  </node>
+  <node id='9'>
+   <data key='nodeKey1'>List[0.4137988489169686`, 1.0595762573587078`]</data>
+  </node>
+  <node id='16'>
+   <data key='nodeKey1'>List[1.657357139201137`, 0.`]</data>
+  </node>
+  <node id='7'>
+   <data key='nodeKey1'>List[1.8196639598605495`, 1.6767337948268515`]</data>
+  </node>
+  <node id='11'>
+   <data key='nodeKey1'>List[2.117201236699428`, 1.2964701046459617`]</data>
+  </node>
+  <node id='13'>
+   <data key='nodeKey1'>List[0.03826769491091864`, 1.3763251089134103`]</data>
+  </node>
+  <node id='10'>
+   <data key='nodeKey1'>List[1.4122732116354917`, 1.852560368977545`]</data>
+  </node>
+  <node id='8'>
+   <data key='nodeKey1'>List[1.0221177044969627`, 1.8168579471280437`]</data>
+  </node>
+  <node id='15'>
+   <data key='nodeKey1'>List[1.6350519141029516`, 1.0544896218631046`]</data>
+  </node>
+  <node id='4'>
+   <data key='nodeKey1'>List[1.6883551651851403`, 0.6362179638475391`]</data>
+  </node>
+  <node id='6'>
+   <data key='nodeKey1'>List[2.132211688512484`, 0.7590632023546818`]</data>
+  </node>
+  <edge id='e1'
+      source='1'
+      target='2' />
+  <edge id='e2'
+      source='1'
+      target='17' />
+  <edge id='e3'
+      source='1'
+      target='14' />
+  <edge id='e4'
+      source='1'
+      target='5' />
+  <edge id='e5'
+      source='2'
+      target='3' />
+  <edge id='e6'
+      source='2'
+      target='12' />
+  <edge id='e7'
+      source='2'
+      target='9' />
+  <edge id='e8'
+      source='2'
+      target='16' />
+  <edge id='e9'
+      source='17'
+      target='7' />
+  <edge id='e10'
+      source='17'
+      target='11' />
+  <edge id='e11'
+      source='17'
+      target='16' />
+  <edge id='e12'
+      source='17'
+      target='13' />
+  <edge id='e13'
+      source='14'
+      target='10' />
+  <edge id='e14'
+      source='14'
+      target='8' />
+  <edge id='e15'
+      source='14'
+      target='15' />
+  <edge id='e16'
+      source='14'
+      target='13' />
+  <edge id='e17'
+      source='5'
+      target='4' />
+  <edge id='e18'
+      source='5'
+      target='6' />
+  <edge id='e19'
+      source='5'
+      target='9' />
+  <edge id='e20'
+      source='5'
+      target='15' />
+  <edge id='e21'
+      source='3'
+      target='4' />
+  <edge id='e22'
+      source='3'
+      target='10' />
+  <edge id='e23'
+      source='3'
+      target='7' />
+  <edge id='e24'
+      source='3'
+      target='13' />
+  <edge id='e25'
+      source='12'
+      target='6' />
+  <edge id='e26'
+      source='12'
+      target='8' />
+  <edge id='e27'
+      source='12'
+      target='11' />
+  <edge id='e28'
+      source='12'
+      target='13' />
+  <edge id='e29'
+      source='4'
+      target='8' />
+  <edge id='e30'
+      source='4'
+      target='11' />
+  <edge id='e31'
+      source='4'
+      target='16' />
+  <edge id='e32'
+      source='6'
+      target='10' />
+  <edge id='e33'
+      source='6'
+      target='7' />
+  <edge id='e34'
+      source='6'
+      target='16' />
+  <edge id='e35'
+      source='10'
+      target='11' />
+  <edge id='e36'
+      source='10'
+      target='9' />
+  <edge id='e37'
+      source='8'
+      target='7' />
+  <edge id='e38'
+      source='8'
+      target='9' />
+  <edge id='e39'
+      source='7'
+      target='15' />
+  <edge id='e40'
+      source='11'
+      target='15' />
+  <edge id='e41'
+      source='9'
+      target='13' />
+  <edge id='e42'
+      source='16'
+      target='15' />
+ </graph>
+</graphml>

@@ -1,0 +1,847 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     40237,        837]
+NotebookOptionsPosition[     38885,        806]
+NotebookOutlinePosition[     39289,        822]
+CellTagsIndexPosition[     39246,        819]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "Get", "[", \
+"\"\<https://raw.githubusercontent.com/szhorvat/IGraphM/master/IGInstaller.m\>\
+\"", "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.970114968649315*^9, 3.970114968649315*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"9408e033-1e55-754d-aede-c71c9b8de11d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The currently installed versions of IGraph/M are: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["The currently installed versions of IGraph/M are: ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9701149722287617`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"eb824993-dd74-4540-9be0-a6a49b285596"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Installing IGraph/M is complete: \"\>", "\[InvisibleSpace]", 
+   InterpretationBox[
+    RowBox[{
+     TagBox["PacletObject",
+      "SummaryHead"], "[", 
+     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+      "Ready"}, 
+      TemplateBox[{
+        PaneSelectorBox[{False -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]],
+                 ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
+              GraphicsBox[
+               TagBox[
+                RasterBox[CompressedData["
+1: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
+                 "], {{0, 46.}, {46., 0}}, {0, 255}, ColorFunction -> 
+                 RGBColor, ImageResolution -> {72, 72}], 
+                BoxForm`ImageTag[
+                "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                 MetaInformation -> <|
+                  "XMP" -> <|
+                    "XMPBasicSchema" -> <|
+                    "CreatorTool" -> "Adobe Photoshop CC 2017 (Macintosh)", 
+                    "CreateDate" -> 
+                    DateObject[{2017, 12, 1, 16, 38, 15.}, "Instant", 
+                    "Gregorian", 1.], "ModifyDate" -> 
+                    DateObject[{2017, 12, 4, 22, 9, 4.}, "Instant", 
+                    "Gregorian", 1.], "MetadataDate" -> 
+                    DateObject[{2017, 12, 4, 22, 9, 4.}, "Instant", 
+                    "Gregorian", 1.]|>, 
+                    "DublinCoreSchema" -> <|"Format" -> "image/png"|>, 
+                    "PhotoshopSchema" -> <|"ColorMode" -> 3|>, 
+                    "XMPMediaManagementSchema" -> <|
+                    "InstanceID" -> 
+                    "xmp.iid:a23149e2-a0d1-4081-bab4-71ed4683843a", 
+                    "DocumentID" -> 
+                    "xmp.did:a23149e2-a0d1-4081-bab4-71ed4683843a", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:a23149e2-a0d1-4081-bab4-71ed4683843a", 
+                    "History[1]" -> <|
+                    "Event" -> <|
+                    "Action" -> "created", "InstanceID" -> 
+                    "xmp.iid:a23149e2-a0d1-4081-bab4-71ed4683843a", "When" -> 
+                    DateObject[{2017, 12, 1, 16, 38, 15.}, "Instant", 
+                    "Gregorian", 1.], "SoftwareAgent" -> 
+                    "Adobe Photoshop CC 2017 (Macintosh)"|>|>|>|>|>], 
+                Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+               ImageSizeRaw -> {46., 46.}, PlotRange -> {{0, 46.}, {0, 46.}}], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"IGraphM\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"0.6.5\"", "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}], True -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]],
+                 ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
+              GraphicsBox[
+               TagBox[
+                RasterBox[CompressedData["
+1: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
+                 "], {{0, 46.}, {46., 0}}, {0, 255}, ColorFunction -> 
+                 RGBColor, ImageResolution -> {72, 72}], 
+                BoxForm`ImageTag[
+                "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                 MetaInformation -> <|
+                  "XMP" -> <|
+                    "XMPBasicSchema" -> <|
+                    "CreatorTool" -> "Adobe Photoshop CC 2017 (Macintosh)", 
+                    "CreateDate" -> 
+                    DateObject[{2017, 12, 1, 16, 38, 15.}, "Instant", 
+                    "Gregorian", 1.], "ModifyDate" -> 
+                    DateObject[{2017, 12, 4, 22, 9, 4.}, "Instant", 
+                    "Gregorian", 1.], "MetadataDate" -> 
+                    DateObject[{2017, 12, 4, 22, 9, 4.}, "Instant", 
+                    "Gregorian", 1.]|>, 
+                    "DublinCoreSchema" -> <|"Format" -> "image/png"|>, 
+                    "PhotoshopSchema" -> <|"ColorMode" -> 3|>, 
+                    "XMPMediaManagementSchema" -> <|
+                    "InstanceID" -> 
+                    "xmp.iid:a23149e2-a0d1-4081-bab4-71ed4683843a", 
+                    "DocumentID" -> 
+                    "xmp.did:a23149e2-a0d1-4081-bab4-71ed4683843a", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:a23149e2-a0d1-4081-bab4-71ed4683843a", 
+                    "History[1]" -> <|
+                    "Event" -> <|
+                    "Action" -> "created", "InstanceID" -> 
+                    "xmp.iid:a23149e2-a0d1-4081-bab4-71ed4683843a", "When" -> 
+                    DateObject[{2017, 12, 1, 16, 38, 15.}, "Instant", 
+                    "Gregorian", 1.], "SoftwareAgent" -> 
+                    "Adobe Photoshop CC 2017 (Macintosh)"|>|>|>|>|>], 
+                Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+               ImageSizeRaw -> {46., 46.}, PlotRange -> {{0, 46.}, {0, 46.}}], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"IGraphM\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"0.6.5\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Location: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"C:\\\\Users\\\\PC\\\\AppData\\\\Roaming\\\\Wolfram\\\\\
+Paclets\\\\Repository\\\\IGraphM-0.6.5\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Description: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    "\"IGraph/M \[Dash] the igraph interface for Mathematica.\
+\"", Short], "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+       "SummaryPanel"],
+      DynamicModuleValues:>{}], "]"}],
+    PacletObject[<|
+     "Name" -> "IGraphM", "Version" -> "0.6.5", "MathematicaVersion" -> 
+      "11.0+", "Description" -> 
+      "IGraph/M \[Dash] the igraph interface for Mathematica.", "Creator" -> 
+      "Szabolcs Horv\[AAcute]t <szhorvat@gmail.com>", "URL" -> 
+      "http://szhorvat.net/mathematica/IGraphM", "Thumbnail" -> "Logo.png", 
+      "Icon" -> "Logo.png", 
+      "Keywords" -> {"igraph", "graph theory", "network analysis"}, 
+      "SystemID" -> {
+       "MacOSX-x86-64", "MacOSX-ARM64", "Windows-x86-64", "Linux-x86-64", 
+        "Linux-ARM"}, 
+      "Extensions" -> {{"Kernel", "Root" -> ".", "Context" -> "IGraphM`"}, {
+        "LibraryLink"}, {
+        "Documentation", "MainPage" -> "Tutorials/IGDocumentation"}}, 
+      "Location" -> 
+      "C:\\Users\\PC\\AppData\\Roaming\\Wolfram\\Paclets\\Repository\\IGraphM-\
+0.6.5"|>],
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False], "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["Installing IGraph/M is complete: ", 
+   PacletObject[<|
+    "Name" -> "IGraphM", "Version" -> "0.6.5", "MathematicaVersion" -> 
+     "11.0+", "Description" -> 
+     "IGraph/M \[Dash] the igraph interface for Mathematica.", "Creator" -> 
+     "Szabolcs Horv\[AAcute]t <szhorvat@gmail.com>", "URL" -> 
+     "http://szhorvat.net/mathematica/IGraphM", "Thumbnail" -> "Logo.png", 
+     "Icon" -> "Logo.png", 
+     "Keywords" -> {"igraph", "graph theory", "network analysis"}, 
+     "SystemID" -> {
+      "MacOSX-x86-64", "MacOSX-ARM64", "Windows-x86-64", "Linux-x86-64", 
+       "Linux-ARM"}, 
+     "Extensions" -> {{"Kernel", "Root" -> ".", "Context" -> "IGraphM`"}, {
+       "LibraryLink"}, {
+       "Documentation", "MainPage" -> "Tutorials/IGDocumentation"}}, 
+     "Location" -> 
+     "C:\\Users\\PC\\AppData\\Roaming\\Wolfram\\Paclets\\Repository\\IGraphM-\
+0.6.5"|>], "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9701149818636093`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"b8119c56-c522-1649-91db-f5ed003064b3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"It can now be loaded using the command \"\>", "\[InvisibleSpace]", 
+   ButtonBox[
+    RowBox[{"<<", "\<\"IGraphM`\"\>"}],
+    Appearance->None,
+    BaseStyle->"Link",
+    ButtonFunction:>(FrontEndExecute[{
+       FrontEnd`SelectionMove[
+        FrontEnd`EvaluationCell[], After, CellGroup], 
+       FrontEnd`NotebookWrite[
+        FrontEnd`EvaluationNotebook[], #, All], 
+       FrontEnd`SelectionEvaluateCreateCell[
+        FrontEnd`EvaluationNotebook[]]}]& ),
+    Evaluator->None,
+    Method->"Preemptive"]}],
+  SequenceForm["It can now be loaded using the command ", 
+   Button[
+    Defer[
+     Get["IGraphM`"]], FrontEndExecute[{
+      FrontEnd`SelectionMove[
+       FrontEnd`EvaluationCell[], After, CellGroup], 
+      FrontEnd`NotebookWrite[
+       FrontEnd`EvaluationNotebook[], #, All], 
+      FrontEnd`SelectionEvaluateCreateCell[
+       FrontEnd`EvaluationNotebook[]]}]& , Evaluator -> None, Appearance -> 
+    None, BaseStyle -> "Link"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9701149818786087`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"ab684e83-1d6c-e947-b68a-09730e168693"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"<<", "IGraphM`"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"IGVersion", "[", "]"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Graph", "[", 
+   RowBox[{
+    RowBox[{"GraphData", "[", "\"\<DodecahedralGraph\>\"", "]"}], ",", 
+    RowBox[{"EdgeStyle", "->", 
+     RowBox[{"Directive", "[", 
+      RowBox[{"Thick", ",", 
+       RowBox[{"Opacity", "[", "1", "]"}]}], "]"}]}], ",", 
+    RowBox[{"VertexStyle", "->", "Black"}]}], "]"}], "//", 
+  RowBox[{"IGEdgeMap", "[", 
+   RowBox[{
+    RowBox[{"ColorData", "[", "109", "]"}], ",", 
+    RowBox[{"EdgeStyle", "->", "IGEdgeColoring"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.9701150121539116`*^9, 3.9701150121539116`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"bc81908f-659a-414c-b2d4-28a43c683444"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"IGraph/M 0.6.5 (December 21, 2022)\"\>"},
+    {"\<\"Evaluate \\!\\(\\*ButtonBox[\\\"IGDocumentation[]\\\",BaseStyle->\\\
+\"Link\\\",ButtonData->\\\"paclet:IGraphM\\\"]\\) to get started.\"\>"}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ CellChangeTimes->{3.970115015244316*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"1f4813cb-b248-f542-88f1-bfa9903aac53"],
+
+Cell[BoxData["\<\"IGraph/M 0.6.5 (December 21, 2022)\\nigraph \
+0.9.10-23-g5635203bd (Dec 21 2022)\\nMicrosoft Windows (64-bit)\"\>"], \
+"Output",
+ CellChangeTimes->{3.970115015263439*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"df66c10a-2e1c-584d-a6cb-f2a394128653"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+       20}, {Null, 
+       SparseArray[
+       Automatic, {20, 20}, 0, {
+        1, {{0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 
+          51, 54, 57, 60}, {{14}, {15}, {16}, {5}, {6}, {13}, {7}, {14}, {
+          19}, {8}, {15}, {20}, {2}, {11}, {19}, {2}, {12}, {20}, {3}, {11}, {
+          16}, {4}, {12}, {16}, {10}, {14}, {17}, {9}, {15}, {18}, {5}, {7}, {
+          12}, {6}, {8}, {11}, {2}, {17}, {18}, {1}, {3}, {9}, {1}, {4}, {
+          10}, {1}, {7}, {8}, {9}, {13}, {19}, {10}, {13}, {20}, {3}, {5}, {
+          17}, {4}, {6}, {18}}}, Pattern}]}, {EdgeStyle -> {
+         Directive[
+          Thickness[Large], 
+          Opacity[1]], UndirectedEdge[4, 15] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[2, 13] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[7, 11] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[9, 14] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[1, 16] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[8, 16] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[3, 7] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[9, 10] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[4, 8] -> RGBColor[1., 0.656408, 0.], 
+         UndirectedEdge[9, 17] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[7, 16] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[1, 14] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[18, 20] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[2, 5] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[6, 20] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[2, 6] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[13, 17] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[3, 19] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[11, 12] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[6, 12] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[3, 14] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[5, 19] -> RGBColor[1., 0.656408, 0.], 
+         UndirectedEdge[8, 12] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[1, 15] -> RGBColor[0., 0.742291, 0.873126], 
+         UndirectedEdge[4, 20] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[10, 18] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[5, 11] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[17, 19] -> RGBColor[0.655728, 0.8, 0.], 
+         UndirectedEdge[10, 15] -> RGBColor[1., 0.4, 0.], 
+         UndirectedEdge[13, 18] -> RGBColor[1., 0.4, 0.]}, 
+       GraphLayout -> {"Dimension" -> 2}, VertexCoordinates -> CompressedData["
+1:eJxTTMoPSmViYGAQAWIQ/SP48dLZR37Y12ftKZks8cB+33wp/bsqn/ZHpVjf
+9++9vp8BCuxN43Z58vyyt9xyomzf/Hf2QMnpeUJf90P174fph8rvh8nD9L+r
+AZnA7HCyDGTDd/s3gTvkWl//398udvPc9+DLUH237DfNfb/8mPd9e3VDjjUy
+UUf2H/6qEdN/iOnAn5UfL/kmvbA3BoPv+2H6oer3w9SngcEz+4dVIuvcH76z
+DwE5T+GTPUsYn+6muddh5jnAzIPavx9mP8y9y4C6NhQ9gJm3H2YeTB7iv8/7
+AVLKoH4=
+        "], VertexStyle -> {
+         GrayLevel[0]}}]]}, 
+    TagBox[GraphicsGroupBox[GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGAQAWIQ/SP48dLZR37Y12ftKZks8cB+33wp/bsqn/ZHpVjf
+9++9vp8BCuxN43Z58vyyt9xyomzf/Hf2QMnpeUJf90P174fph8rvh8nD9L+r
+AZnA7HCyDGTDd/s3gTvkWl//398udvPc9+DLUH237DfNfb/8mPd9e3VDjjUy
+UUf2H/6qEdN/iOnAn5UfL/kmvbA3BoPv+2H6oer3w9SngcEz+4dVIuvcH76z
+DwE5T+GTPUsYn+6muddh5jnAzIPavx9mP8y9y4C6NhQ9gJm3H2YeTB7iv8/7
+AVLKoH4=
+       "], {
+        {Hue[0.6, 0.7, 0.7], Thickness[Large], Opacity[1], CapForm["Round"], 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{1, 14}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{1, 15}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{1, 16}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{2, 5}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{2, 6}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{2, 13}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{3, 7}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{3, 14}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{3, 19}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.656408, 0.], 
+          {Arrowheads[0.], ArrowBox[{4, 8}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{4, 15}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{4, 20}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{5, 11}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.656408, 0.], 
+          {Arrowheads[0.], ArrowBox[{5, 19}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{6, 12}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{6, 20}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{7, 11}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{7, 16}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{8, 12}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{8, 16}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{9, 10}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{9, 14}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{9, 17}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{10, 15}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{10, 18}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{11, 12}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{13, 17}, 0.0412452419793366]}}, 
+         {RGBColor[1., 0.4, 0.], 
+          {Arrowheads[0.], ArrowBox[{13, 18}, 0.0412452419793366]}}, 
+         {RGBColor[0.655728, 0.8, 0.], 
+          {Arrowheads[0.], ArrowBox[{17, 19}, 0.0412452419793366]}}, 
+         {RGBColor[0., 0.742291, 0.873126], 
+          {Arrowheads[0.], ArrowBox[{18, 20}, 0.0412452419793366]}}}, 
+        {GrayLevel[0], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+         DiskBox[1, 0.0412452419793366], DiskBox[2, 0.0412452419793366], 
+         DiskBox[3, 0.0412452419793366], DiskBox[4, 0.0412452419793366], 
+         DiskBox[5, 0.0412452419793366], DiskBox[6, 0.0412452419793366], 
+         DiskBox[7, 0.0412452419793366], DiskBox[8, 0.0412452419793366], 
+         DiskBox[9, 0.0412452419793366], DiskBox[10, 0.0412452419793366], 
+         DiskBox[11, 0.0412452419793366], DiskBox[12, 0.0412452419793366], 
+         DiskBox[13, 0.0412452419793366], DiskBox[14, 0.0412452419793366], 
+         DiskBox[15, 0.0412452419793366], DiskBox[16, 0.0412452419793366], 
+         DiskBox[17, 0.0412452419793366], DiskBox[18, 0.0412452419793366], 
+         DiskBox[19, 0.0412452419793366], DiskBox[20, 0.0412452419793366]}}]],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.9701150553218594`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"6d801b45-7a8a-d747-bac0-ecff19ea4f1d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "IGCommunities*"}]], "Input",
+ CellChangeTimes->{
+  3.9701151038919907`*^9, {3.9701151518832474`*^9, 3.9701151659022255`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"80853825-bd40-204e-b405-46649df11c30"],
+
+Cell[BoxData[
+ StyleBox[
+  FrameBox[GridBox[{
+     {
+      DynamicModuleBox[{Typeset`open$$ = True}, 
+       PaneSelectorBox[{False->
+        ButtonBox[
+         RowBox[{
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEBitmaps", "RightPointerOpener"]], " ", 
+          StyleBox["IGraphM`", "InformationGridGroupHeader"]}],
+         Appearance->None,
+         BaseStyle->"InformationGridLink",
+         ButtonFunction:>FEPrivate`Set[Typeset`open$$, True],
+         Evaluator->Automatic,
+         Method->"Preemptive"], True->
+        PaneBox[GridBox[{
+           {
+            ButtonBox[
+             RowBox[{
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               
+               ImageSizeCache->{
+                10., {2.1340332872234287`, 7.865966712776571}}], " ", 
+              StyleBox["IGraphM`", "InformationGridGroupHeader"]}],
+             Appearance->None,
+             BaseStyle->"InformationGridLink",
+             ButtonFunction:>FEPrivate`Set[Typeset`open$$, False],
+             Evaluator->Automatic,
+             Method->"Preemptive"]},
+           {
+            PaneBox[GridBox[{
+               {
+                ButtonBox[
+                 
+                 StyleBox["IGCommunitiesEdgeBetweenness", 
+                  "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesEdgeBetweenness", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IGCommunitiesLeiden", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesLeiden", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["IGCommunitiesFluid", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesFluid", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IGCommunitiesMultilevel", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesMultilevel", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["IGCommunitiesGreedy", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesGreedy", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 
+                 StyleBox["IGCommunitiesOptimalModularity", 
+                  "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesOptimalModularity", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["IGCommunitiesInfoMAP", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesInfoMAP", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IGCommunitiesSpinGlass", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesSpinGlass", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 
+                 StyleBox["IGCommunitiesLabelPropagation", 
+                  "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesLabelPropagation", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IGCommunitiesWalktrap", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesWalktrap", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 
+                 StyleBox["IGCommunitiesLeadingEigenvector", 
+                  "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-c0f17941-f3f9-4fc9-95c7-c331b404e30e", {
+                   "IGCommunitiesLeadingEigenvector", "IGraphM`"}, False},
+                 ButtonNote->"IGraphM`",
+                 Evaluator->Automatic], ""}
+              },
+              DefaultBaseStyle->"Text",
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {{
+                   Scaled[0.475]}}}],
+             ImageMargins->{{10, 0}, {0, 2}},
+             ScrollPosition->{0., 0.}]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+         FrameMargins->{{0, 0}, {8, 0}},
+         ScrollPosition->{0., 0.}]}, Dynamic[Typeset`open$$],
+        ImageSize->Automatic]]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{"ColumnsIndexed" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.8]}, 
+        Offset[0.2]}}],
+   BaseStyle->"InformationTitleFrame"], "InformationGridPlain"]], "Output",
+ CellChangeTimes->{3.970115115185913*^9, 3.9701151672023945`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"d9582ef4-aaf7-0a47-9264-e87ce19232cf"]
+}, Open  ]]
+},
+WindowSize->{571.8, 523.8},
+WindowMargins->{{284.4, Automatic}, {12, Automatic}},
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4f8a792f-579b-6e43-8c7b-8b9e45fdff07"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 304, 7, 66, "Input",ExpressionUUID->"9408e033-1e55-754d-aede-c71c9b8de11d"],
+Cell[CellGroupData[{
+Cell[905, 33, 404, 9, 22, "Print",ExpressionUUID->"eb824993-dd74-4540-9be0-a6a49b285596"],
+Cell[1312, 44, 18739, 343, 93, "Print",ExpressionUUID->"b8119c56-c522-1649-91db-f5ed003064b3"],
+Cell[20054, 389, 1176, 31, 22, "Print",ExpressionUUID->"ab684e83-1d6c-e947-b68a-09730e168693"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21279, 426, 807, 19, 161, "Input",ExpressionUUID->"bc81908f-659a-414c-b2d4-28a43c683444"],
+Cell[22089, 447, 537, 11, 49, "Output",ExpressionUUID->"1f4813cb-b248-f542-88f1-bfa9903aac53"],
+Cell[22629, 460, 266, 4, 70, "Output",ExpressionUUID->"df66c10a-2e1c-584d-a6cb-f2a394128653"],
+Cell[22898, 466, 8067, 142, 359, "Output",ExpressionUUID->"6d801b45-7a8a-d747-bac0-ecff19ea4f1d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31002, 613, 232, 4, 28, "Input",ExpressionUUID->"80853825-bd40-204e-b405-46649df11c30"],
+Cell[31237, 619, 7632, 184, 209, "Output",ExpressionUUID->"d9582ef4-aaf7-0a47-9264-e87ce19232cf"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
