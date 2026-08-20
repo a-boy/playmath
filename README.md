@@ -167,10 +167,8 @@ opm=OddPrimesMask=
 
 
 ## Question
-
-
-- Pi/2==[1;1, 1/2, 1/3, 1/4, 1/5,...] ?
-![](stage314-Pi/screenshot2026-07-11-152227.png)
+-
+- ...
 
 #### math tools
 
